@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="FtsZ_Polymerization" name="FtsZ_Polymerization">
+    <listOfCompartments>
+      <compartment constant="false" id="Cytosol" name="Cytosol" size="1.0" spatialDimensions="3" units="litre"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F" initialAmount="20.0" name="FtsZ" substanceUnits="mole"/>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_D" initialAmount="0.0" name="FtsZ" substanceUnits="mole"/>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T" initialAmount="0.0" name="FtsZ" substanceUnits="mole"/>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T2" initialAmount="0.0" name="FtsZ" substanceUnits="mole"/>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T3" initialAmount="0.0" name="FtsZ" substanceUnits="mole"/>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T4" initialAmount="0.0" name="FtsZ" substanceUnits="mole"/>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T5" initialAmount="0.0" name="FtsZ" substanceUnits="mole"/>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T6" initialAmount="0.0" name="FtsZ" substanceUnits="mole"/>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T7" initialAmount="0.0" name="FtsZ" substanceUnits="mole"/>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T8" initialAmount="0.0" name="FtsZ" substanceUnits="mole"/>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T9" initialAmount="0.0" name="FtsZ" substanceUnits="mole"/>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_GDP" initialAmount="10.0" substanceUnits="mole"/>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_GTP" initialAmount="90.0" substanceUnits="mole"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter constant="false" id="k_act1" value="1.1"/>
+      <parameter constant="false" id="k_act2" value="0.01"/>
+      <parameter constant="false" id="k_el1" value="5100000.0"/>
+      <parameter constant="false" id="k_el2" value="2.9"/>
+      <parameter constant="false" id="k_ex1" value="10000.0"/>
+      <parameter constant="false" id="k_ex2" value="5000.0"/>
+      <parameter constant="false" id="k_nuc1" value="4200000.0"/>
+      <parameter constant="false" id="k_nuc2" value="40.0"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction fast="false" id="R01" name="F -&gt; F_T" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_act1</ci>
+              <ci>Cytosol_F</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R02" name="F_T -&gt; F" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_act2</ci>
+              <ci>Cytosol_F_T</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R03" name="F_D + GTP -&gt; F_T + GDP" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_D" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_GTP" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_GDP" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_ex1</ci>
+                <ci>Cytosol_F_D</ci>
+              </apply>
+              <ci>Cytosol_GTP</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R04" name="F_T + GDP -&gt; F_D + GTP" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_GDP" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_D" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_GTP" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_ex2</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_GDP</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R05" name="F_T -&gt; F_T2" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="2"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T2" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_nuc1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R06" name="F_T2 -&gt; F_T" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T2" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="2"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_nuc2</ci>
+              <ci>Cytosol_F_T2</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R07" name="F_T + F_T2 -&gt; F_T3" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_F_T2" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T3" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_el1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T2</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R08" name="F_T + F_T3 -&gt; F_T4" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_F_T3" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T4" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_el1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T3</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R09" name="F_T + F_T4 -&gt; F_T5" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_F_T4" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T5" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_el1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T4</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R10" name="F_T + F_T5 -&gt; F_T6" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_F_T5" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T6" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_el1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T5</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R11" name="F_T + F_T6 -&gt; F_T7" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_F_T6" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T7" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_el1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T6</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R12" name="F_T + F_T7 -&gt; F_T8" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_F_T7" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T8" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_el1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T7</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R13" name="F_T + F_T8 -&gt; F_T9" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_F_T8" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T9" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_el1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T8</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R14" name="F_T9 -&gt; F_T + F_T8" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T9" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_F_T8" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_el2</ci>
+              <ci>Cytosol_F_T9</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R15" name="F_T8 -&gt; F_T + F_T7" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T8" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_F_T7" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_el2</ci>
+              <ci>Cytosol_F_T8</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R16" name="F_T7 -&gt; F_T + F_T6" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T7" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_F_T6" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_el2</ci>
+              <ci>Cytosol_F_T7</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R17" name="F_T6 -&gt; F_T + F_T5" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T6" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_F_T5" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_el2</ci>
+              <ci>Cytosol_F_T6</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R18" name="F_T5 -&gt; F_T + F_T4" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T5" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_F_T4" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_el2</ci>
+              <ci>Cytosol_F_T5</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R19" name="F_T4 -&gt; F_T + F_T3" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T4" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_F_T3" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_el2</ci>
+              <ci>Cytosol_F_T4</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R20" name="F_T3 -&gt; F_T + F_T2" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T3" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1"/>
+          <speciesReference constant="false" species="Cytosol_F_T2" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_el2</ci>
+              <ci>Cytosol_F_T3</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
