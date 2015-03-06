@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="FtsZ_Polymerization" name="FtsZ_Polymerization">
+    <annotation>
+      <sbgn xmlns:biouml="http://www.biouml.org/ns" notation="databases/Utils/Diagrams/graphic notations/sbml_sbgn.xml">
+        <nodes>
+          <node closeup="" compartmentType="" id="Cytosol" parent="" ref="Cytosol" type="compartment">
+            <nodeLayout height="1398" width="725" x="-40" y="-150"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="F" multimer="0" parent="Cytosol" ref="F" title="FtsZ" type="macromolecule">
+            <nodeLayout height="55" width="90" x="560" y="58"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="F_D" multimer="0" parent="Cytosol" ref="F_D" title="FtsZ" type="macromolecule">
+            <nodeLayout height="62" width="75" x="60" y="-117"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="GDP_label" parent="Cytosol.F_D" type="variable" value="GDP">
+            <nodeLayout x="55" y="-129"/>
+          </node>
+          <node clone="" id="F_T" multimer="0" parent="Cytosol" ref="F_T" title="FtsZ" type="macromolecule">
+            <nodeLayout height="63" width="93" x="322" y="54"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="GTP_label" parent="Cytosol.F_T" type="variable" value="GTP">
+            <nodeLayout x="390" y="42"/>
+          </node>
+          <node clone="" id="F_T2" multimer="2" parent="Cytosol" ref="F_T2" title="FtsZ" type="macromolecule">
+            <nodeLayout height="67" width="97" x="95" y="108"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="GTP_label" parent="Cytosol.F_T2" type="variable" value="GTP">
+            <nodeLayout height="25" width="32" x="175" y="123"/>
+          </node>
+          <node clone="" id="F_T3" multimer="3" parent="Cytosol" ref="F_T3" title="FtsZ" type="macromolecule">
+            <nodeLayout height="65" width="100" x="95" y="248"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="GTP_label" parent="Cytosol.F_T3" type="variable" value="GTP">
+            <nodeLayout height="50" width="34" x="178" y="258"/>
+          </node>
+          <node clone="" id="F_T4" multimer="4" parent="Cytosol" ref="F_T4" title="FtsZ" type="macromolecule">
+            <nodeLayout height="65" width="101" x="95" y="393"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="GTP" parent="Cytosol.F_T4" type="variable" value="GTP">
+            <nodeLayout x="179" y="398"/>
+          </node>
+          <node clone="" id="F_T5" multimer="5" parent="Cytosol" ref="F_T5" title="FtsZ" type="macromolecule">
+            <nodeLayout height="68" width="105" x="95" y="548"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="GTP" parent="Cytosol.F_T5" type="variable" value="GTP">
+            <nodeLayout x="183" y="553"/>
+          </node>
+          <node clone="" id="F_T6" multimer="6" parent="Cytosol" ref="F_T6" title="FtsZ" type="macromolecule">
+            <nodeLayout height="65" width="106" x="94" y="698"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="GTP" parent="Cytosol.F_T6" type="variable" value="GTP">
+            <nodeLayout x="183" y="703"/>
+          </node>
+          <node clone="" id="F_T7" multimer="7" parent="Cytosol" ref="F_T7" title="FtsZ" type="macromolecule">
+            <nodeLayout height="60" width="106" x="94" y="843"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="GTP" parent="Cytosol.F_T7" type="variable" value="GTP">
+            <nodeLayout x="183" y="853"/>
+          </node>
+          <node clone="" id="F_T8" multimer="8" parent="Cytosol" ref="F_T8" title="FtsZ" type="macromolecule">
+            <nodeLayout height="60" width="106" x="94" y="993"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="GTP" parent="Cytosol.F_T8" type="variable" value="GTP">
+            <nodeLayout x="183" y="1003"/>
+          </node>
+          <node clone="" id="F_T9" multimer="9" parent="Cytosol" ref="F_T9" title="FtsZ" type="macromolecule">
+            <nodeLayout height="55" width="100" x="100" y="1143"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="GTP" parent="Cytosol.F_T9" type="variable" value="GTP">
+            <nodeLayout x="183" y="1148"/>
+          </node>
+          <node clone="" id="GDP" multimer="0" parent="Cytosol" ref="Cytosol.GDP" type="simple chemical">
+            <nodeLayout height="51" width="50" x="290" y="-67"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="GTP" multimer="0" parent="Cytosol" ref="Cytosol.GTP" type="simple chemical">
+            <nodeLayout height="50" width="50" x="170" y="-67"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="R01" parent="Cytosol" reactionType="process" ref="R01" title="F -&gt; F_T" type="reaction">
+            <nodeLayout height="15" width="15" x="481" y="68"/>
+          </node>
+          <node id="R02" parent="Cytosol" reactionType="process" ref="R02" title="F_T -&gt; F" type="reaction">
+            <nodeLayout height="17" width="15" x="481" y="93"/>
+          </node>
+          <node id="R03" parent="Cytosol" reactionType="process" ref="R03" title="F_D + GTP -&gt; F_T + GDP" type="reaction">
+            <nodeLayout height="15" width="15" x="255" y="13"/>
+          </node>
+          <node id="R04" parent="Cytosol" reactionType="process" ref="R04" title="F_T + GDP -&gt; F_D + GTP" type="reaction">
+            <nodeLayout height="1" width="15" x="250" y="-110"/>
+          </node>
+          <node id="R05" parent="Cytosol" reactionType="process" ref="R05" title="F_T -&gt; F_T2" type="reaction">
+            <nodeLayout x="160" y="58"/>
+          </node>
+          <node id="R06" parent="Cytosol" reactionType="process" ref="R06" title="F_T2 -&gt; F_T" type="reaction">
+            <nodeLayout x="105" y="78"/>
+          </node>
+          <node id="R07" parent="Cytosol" reactionType="process" ref="R07" title="F_T + F_T2 -&gt; F_T3" type="reaction">
+            <nodeLayout height="15" width="15" x="160" y="198"/>
+          </node>
+          <node id="R08" parent="Cytosol" reactionType="process" ref="R08" title="F_T + F_T3 -&gt; F_T4" type="reaction">
+            <nodeLayout height="15" width="15" x="160" y="338"/>
+          </node>
+          <node id="R09" parent="Cytosol" reactionType="process" ref="R09" title="F_T + F_T4 -&gt; F_T5" type="reaction">
+            <nodeLayout height="15" width="7" x="155" y="483"/>
+          </node>
+          <node id="R10" parent="Cytosol" reactionType="process" ref="R10" title="F_T + F_T5 -&gt; F_T6" type="reaction">
+            <nodeLayout x="155" y="648"/>
+          </node>
+          <node id="R11" parent="Cytosol" reactionType="process" ref="R11" title="F_T + F_T6 -&gt; F_T7" type="reaction">
+            <nodeLayout height="15" width="15" x="155" y="793"/>
+          </node>
+          <node id="R12" parent="Cytosol" reactionType="process" ref="R12" title="F_T + F_T7 -&gt; F_T8" type="reaction">
+            <nodeLayout height="15" width="15" x="155" y="933"/>
+          </node>
+          <node id="R13" parent="Cytosol" reactionType="process" ref="R13" title="F_T + F_T8 -&gt; F_T9" type="reaction">
+            <nodeLayout height="15" width="15" x="155" y="1083"/>
+          </node>
+          <node id="R14" parent="Cytosol" reactionType="process" ref="R14" title="F_T9 -&gt; F_T + F_T8" type="reaction">
+            <nodeLayout height="15" width="12" x="110" y="1113"/>
+          </node>
+          <node id="R15" parent="Cytosol" reactionType="process" ref="R15" title="F_T8 -&gt; F_T + F_T7" type="reaction">
+            <nodeLayout height="1" width="15" x="107" y="958"/>
+          </node>
+          <node id="R16" parent="Cytosol" reactionType="process" ref="R16" title="F_T7 -&gt; F_T + F_T6" type="reaction">
+            <nodeLayout x="105" y="818"/>
+          </node>
+          <node id="R17" parent="Cytosol" reactionType="process" ref="R17" title="F_T6 -&gt; F_T + F_T5" type="reaction">
+            <nodeLayout height="15" width="15" x="107" y="668"/>
+          </node>
+          <node id="R18" parent="Cytosol" reactionType="process" ref="R18" title="F_T5 -&gt; F_T + F_T4" type="reaction">
+            <nodeLayout height="15" width="15" x="107" y="513"/>
+          </node>
+          <node id="R19" parent="Cytosol" reactionType="process" ref="R19" title="F_T4 -&gt; F_T + F_T3" type="reaction">
+            <nodeLayout x="105" y="363"/>
+          </node>
+          <node id="R20" parent="Cytosol" reactionType="process" ref="R20" title="F_T3 -&gt; F_T + F_T2" type="reaction">
+            <nodeLayout height="15" width="15" x="105" y="218"/>
+          </node>
+        </nodes>
+        <edges>
+          <edge from="Cytosol.F" id="R01: F as reactant" kernelType="relation-chemical" ref="R01: F as reactant" to="Cytosol.R01" type="reaction"/>
+          <edge from="Cytosol.R01" id="R01: F_T as product" kernelType="relation-chemical" ref="R01: F_T as product" to="Cytosol.F_T" type="reaction"/>
+          <edge from="Cytosol.R02" id="R02: F as product" kernelType="relation-chemical" ref="R02: F as product" to="Cytosol.F" type="reaction"/>
+          <edge from="Cytosol.F_T" id="R02: F_T as reactant" kernelType="relation-chemical" ref="R02: F_T as reactant" to="Cytosol.R02" type="reaction"/>
+          <edge from="Cytosol.F_D" id="R03: F_D as reactant" kernelType="relation-chemical" ref="R03: F_D as reactant" to="Cytosol.R03" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="98" y0="-54"/>
+              <segment segmentType="lineTo" x0="98" y0="23"/>
+              <segment segmentType="lineTo" x0="252" y0="23"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.R03" id="R03: F_T as product" kernelType="relation-chemical" ref="R03: F_T as product" to="Cytosol.F_T" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="271" y0="20"/>
+              <segment segmentType="lineTo" x0="360" y0="20"/>
+              <segment segmentType="lineTo" x0="360" y0="51"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.R03" id="R03: GDP as product" kernelType="relation-chemical" ref="R03: GDP as product" to="Cytosol.GDP" type="reaction"/>
+          <edge from="Cytosol.GTP" id="R03: GTP as reactant" kernelType="relation-chemical" ref="R03: GTP as reactant" to="Cytosol.R03" type="reaction"/>
+          <edge from="Cytosol.R04" id="R04: F_D as product" kernelType="relation-chemical" ref="R04: F_D as product" to="Cytosol.F_D" type="reaction"/>
+          <edge from="Cytosol.F_T" id="R04: F_T as reactant" kernelType="relation-chemical" ref="R04: F_T as reactant" to="Cytosol.R04" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="382" y0="53"/>
+              <segment segmentType="lineTo" x0="382" y0="-100"/>
+              <segment segmentType="lineTo" x0="268" y0="-99"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.GDP" id="R04: GDP as reactant" kernelType="relation-chemical" ref="R04: GDP as reactant" to="Cytosol.R04" type="reaction"/>
+          <edge from="Cytosol.R04" id="R04: GTP as product" kernelType="relation-chemical" ref="R04: GTP as product" to="Cytosol.GTP" type="reaction"/>
+          <edge from="Cytosol.F_T" id="R05: F_T as reactant" kernelType="relation-chemical" ref="R05: F_T as reactant" to="Cytosol.R05" type="reaction"/>
+          <edge from="Cytosol.R05" id="R05: F_T2 as product" kernelType="relation-chemical" ref="R05: F_T2 as product" to="Cytosol.F_T2" type="reaction"/>
+          <edge from="Cytosol.R06" id="R06: F_T as product" kernelType="relation-chemical" ref="R06: F_T as product" to="Cytosol.F_T" type="reaction"/>
+          <edge from="Cytosol.F_T2" id="R06: F_T2 as reactant" kernelType="relation-chemical" ref="R06: F_T2 as reactant" to="Cytosol.R06" type="reaction"/>
+          <edge from="Cytosol.F_T" id="R07: F_T as reactant" kernelType="relation-chemical" ref="R07: F_T as reactant" to="Cytosol.R07" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="357" y0="118"/>
+              <segment segmentType="lineTo" x0="357" y0="215"/>
+              <segment segmentType="lineTo" x0="169" y0="216"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.F_T2" id="R07: F_T2 as reactant" kernelType="relation-chemical" ref="R07: F_T2 as reactant" to="Cytosol.R07" type="reaction"/>
+          <edge from="Cytosol.R07" id="R07: F_T3 as product" kernelType="relation-chemical" ref="R07: F_T3 as product" to="Cytosol.F_T3" type="reaction"/>
+          <edge from="Cytosol.F_T" id="R08: F_T as reactant" kernelType="relation-chemical" ref="R08: F_T as reactant" to="Cytosol.R08" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="370" y0="118"/>
+              <segment segmentType="lineTo" x0="370" y0="355"/>
+              <segment segmentType="lineTo" x0="169" y0="356"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.F_T3" id="R08: F_T3 as reactant" kernelType="relation-chemical" ref="R08: F_T3 as reactant" to="Cytosol.R08" type="reaction"/>
+          <edge from="Cytosol.R08" id="R08: F_T4 as product" kernelType="relation-chemical" ref="R08: F_T4 as product" to="Cytosol.F_T4" type="reaction"/>
+          <edge from="Cytosol.F_T" id="R09: F_T as reactant" kernelType="relation-chemical" ref="R09: F_T as reactant" to="Cytosol.R09" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="375" y0="118"/>
+              <segment segmentType="lineTo" x0="375" y0="500"/>
+              <segment segmentType="lineTo" x0="165" y0="501"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.F_T4" id="R09: F_T4 as reactant" kernelType="relation-chemical" ref="R09: F_T4 as reactant" to="Cytosol.R09" type="reaction"/>
+          <edge from="Cytosol.R09" id="R09: F_T5 as product" kernelType="relation-chemical" ref="R09: F_T5 as product" to="Cytosol.F_T5" type="reaction"/>
+          <edge from="Cytosol.F_T" id="R10: F_T as reactant" kernelType="relation-chemical" ref="R10: F_T as reactant" to="Cytosol.R10" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="360" y0="118"/>
+              <segment segmentType="lineTo" x0="360" y0="665"/>
+              <segment segmentType="lineTo" x0="164" y0="666"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.F_T5" id="R10: F_T5 as reactant" kernelType="relation-chemical" ref="R10: F_T5 as reactant" to="Cytosol.R10" type="reaction"/>
+          <edge from="Cytosol.R10" id="R10: F_T6 as product" kernelType="relation-chemical" ref="R10: F_T6 as product" to="Cytosol.F_T6" type="reaction"/>
+          <edge from="Cytosol.F_T" id="R11: F_T as reactant" kernelType="relation-chemical" ref="R11: F_T as reactant" to="Cytosol.R11" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="355" y0="118"/>
+              <segment segmentType="lineTo" x0="355" y0="805"/>
+              <segment segmentType="lineTo" x0="173" y0="805"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.F_T6" id="R11: F_T6 as reactant" kernelType="relation-chemical" ref="R11: F_T6 as reactant" to="Cytosol.R11" type="reaction"/>
+          <edge from="Cytosol.R11" id="R11: F_T7 as product" kernelType="relation-chemical" ref="R11: F_T7 as product" to="Cytosol.F_T7" type="reaction"/>
+          <edge from="Cytosol.F_T" id="R12: F_T as reactant" kernelType="relation-chemical" ref="R12: F_T as reactant" to="Cytosol.R12" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="380" y0="118"/>
+              <segment segmentType="lineTo" x0="380" y0="950"/>
+              <segment segmentType="lineTo" x0="165" y0="951"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.F_T7" id="R12: F_T7 as reactant" kernelType="relation-chemical" ref="R12: F_T7 as reactant" to="Cytosol.R12" type="reaction"/>
+          <edge from="Cytosol.R12" id="R12: F_T8 as product" kernelType="relation-chemical" ref="R12: F_T8 as product" to="Cytosol.F_T8" type="reaction"/>
+          <edge from="Cytosol.F_T" id="R13: F_T as reactant" kernelType="relation-chemical" ref="R13: F_T as reactant" to="Cytosol.R13" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="367" y0="118"/>
+              <segment segmentType="lineTo" x0="367" y0="1095"/>
+              <segment segmentType="lineTo" x0="173" y0="1095"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.F_T8" id="R13: F_T8 as reactant" kernelType="relation-chemical" ref="R13: F_T8 as reactant" to="Cytosol.R13" type="reaction"/>
+          <edge from="Cytosol.R13" id="R13: F_T9 as product" kernelType="relation-chemical" ref="R13: F_T9 as product" to="Cytosol.F_T9" type="reaction"/>
+          <edge from="Cytosol.R14" id="R14: F_T as product" kernelType="relation-chemical" ref="R14: F_T as product" to="Cytosol.F_T" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="126" y0="1120"/>
+              <segment segmentType="lineTo" x0="397" y0="1120"/>
+              <segment segmentType="lineTo" x0="397" y0="120"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.R14" id="R14: F_T8 as product" kernelType="relation-chemical" ref="R14: F_T8 as product" to="Cytosol.F_T8" type="reaction"/>
+          <edge from="Cytosol.F_T9" id="R14: F_T9 as reactant" kernelType="relation-chemical" ref="R14: F_T9 as reactant" to="Cytosol.R14" type="reaction"/>
+          <edge from="Cytosol.R15" id="R15: F_T as product" kernelType="relation-chemical" ref="R15: F_T as product" to="Cytosol.F_T" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="123" y0="970"/>
+              <segment segmentType="lineTo" x0="382" y0="970"/>
+              <segment segmentType="lineTo" x0="382" y0="120"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.R15" id="R15: F_T7 as product" kernelType="relation-chemical" ref="R15: F_T7 as product" to="Cytosol.F_T7" type="reaction"/>
+          <edge from="Cytosol.F_T8" id="R15: F_T8 as reactant" kernelType="relation-chemical" ref="R15: F_T8 as reactant" to="Cytosol.R15" type="reaction"/>
+          <edge from="Cytosol.R16" id="R16: F_T as product" kernelType="relation-chemical" ref="R16: F_T as product" to="Cytosol.F_T" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="115" y0="834"/>
+              <segment segmentType="lineTo" x0="406" y0="835"/>
+              <segment segmentType="lineTo" x0="406" y0="120"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.R16" id="R16: F_T6 as product" kernelType="relation-chemical" ref="R16: F_T6 as product" to="Cytosol.F_T6" type="reaction"/>
+          <edge from="Cytosol.F_T7" id="R16: F_T7 as reactant" kernelType="relation-chemical" ref="R16: F_T7 as reactant" to="Cytosol.R16" type="reaction"/>
+          <edge from="Cytosol.R17" id="R17: F_T as product" kernelType="relation-chemical" ref="R17: F_T as product" to="Cytosol.F_T" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="117" y0="684"/>
+              <segment segmentType="lineTo" x0="400" y0="683"/>
+              <segment segmentType="lineTo" x0="400" y0="120"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.R17" id="R17: F_T5 as product" kernelType="relation-chemical" ref="R17: F_T5 as product" to="Cytosol.F_T5" type="reaction"/>
+          <edge from="Cytosol.F_T6" id="R17: F_T6 as reactant" kernelType="relation-chemical" ref="R17: F_T6 as reactant" to="Cytosol.R17" type="reaction"/>
+          <edge from="Cytosol.R18" id="R18: F_T as product" kernelType="relation-chemical" ref="R18: F_T as product" to="Cytosol.F_T" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="123" y0="525"/>
+              <segment segmentType="lineTo" x0="390" y0="525"/>
+              <segment segmentType="lineTo" x0="390" y0="120"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.R18" id="R18: F_T4 as product" kernelType="relation-chemical" ref="R18: F_T4 as product" to="Cytosol.F_T4" type="reaction"/>
+          <edge from="Cytosol.F_T5" id="R18: F_T5 as reactant" kernelType="relation-chemical" ref="R18: F_T5 as reactant" to="Cytosol.R18" type="reaction"/>
+          <edge from="Cytosol.R19" id="R19: F_T as product" kernelType="relation-chemical" ref="R19: F_T as product" to="Cytosol.F_T" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="121" y0="371"/>
+              <segment segmentType="lineTo" x0="387" y0="371"/>
+              <segment segmentType="lineTo" x0="387" y0="120"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.R19" id="R19: F_T3 as product" kernelType="relation-chemical" ref="R19: F_T3 as product" to="Cytosol.F_T3" type="reaction"/>
+          <edge from="Cytosol.F_T4" id="R19: F_T4 as reactant" kernelType="relation-chemical" ref="R19: F_T4 as reactant" to="Cytosol.R19" type="reaction"/>
+          <edge from="Cytosol.R20" id="R20: F_T as product" kernelType="relation-chemical" ref="R20: F_T as product" to="Cytosol.F_T" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="115" y0="234"/>
+              <segment segmentType="lineTo" x0="383" y0="233"/>
+              <segment segmentType="lineTo" x0="383" y0="120"/>
+            </path>
+          </edge>
+          <edge from="Cytosol.R20" id="R20: F_T2 as product" kernelType="relation-chemical" ref="R20: F_T2 as product" to="Cytosol.F_T2" type="reaction"/>
+          <edge from="Cytosol.F_T3" id="R20: F_T3 as reactant" kernelType="relation-chemical" ref="R20: F_T3 as reactant" to="Cytosol.R20" type="reaction"/>
+        </edges>
+        <viewOptions>
+          <propertyRef name="autoLayout" value="false"/>
+          <propertyRef name="dependencyEdges" value="false"/>
+          <propertyRef name="drawOnFly" value="false"/>
+          <propertyRef name="gridOptions" type="ru.biosoft.graphics.editor.GridOptions">
+            <propertyRef name="cellSize" value="20"/>
+            <propertyRef name="gridStyle" value="POINTS"/>
+            <propertyRef name="showGrid" value="true"/>
+            <propertyRef name="stepSize" value="5"/>
+            <propertyRef name="useDefault" value="true"/>
+          </propertyRef>
+          <propertyRef name="options">
+            <propertyRef name="sourceSinkSize" value="30;30"/>
+            <propertyRef name="sourceSinkBrush" value="#E15064:#DC2350"/>
+            <propertyRef name="macromoleculeBrush" value="#EAFFD8:#D4FFAA"/>
+            <propertyRef name="nucleicBrush" value="#B4FFFF:#A0F0F0"/>
+            <propertyRef name="perturbingBrush" value="#FFB4FF:#F0A0F0"/>
+            <propertyRef name="unspecifiedBrush" value="#F5E164:#F5C80A"/>
+            <propertyRef name="simpleChemicalBrush" value="#D282AA:#BE5A96"/>
+            <propertyRef name="complexBrush" value="#5ABEC8:#3CB4BE"/>
+            <propertyRef name="compartmentBrush" value="#F0F0F0"/>
+            <propertyRef name="compartmentPen" value="4.0;#969696;Solid"/>
+            <propertyRef name="compartmentPenIn" value="1.0;#C8C8C8;Solid"/>
+            <propertyRef name="compartmentPenOut" value="2.0;#646464;Solid"/>
+            <propertyRef name="unitOfInfoSize" value="40;20"/>
+            <propertyRef name="unitOfInfoBrush" value="white"/>
+            <propertyRef name="variableSize" value="20;20"/>
+            <propertyRef name="variableBrush" value="white"/>
+            <propertyRef name="edgePen" value="1.0;#646464;Solid"/>
+            <propertyRef name="edgeTipBrush" value="#787878"/>
+            <propertyRef name="phenotypeBrush" value="#F0F0FF:#C8B4FF"/>
+            <propertyRef name="nodeTitleFont" value="Arial;0;12;black"/>
+            <propertyRef name="customTitleFont" value="Arial;1;18;black"/>
+            <propertyRef name="portTitleFont" value="Arial;1;12;#7A378B"/>
+            <propertyRef name="formulaFont" value="Arial;0;11;black"/>
+            <propertyRef name="eventTitleFont" value="Arial;1;11;black"/>
+            <propertyRef name="eventPen" value="1.0;black;Solid"/>
+            <propertyRef name="highlight1Brush" value="#CCF"/>
+            <propertyRef name="highlight2Brush" value="#FFCECE"/>
+            <propertyRef name="highlight3Brush" value="#FFCEFF"/>
+            <propertyRef name="addSourceSink" value="true"/>
+            <propertyRef name="nodeTitleLimit" value="1000.0"/>
+            <propertyRef name="automoveReactions" value="true"/>
+          </propertyRef>
+        </viewOptions>
+      </sbgn>
+      <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+        <biouml:diagramInfo completeName="FtsZ Polymerization"/>
+        <biouml:viewOptions autoLayout="false" dependencyEdges="false"/>
+      </biouml:BIOUML>
+    </annotation>
+    <listOfCompartments>
+      <compartment constant="false" id="Cytosol" name="Cytosol" size="1.0" spatialDimensions="3" units="litre">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:compartmentInfo color="rgba(0,0,0,0)" completeName="Cytosol" height="1398" shape="0" title="Cytosol" width="725" x="-40" y="-150"/>
+          </biouml:BIOUML>
+        </annotation>
+      </compartment>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F" initialAmount="20.0" name="FtsZ" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.F" height="55" title="FtsZ" width="90" x="560" y="58">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-protein"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_D" initialAmount="0.0" name="FtsZ" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.F_D" height="62" title="FtsZ" width="75" x="60" y="-117">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-protein"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T" initialAmount="0.0" name="FtsZ" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.F_T" height="63" title="FtsZ" width="93" x="322" y="54">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-protein"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T2" initialAmount="0.0" name="FtsZ" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.F_T2" height="67" title="FtsZ" width="97" x="95" y="108">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-protein"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T3" initialAmount="0.0" name="FtsZ" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.F_T3" height="65" title="FtsZ" width="100" x="95" y="248">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-protein"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T4" initialAmount="0.0" name="FtsZ" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.F_T4" height="65" title="FtsZ" width="101" x="95" y="393">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-protein"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T5" initialAmount="0.0" name="FtsZ" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.F_T5" height="68" title="FtsZ" width="105" x="95" y="548">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-protein"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T6" initialAmount="0.0" name="FtsZ" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.F_T6" height="65" title="FtsZ" width="106" x="94" y="698">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-protein"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T7" initialAmount="0.0" name="FtsZ" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.F_T7" height="60" title="FtsZ" width="106" x="94" y="843">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-protein"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T8" initialAmount="0.0" name="FtsZ" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.F_T8" height="60" title="FtsZ" width="106" x="94" y="993">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-protein"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_F_T9" initialAmount="0.0" name="FtsZ" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.F_T9" height="55" title="FtsZ" width="100" x="100" y="1143">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-protein"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_GDP" initialAmount="10.0" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.GDP" height="51" title="GDP" width="50" x="290" y="-67">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-substance"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="false" id="Cytosol_GTP" initialAmount="90.0" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.GTP" height="50" title="GTP" width="50" x="170" y="-67">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-substance"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter constant="false" id="k_act1" value="1.1"/>
+      <parameter constant="false" id="k_act2" units="s^-1" value="0.01"/>
+      <parameter constant="false" id="k_el1" value="5100000.0"/>
+      <parameter constant="false" id="k_el2" value="2.9"/>
+      <parameter constant="false" id="k_ex1" value="10000.0"/>
+      <parameter constant="false" id="k_ex2" value="5000.0"/>
+      <parameter constant="false" id="k_nuc1" value="4200000.0"/>
+      <parameter constant="false" id="k_nuc2" value="40.0"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction fast="false" id="R01" name="F -&gt; F_T" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R01" title="F -&gt; F_T" x="481" y="68"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=559,y=75]" outPort="java.awt.Point[x=499,y=75]" title="F -&gt; F_T"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=480,y=75]" outPort="java.awt.Point[x=418,y=75]" title="F -&gt; F_T"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_act1</ci>
+              <ci>Cytosol_F</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R02" name="F_T -&gt; F" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R02" title="F_T -&gt; F" x="481" y="93"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=416,y=100]" outPort="java.awt.Point[x=478,y=100]" title="F_T -&gt; F"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=497,y=100]" outPort="java.awt.Point[x=557,y=100]" title="F_T -&gt; F"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_act2</ci>
+              <ci>Cytosol_F_T</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R03" name="F_D + GTP -&gt; F_T + GDP" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R03" title="F_D + GTP -&gt; F_T + GDP" x="255" y="13"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_D" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=98,y=-54]" outPort="java.awt.Point[x=252,y=23]" title="F_D + GTP -&gt; F_T + GDP">
+                  <path>
+                    <segment segmentType="moveTo" x0="98" y0="-54"/>
+                    <segment segmentType="lineTo" x0="98" y0="23"/>
+                    <segment segmentType="lineTo" x0="252" y0="23"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_GTP" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=199,y=-16]" outPort="java.awt.Point[x=260,y=10]" title="F_D + GTP -&gt; F_T + GDP"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=271,y=20]" outPort="java.awt.Point[x=360,y=51]" title="F_D + GTP -&gt; F_T + GDP">
+                  <path>
+                    <segment segmentType="moveTo" x0="271" y0="20"/>
+                    <segment segmentType="lineTo" x0="360" y0="20"/>
+                    <segment segmentType="lineTo" x0="360" y0="51"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_GDP" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=264,y=12]" outPort="java.awt.Point[x=312,y=-13]" title="F_D + GTP -&gt; F_T + GDP"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_ex1</ci>
+                <ci>Cytosol_F_D</ci>
+              </apply>
+              <ci>Cytosol_GTP</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R04" name="F_T + GDP -&gt; F_D + GTP" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R04" title="F_T + GDP -&gt; F_D + GTP" x="250" y="-110"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=382,y=53]" outPort="java.awt.Point[x=268,y=-99]" title="F_T + GDP -&gt; F_D + GTP">
+                  <path>
+                    <segment segmentType="moveTo" x0="382" y0="53"/>
+                    <segment segmentType="lineTo" x0="382" y0="-100"/>
+                    <segment segmentType="lineTo" x0="268" y0="-99"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_GDP" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=312,y=-68]" outPort="java.awt.Point[x=259,y=-92]" title="F_T + GDP -&gt; F_D + GTP"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_D" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=249,y=-102]" outPort="java.awt.Point[x=138,y=-102]" title="F_T + GDP -&gt; F_D + GTP"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_GTP" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=255,y=-94]" outPort="java.awt.Point[x=199,y=-70]" title="F_T + GDP -&gt; F_D + GTP"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_ex2</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_GDP</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R05" name="F_T -&gt; F_T2" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R05" title="F_T -&gt; F_T2" x="160" y="58"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="2">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=321,y=65]" outPort="java.awt.Point[x=178,y=65]" title="F_T -&gt; F_T2"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T2" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=167,y=74]" outPort="java.awt.Point[x=167,y=105]" title="F_T -&gt; F_T2"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_nuc1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R06" name="F_T2 -&gt; F_T" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R06" title="F_T2 -&gt; F_T" x="105" y="78"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T2" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=112,y=107]" outPort="java.awt.Point[x=112,y=96]" title="F_T2 -&gt; F_T"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="2">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=121,y=85]" outPort="java.awt.Point[x=319,y=85]" title="F_T2 -&gt; F_T"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_nuc2</ci>
+              <ci>Cytosol_F_T2</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R07" name="F_T + F_T2 -&gt; F_T3" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R07" title="F_T + F_T2 -&gt; F_T3" x="160" y="198"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=357,y=118]" outPort="java.awt.Point[x=169,y=216]" title="F_T + F_T2 -&gt; F_T3">
+                  <path>
+                    <segment segmentType="moveTo" x0="357" y0="118"/>
+                    <segment segmentType="lineTo" x0="357" y0="215"/>
+                    <segment segmentType="lineTo" x0="169" y0="216"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_F_T2" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=167,y=191]" outPort="java.awt.Point[x=167,y=195]" title="F_T + F_T2 -&gt; F_T3"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T3" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=167,y=214]" outPort="java.awt.Point[x=167,y=245]" title="F_T + F_T2 -&gt; F_T3"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_el1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T2</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R08" name="F_T + F_T3 -&gt; F_T4" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R08" title="F_T + F_T3 -&gt; F_T4" x="160" y="338"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=370,y=118]" outPort="java.awt.Point[x=169,y=356]" title="F_T + F_T3 -&gt; F_T4">
+                  <path>
+                    <segment segmentType="moveTo" x0="370" y0="118"/>
+                    <segment segmentType="lineTo" x0="370" y0="355"/>
+                    <segment segmentType="lineTo" x0="169" y0="356"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_F_T3" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=167,y=329]" outPort="java.awt.Point[x=167,y=335]" title="F_T + F_T3 -&gt; F_T4"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T4" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=167,y=354]" outPort="java.awt.Point[x=167,y=390]" title="F_T + F_T3 -&gt; F_T4"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_el1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T3</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R09" name="F_T + F_T4 -&gt; F_T5" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R09" title="F_T + F_T4 -&gt; F_T5" x="155" y="483"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=375,y=118]" outPort="java.awt.Point[x=165,y=501]" title="F_T + F_T4 -&gt; F_T5">
+                  <path>
+                    <segment segmentType="moveTo" x0="375" y0="118"/>
+                    <segment segmentType="lineTo" x0="375" y0="500"/>
+                    <segment segmentType="lineTo" x0="165" y0="501"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_F_T4" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=162,y=474]" outPort="java.awt.Point[x=162,y=480]" title="F_T + F_T4 -&gt; F_T5"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T5" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=162,y=499]" outPort="java.awt.Point[x=162,y=545]" title="F_T + F_T4 -&gt; F_T5"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_el1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T4</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R10" name="F_T + F_T5 -&gt; F_T6" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R10" title="F_T + F_T5 -&gt; F_T6" x="155" y="648"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=360,y=118]" outPort="java.awt.Point[x=164,y=666]" title="F_T + F_T5 -&gt; F_T6">
+                  <path>
+                    <segment segmentType="moveTo" x0="360" y0="118"/>
+                    <segment segmentType="lineTo" x0="360" y0="665"/>
+                    <segment segmentType="lineTo" x0="164" y0="666"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_F_T5" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=162,y=632]" outPort="java.awt.Point[x=162,y=645]" title="F_T + F_T5 -&gt; F_T6"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T6" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=162,y=664]" outPort="java.awt.Point[x=162,y=695]" title="F_T + F_T5 -&gt; F_T6"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_el1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T5</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R11" name="F_T + F_T6 -&gt; F_T7" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R11" title="F_T + F_T6 -&gt; F_T7" x="155" y="793"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=355,y=118]" outPort="java.awt.Point[x=173,y=805]" title="F_T + F_T6 -&gt; F_T7">
+                  <path>
+                    <segment segmentType="moveTo" x0="355" y0="118"/>
+                    <segment segmentType="lineTo" x0="355" y0="805"/>
+                    <segment segmentType="lineTo" x0="173" y0="805"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_F_T6" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=162,y=779]" outPort="java.awt.Point[x=162,y=790]" title="F_T + F_T6 -&gt; F_T7"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T7" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=162,y=809]" outPort="java.awt.Point[x=162,y=840]" title="F_T + F_T6 -&gt; F_T7"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_el1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T6</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R12" name="F_T + F_T7 -&gt; F_T8" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R12" title="F_T + F_T7 -&gt; F_T8" x="155" y="933"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=380,y=118]" outPort="java.awt.Point[x=165,y=951]" title="F_T + F_T7 -&gt; F_T8">
+                  <path>
+                    <segment segmentType="moveTo" x0="380" y0="118"/>
+                    <segment segmentType="lineTo" x0="380" y0="950"/>
+                    <segment segmentType="lineTo" x0="165" y0="951"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_F_T7" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=162,y=919]" outPort="java.awt.Point[x=162,y=930]" title="F_T + F_T7 -&gt; F_T8"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T8" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=162,y=949]" outPort="java.awt.Point[x=162,y=990]" title="F_T + F_T7 -&gt; F_T8"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_el1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T7</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R13" name="F_T + F_T8 -&gt; F_T9" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R13" title="F_T + F_T8 -&gt; F_T9" x="155" y="1083"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=367,y=118]" outPort="java.awt.Point[x=173,y=1095]" title="F_T + F_T8 -&gt; F_T9">
+                  <path>
+                    <segment segmentType="moveTo" x0="367" y0="118"/>
+                    <segment segmentType="lineTo" x0="367" y0="1095"/>
+                    <segment segmentType="lineTo" x0="173" y0="1095"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_F_T8" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=162,y=1069]" outPort="java.awt.Point[x=162,y=1080]" title="F_T + F_T8 -&gt; F_T9"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T9" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=162,y=1099]" outPort="java.awt.Point[x=162,y=1140]" title="F_T + F_T8 -&gt; F_T9"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <apply>
+                <times/>
+                <ci>k_el1</ci>
+                <ci>Cytosol_F_T</ci>
+              </apply>
+              <ci>Cytosol_F_T8</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R14" name="F_T9 -&gt; F_T + F_T8" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R14" title="F_T9 -&gt; F_T + F_T8" x="110" y="1113"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T9" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=117,y=1142]" outPort="java.awt.Point[x=117,y=1131]" title="F_T9 -&gt; F_T + F_T8"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=126,y=1120]" outPort="java.awt.Point[x=397,y=120]" title="F_T9 -&gt; F_T + F_T8">
+                  <path>
+                    <segment segmentType="moveTo" x0="126" y0="1120"/>
+                    <segment segmentType="lineTo" x0="397" y0="1120"/>
+                    <segment segmentType="lineTo" x0="397" y0="120"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_F_T8" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=117,y=1112]" outPort="java.awt.Point[x=117,y=1071]" title="F_T9 -&gt; F_T + F_T8"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_el2</ci>
+              <ci>Cytosol_F_T9</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R15" name="F_T8 -&gt; F_T + F_T7" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R15" title="F_T8 -&gt; F_T + F_T7" x="107" y="958"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T8" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=114,y=992]" outPort="java.awt.Point[x=114,y=976]" title="F_T8 -&gt; F_T + F_T7"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=123,y=970]" outPort="java.awt.Point[x=382,y=120]" title="F_T8 -&gt; F_T + F_T7">
+                  <path>
+                    <segment segmentType="moveTo" x0="123" y0="970"/>
+                    <segment segmentType="lineTo" x0="382" y0="970"/>
+                    <segment segmentType="lineTo" x0="382" y0="120"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_F_T7" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=114,y=957]" outPort="java.awt.Point[x=114,y=921]" title="F_T8 -&gt; F_T + F_T7"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_el2</ci>
+              <ci>Cytosol_F_T8</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R16" name="F_T7 -&gt; F_T + F_T6" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R16" title="F_T7 -&gt; F_T + F_T6" x="105" y="818"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T7" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=112,y=842]" outPort="java.awt.Point[x=112,y=836]" title="F_T7 -&gt; F_T + F_T6"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=115,y=834]" outPort="java.awt.Point[x=406,y=120]" title="F_T7 -&gt; F_T + F_T6">
+                  <path>
+                    <segment segmentType="moveTo" x0="115" y0="834"/>
+                    <segment segmentType="lineTo" x0="406" y0="835"/>
+                    <segment segmentType="lineTo" x0="406" y0="120"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_F_T6" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=112,y=817]" outPort="java.awt.Point[x=112,y=781]" title="F_T7 -&gt; F_T + F_T6"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_el2</ci>
+              <ci>Cytosol_F_T7</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R17" name="F_T6 -&gt; F_T + F_T5" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R17" title="F_T6 -&gt; F_T + F_T5" x="107" y="668"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T6" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=114,y=697]" outPort="java.awt.Point[x=114,y=686]" title="F_T6 -&gt; F_T + F_T5"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=117,y=684]" outPort="java.awt.Point[x=400,y=120]" title="F_T6 -&gt; F_T + F_T5">
+                  <path>
+                    <segment segmentType="moveTo" x0="117" y0="684"/>
+                    <segment segmentType="lineTo" x0="400" y0="683"/>
+                    <segment segmentType="lineTo" x0="400" y0="120"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_F_T5" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=114,y=667]" outPort="java.awt.Point[x=114,y=634]" title="F_T6 -&gt; F_T + F_T5"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_el2</ci>
+              <ci>Cytosol_F_T6</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R18" name="F_T5 -&gt; F_T + F_T4" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R18" title="F_T5 -&gt; F_T + F_T4" x="107" y="513"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T5" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=114,y=547]" outPort="java.awt.Point[x=114,y=531]" title="F_T5 -&gt; F_T + F_T4"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=123,y=525]" outPort="java.awt.Point[x=390,y=120]" title="F_T5 -&gt; F_T + F_T4">
+                  <path>
+                    <segment segmentType="moveTo" x0="123" y0="525"/>
+                    <segment segmentType="lineTo" x0="390" y0="525"/>
+                    <segment segmentType="lineTo" x0="390" y0="120"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_F_T4" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=114,y=512]" outPort="java.awt.Point[x=114,y=476]" title="F_T5 -&gt; F_T + F_T4"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_el2</ci>
+              <ci>Cytosol_F_T5</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R19" name="F_T4 -&gt; F_T + F_T3" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R19" title="F_T4 -&gt; F_T + F_T3" x="105" y="363"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T4" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=112,y=392]" outPort="java.awt.Point[x=112,y=381]" title="F_T4 -&gt; F_T + F_T3"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=121,y=371]" outPort="java.awt.Point[x=387,y=120]" title="F_T4 -&gt; F_T + F_T3">
+                  <path>
+                    <segment segmentType="moveTo" x0="121" y0="371"/>
+                    <segment segmentType="lineTo" x0="387" y0="371"/>
+                    <segment segmentType="lineTo" x0="387" y0="120"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_F_T3" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=112,y=362]" outPort="java.awt.Point[x=112,y=331]" title="F_T4 -&gt; F_T + F_T3"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_el2</ci>
+              <ci>Cytosol_F_T4</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="R20" name="F_T3 -&gt; F_T + F_T2" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Cytosol.R20" title="F_T3 -&gt; F_T + F_T2" x="105" y="218"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Cytosol_F_T3" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=112,y=247]" outPort="java.awt.Point[x=112,y=236]" title="F_T3 -&gt; F_T + F_T2"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Cytosol_F_T" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=115,y=234]" outPort="java.awt.Point[x=383,y=120]" title="F_T3 -&gt; F_T + F_T2">
+                  <path>
+                    <segment segmentType="moveTo" x0="115" y0="234"/>
+                    <segment segmentType="lineTo" x0="383" y0="233"/>
+                    <segment segmentType="lineTo" x0="383" y0="120"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Cytosol_F_T2" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=112,y=217]" outPort="java.awt.Point[x=112,y=193]" title="F_T3 -&gt; F_T + F_T2"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_el2</ci>
+              <ci>Cytosol_F_T3</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

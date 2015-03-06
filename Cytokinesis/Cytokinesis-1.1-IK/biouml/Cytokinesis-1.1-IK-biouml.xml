@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="Cytokinesis" name="Cytokinesis">
+    <annotation>
+      <sbgn xmlns:biouml="http://www.biouml.org/ns" notation="databases/Utils/Diagrams/graphic notations/sbml_sbgn.xml">
+        <nodes>
+          <node clone="" id="Edge" multimer="0" parent="" ref="Edge" type="unspecified">
+            <nodeLayout height="0" width="0" x="30" y="150"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="Edge_Bent" parent="" ref="Edge_Bent" title="" type="complex">
+            <nodeLayout height="115" width="100" x="400" y="55"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Bent" multimer="0" parent="Edge_Bent" type="macromolecule">
+            <nodeLayout height="0" width="0" x="415" y="115"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Edge" multimer="0" parent="Edge_Bent" type="unspecified">
+            <nodeLayout height="35" width="70" x="415" y="70"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="Edge_Bent_Bent" parent="" ref="Edge_Bent_Bent" title="" type="complex">
+            <nodeLayout height="150" width="105" x="635" y="-180"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Bent" multimer="0" parent="Edge_Bent_Bent" type="macromolecule">
+            <nodeLayout height="0" width="0" x="645" y="-130"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Edge" multimer="0" parent="Edge_Bent_Bent" type="unspecified">
+            <nodeLayout height="0" width="0" x="645" y="-175"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="bent2" multimer="0" parent="Edge_Bent_Bent" title="Bent" type="macromolecule">
+            <nodeLayout height="0" width="0" x="645" y="-85"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="Edge_Bent_Straight_Straight" parent="" ref="Edge_Bent_Straight_Straight" title="" type="complex">
+            <nodeLayout height="185" width="125" x="600" y="-10"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Bent" multimer="0" parent="Edge_Bent_Straight_Straight" type="macromolecule">
+            <nodeLayout height="0" width="0" x="630" y="40"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Edge" multimer="0" parent="Edge_Bent_Straight_Straight" type="unspecified">
+            <nodeLayout height="0" width="0" x="630" y="0"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Straight" multimer="0" parent="Edge_Bent_Straight_Straight" type="macromolecule">
+            <nodeLayout height="0" width="0" x="625" y="80"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Straight2" multimer="0" parent="Edge_Bent_Straight_Straight" title="Straight" type="macromolecule">
+            <nodeLayout height="0" width="0" x="627" y="120"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="Edge_Straight" parent="" ref="Edge_Straight" title="" type="complex">
+            <nodeLayout height="119" width="110" x="195" y="54"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Edge" multimer="0" parent="Edge_Straight" type="unspecified">
+            <nodeLayout height="0" width="0" x="205" y="70"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Straight" multimer="0" parent="Edge_Straight" type="macromolecule">
+            <nodeLayout height="0" width="0" x="205" y="115"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="Edge_Straight_Bent" parent="" ref="Edge_Straight_Bent" title="" type="complex">
+            <nodeLayout height="150" width="121" x="384" y="-185"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Bent" multimer="0" parent="Edge_Straight_Bent" type="macromolecule">
+            <nodeLayout height="0" width="0" x="404" y="-85"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Edge" multimer="0" parent="Edge_Straight_Bent" type="unspecified">
+            <nodeLayout height="0" width="0" x="404" y="-175"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Straight" multimer="0" parent="Edge_Straight_Bent" type="macromolecule">
+            <nodeLayout height="0" width="0" x="399" y="-130"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="Edge_Straight_Straight" parent="" ref="Edge_Straight_Straight" title="" type="complex">
+            <nodeLayout height="150" width="110" x="205" y="-185"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Edge" multimer="0" parent="Edge_Straight_Straight" type="unspecified">
+            <nodeLayout height="0" width="0" x="220" y="-180"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Straight" multimer="0" parent="Edge_Straight_Straight" type="macromolecule">
+            <nodeLayout height="0" width="0" x="215" y="-135"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Straight2" multimer="0" parent="Edge_Straight_Straight" title="Straight" type="macromolecule">
+            <nodeLayout height="0" width="0" x="215" y="-90"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node clone="" id="Ftsz_GDP" multimer="0" parent="" ref="Ftsz_GDP" title="Ftsz" type="macromolecule">
+            <nodeLayout height="0" width="0" x="958" y="75"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="GDP" parent="Ftsz_GDP" type="variable" value="GDP">
+            <nodeLayout x="940" y="63"/>
+          </node>
+          <node clone="" id="Straight" multimer="0" parent="" ref="Straight" type="macromolecule">
+            <nodeLayout height="0" width="0" x="37" y="65"/>
+            <nodePaint color="rgba(0,0,0,0)"/>
+          </node>
+          <node id="bending" parent="" type="event">
+            <nodeLayout x="319" y="235"/>
+          </node>
+          <node id="binding" parent="" type="event">
+            <nodeLayout x="5" y="237"/>
+          </node>
+          <node id="pinchingFinished" parent="" type="event">
+            <nodeLayout x="560" y="234"/>
+          </node>
+          <node id="reaction" parent="" reactionType="process" ref="reaction" title="Edge + Straight -&gt; Edge_Straight" type="reaction">
+            <nodeLayout x="140" y="115"/>
+          </node>
+          <node id="reaction_1" parent="" reactionType="process" ref="reaction_1" title="Edge_Straight -&gt; Edge_Bent" type="reaction">
+            <nodeLayout x="335" y="105"/>
+          </node>
+          <node id="reaction_2" parent="" reactionType="process" ref="reaction_2" title="Edge_Bent_Bent -&gt; Ftsz_GDP" type="reaction">
+            <nodeLayout x="980" y="-100"/>
+          </node>
+          <node id="reaction_3" parent="" reactionType="process" ref="reaction_3" title="Edge_Straight + Straight -&gt; Edge_Straight_Straight" type="reaction">
+            <nodeLayout x="268" y="20"/>
+          </node>
+          <node id="reaction_4" parent="" reactionType="process" ref="reaction_4" title="Edge_Straight_Straight -&gt; Edge_Straight_Bent" type="reaction">
+            <nodeLayout x="340" y="-90"/>
+          </node>
+          <node id="reaction_5" parent="" reactionType="process" ref="reaction_5" title="Edge_Straight_Bent -&gt; Edge_Bent_Bent" type="reaction">
+            <nodeLayout x="585" y="-95"/>
+          </node>
+          <node id="reaction_6" parent="" reactionType="process" ref="reaction_6" title="Straight + Edge_Bent -&gt; Edge_Straight_Bent" type="reaction">
+            <nodeLayout x="430" y="0"/>
+          </node>
+          <node id="reaction_7" parent="" reactionType="process" ref="reaction_7" title="Edge_Straight_Bent + Straight -&gt; Edge_Bent_Straight_Straight" type="reaction">
+            <nodeLayout x="475" y="-10"/>
+          </node>
+          <node id="reaction_8" parent="" reactionType="process" ref="reaction_8" title="Edge_Bent_Straight_Straight -&gt; Ftsz_GDP" type="reaction">
+            <nodeLayout x="830" y="85"/>
+          </node>
+          <node id="unbinding" parent="" type="event">
+            <nodeLayout x="330" y="341"/>
+          </node>
+        </nodes>
+        <edges>
+          <edge from="Edge" id="reaction: Edge as reactant" kernelType="relation-chemical" ref="reaction: Edge as reactant" to="reaction" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="101" y0="170"/>
+              <segment segmentType="lineTo" x0="145" y0="170"/>
+              <segment segmentType="lineTo" x0="145" y0="133"/>
+            </path>
+          </edge>
+          <edge from="reaction" id="reaction: Edge_Straight as product" kernelType="relation-chemical" ref="reaction: Edge_Straight as product" to="Edge_Straight" type="reaction"/>
+          <edge from="Straight" id="reaction: Straight as reactant" kernelType="relation-chemical" ref="reaction: Straight as reactant" to="reaction" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="116" y0="90"/>
+              <segment segmentType="lineTo" x0="144" y0="90"/>
+              <segment segmentType="lineTo" x0="144" y0="112"/>
+            </path>
+          </edge>
+          <edge from="reaction_1" id="reaction_1: Edge_Bent as product" kernelType="relation-chemical" ref="reaction_1: Edge_Bent as product" to="Edge_Bent" type="reaction"/>
+          <edge from="Edge_Straight" id="reaction_1: Edge_Straight as reactant" kernelType="relation-chemical" ref="reaction_1: Edge_Straight as reactant" to="reaction_1" type="reaction"/>
+          <edge from="Edge_Bent_Bent" id="reaction_2: Edge_Bent_Bent as reactant" kernelType="relation-chemical" ref="reaction_2: Edge_Bent_Bent as reactant" to="reaction_2" type="reaction"/>
+          <edge from="reaction_2" id="reaction_2: Ftsz_GDP as product" kernelType="relation-chemical" ref="reaction_2: Ftsz_GDP as product" to="Ftsz_GDP" type="reaction"/>
+          <edge from="Edge_Straight" id="reaction_3: Edge_Straight as reactant" kernelType="relation-chemical" ref="reaction_3: Edge_Straight as reactant" to="reaction_3" type="reaction"/>
+          <edge from="reaction_3" id="reaction_3: Edge_Straight_Straight as product" kernelType="relation-chemical" ref="reaction_3: Edge_Straight_Straight as product" to="Edge_Straight_Straight" type="reaction"/>
+          <edge from="Straight" id="reaction_3: Straight as reactant" kernelType="relation-chemical" ref="reaction_3: Straight as reactant" to="reaction_3" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="100" y0="64"/>
+              <segment segmentType="lineTo" x0="100" y0="20"/>
+              <segment segmentType="lineTo" x0="265" y0="20"/>
+            </path>
+          </edge>
+          <edge from="reaction_4" id="reaction_4: Edge_Straight_Bent as product" kernelType="relation-chemical" ref="reaction_4: Edge_Straight_Bent as product" to="Edge_Straight_Bent" type="reaction"/>
+          <edge from="Edge_Straight_Straight" id="reaction_4: Edge_Straight_Straight as reactant" kernelType="relation-chemical" ref="reaction_4: Edge_Straight_Straight as reactant" to="reaction_4" type="reaction"/>
+          <edge from="reaction_5" id="reaction_5: Edge_Bent_Bent as product" kernelType="relation-chemical" ref="reaction_5: Edge_Bent_Bent as product" to="Edge_Bent_Bent" type="reaction"/>
+          <edge from="Edge_Straight_Bent" id="reaction_5: Edge_Straight_Bent as reactant" kernelType="relation-chemical" ref="reaction_5: Edge_Straight_Bent as reactant" to="reaction_5" type="reaction"/>
+          <edge from="Edge_Bent" id="reaction_6: Edge_Bent as reactant" kernelType="relation-chemical" ref="reaction_6: Edge_Bent as reactant" to="reaction_6" type="reaction"/>
+          <edge from="reaction_6" id="reaction_6: Edge_Straight_Bent as product" kernelType="relation-chemical" ref="reaction_6: Edge_Straight_Bent as product" to="Edge_Straight_Bent" type="reaction"/>
+          <edge from="Straight" id="reaction_6: Straight as reactant" kernelType="relation-chemical" ref="reaction_6: Straight as reactant" to="reaction_6" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="80" y0="64"/>
+              <segment segmentType="lineTo" x0="80" y0="12"/>
+              <segment segmentType="lineTo" x0="427" y0="12"/>
+            </path>
+          </edge>
+          <edge from="reaction_7" id="reaction_7: Edge_Bent_Straight_Straight as product" kernelType="relation-chemical" ref="reaction_7: Edge_Bent_Straight_Straight as product" to="Edge_Bent_Straight_Straight" type="reaction"/>
+          <edge from="Edge_Straight_Bent" id="reaction_7: Edge_Straight_Bent as reactant" kernelType="relation-chemical" ref="reaction_7: Edge_Straight_Bent as reactant" to="reaction_7" type="reaction"/>
+          <edge from="Straight" id="reaction_7: Straight as reactant" kernelType="relation-chemical" ref="reaction_7: Straight as reactant" to="reaction_7" type="reaction">
+            <path>
+              <segment segmentType="lineTo" x0="70" y0="64"/>
+              <segment segmentType="lineTo" x0="70" y0="-5"/>
+              <segment segmentType="lineTo" x0="472" y0="-4"/>
+            </path>
+          </edge>
+          <edge from="Edge_Bent_Straight_Straight" id="reaction_8: Edge_Bent_Straight_Straight as reactant" kernelType="relation-chemical" ref="reaction_8: Edge_Bent_Straight_Straight as reactant" to="reaction_8" type="reaction"/>
+          <edge from="reaction_8" id="reaction_8: Ftsz_GDP as product" kernelType="relation-chemical" ref="reaction_8: Ftsz_GDP as product" to="Ftsz_GDP" type="reaction"/>
+        </edges>
+        <viewOptions>
+          <propertyRef name="autoLayout" value="false"/>
+          <propertyRef name="dependencyEdges" value="false"/>
+          <propertyRef name="drawOnFly" value="false"/>
+          <propertyRef name="gridOptions" type="ru.biosoft.graphics.editor.GridOptions">
+            <propertyRef name="cellSize" value="20"/>
+            <propertyRef name="gridStyle" value="POINTS"/>
+            <propertyRef name="showGrid" value="true"/>
+            <propertyRef name="stepSize" value="5"/>
+            <propertyRef name="useDefault" value="true"/>
+          </propertyRef>
+          <propertyRef name="options">
+            <propertyRef name="sourceSinkSize" value="30;30"/>
+            <propertyRef name="sourceSinkBrush" value="#E15064:#DC2350"/>
+            <propertyRef name="macromoleculeBrush" value="#EAFFD8:#D4FFAA"/>
+            <propertyRef name="nucleicBrush" value="#B4FFFF:#A0F0F0"/>
+            <propertyRef name="perturbingBrush" value="#FFB4FF:#F0A0F0"/>
+            <propertyRef name="unspecifiedBrush" value="#F5E164:#F5C80A"/>
+            <propertyRef name="simpleChemicalBrush" value="#D282AA:#BE5A96"/>
+            <propertyRef name="complexBrush" value="#5ABEC8:#3CB4BE"/>
+            <propertyRef name="compartmentBrush" value="#F0F0F0"/>
+            <propertyRef name="compartmentPen" value="4.0;#969696;Solid"/>
+            <propertyRef name="compartmentPenIn" value="1.0;#C8C8C8;Solid"/>
+            <propertyRef name="compartmentPenOut" value="2.0;#646464;Solid"/>
+            <propertyRef name="unitOfInfoSize" value="40;20"/>
+            <propertyRef name="unitOfInfoBrush" value="white"/>
+            <propertyRef name="variableSize" value="20;20"/>
+            <propertyRef name="variableBrush" value="white"/>
+            <propertyRef name="edgePen" value="1.0;#646464;Solid"/>
+            <propertyRef name="edgeTipBrush" value="#787878"/>
+            <propertyRef name="phenotypeBrush" value="#F0F0FF:#C8B4FF"/>
+            <propertyRef name="nodeTitleFont" value="Arial;0;12;black"/>
+            <propertyRef name="customTitleFont" value="Arial;1;18;black"/>
+            <propertyRef name="portTitleFont" value="Arial;1;12;#7A378B"/>
+            <propertyRef name="formulaFont" value="Arial;0;11;black"/>
+            <propertyRef name="eventTitleFont" value="Arial;1;11;black"/>
+            <propertyRef name="eventPen" value="1.0;black;Solid"/>
+            <propertyRef name="highlight1Brush" value="#CCF"/>
+            <propertyRef name="highlight2Brush" value="#FFCECE"/>
+            <propertyRef name="highlight3Brush" value="#FFCEFF"/>
+            <propertyRef name="addSourceSink" value="true"/>
+            <propertyRef name="nodeTitleLimit" value="1000.0"/>
+            <propertyRef name="automoveReactions" value="false"/>
+          </propertyRef>
+        </viewOptions>
+      </sbgn>
+      <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+        <biouml:diagramInfo completeName="Cytokinesis"/>
+        <biouml:viewOptions autoLayout="false" dependencyEdges="false"/>
+      </biouml:BIOUML>
+    </annotation>
+    <listOfCompartments>
+      <compartment constant="false" id="default" name="Cytokinesis" spatialDimensions="3">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:compartmentInfo color="rgba(0,0,0,0)" completeName="default" height="526" isDefault="true" shape="0" title="Cytokinesis" width="980" x="0" y="0"/>
+          </biouml:BIOUML>
+        </annotation>
+      </compartment>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="Edge" initialAmount="0.0" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Edge" height="0" title="Edge" width="0" x="30" y="150">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-substance"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="Edge_Bent" initialAmount="0.0" name="" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Edge_Bent" height="115" width="100" x="400" y="55">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-substance"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="Edge_Bent_Bent" initialAmount="0.0" name="" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Edge_Bent_Bent" height="150" width="105" x="635" y="-180">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-substance"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="Edge_Bent_Straight_Straight" initialAmount="0.0" name="" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Edge_Bent_Straight_Straight" height="185" width="125" x="600" y="-10">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-substance"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="Edge_Straight" initialAmount="0.0" name="" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Edge_Straight" height="119" width="110" x="195" y="54">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-substance"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="Edge_Straight_Bent" initialAmount="0.0" name="" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Edge_Straight_Bent" height="150" width="121" x="384" y="-185">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-substance"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="Edge_Straight_Straight" initialAmount="0.0" name="" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Edge_Straight_Straight" height="150" width="110" x="205" y="-185">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-substance"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="Ftsz_GDP" initialAmount="0.0" name="Ftsz" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Ftsz_GDP" height="0" title="Ftsz" width="0" x="958" y="75">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-protein"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+      <species boundaryCondition="false" compartment="default" constant="false" hasOnlySubstanceUnits="false" id="Straight" initialAmount="0.0" substanceUnits="mole">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="Straight" height="0" title="Straight" width="0" x="37" y="65">
+              <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+              <property name="titleFont" short-description="titleFont" type="font" value="Arial;1;18;black"/>
+              <property name="useDefaultFont" short-description="useDefaultFont" type="boolean" value="true"/>
+            </biouml:nodeInfo>
+            <biouml:specieInfo type="molecule-protein"/>
+          </biouml:BIOUML>
+        </annotation>
+      </species>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter constant="false" id="D_prev" value="0.0"/>
+      <parameter constant="false" id="L" value="0.0"/>
+      <parameter constant="false" id="Pi" value="3.14"/>
+      <parameter constant="false" id="diameter" value="0.0"/>
+      <parameter constant="false" id="diamtere" value="0.0"/>
+      <parameter constant="false" id="doBending" value="0.0"/>
+      <parameter constant="false" id="doBinding" value="0.0"/>
+      <parameter constant="false" id="doUnbinding" value="0.0"/>
+      <parameter constant="false" id="k_bind" value="0.0"/>
+      <parameter constant="false" id="k_hyd" value="0.0"/>
+      <parameter constant="false" id="k_unbind" value="0.0"/>
+      <parameter constant="false" id="minDameter" value="0.0"/>
+      <parameter constant="false" id="numEdges" value="0.0"/>
+      <parameter constant="false" id="unknown" value="0.0"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction fast="false" id="reaction" name="Edge + Straight -&gt; Edge_Straight" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="reaction" title="Edge + Straight -&gt; Edge_Straight" x="140" y="115"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Edge" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=101,y=170]" outPort="java.awt.Point[x=145,y=133]" title="Edge + Straight -&gt; Edge_Straight">
+                  <path>
+                    <segment segmentType="moveTo" x0="101" y0="170"/>
+                    <segment segmentType="lineTo" x0="145" y0="170"/>
+                    <segment segmentType="lineTo" x0="145" y0="133"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Straight" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=116,y=90]" outPort="java.awt.Point[x=144,y=112]" title="Edge + Straight -&gt; Edge_Straight">
+                  <path>
+                    <segment segmentType="moveTo" x0="116" y0="90"/>
+                    <segment segmentType="lineTo" x0="144" y0="90"/>
+                    <segment segmentType="lineTo" x0="144" y0="112"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Edge_Straight" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=156,y=122]" outPort="java.awt.Point[x=192,y=122]" title="Edge + Straight -&gt; Edge_Straight"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_bind</ci>
+              <ci>doBinding</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="reaction_1" name="Edge_Straight -&gt; Edge_Bent" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="reaction_1" title="Edge_Straight -&gt; Edge_Bent" x="335" y="105"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Edge_Straight" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=306,y=112]" outPort="java.awt.Point[x=332,y=112]" title="Edge_Straight -&gt; Edge_Bent"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Edge_Bent" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=351,y=112]" outPort="java.awt.Point[x=397,y=112]" title="Edge_Straight -&gt; Edge_Bent"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci>k_hyd</ci>
+              <ci>doBending</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="reaction_2" name="Edge_Bent_Bent -&gt; Ftsz_GDP" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="reaction_2" title="Edge_Bent_Bent -&gt; Ftsz_GDP" x="980" y="-100"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Edge_Bent_Bent" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=741,y=-92]" outPort="java.awt.Point[x=977,y=-92]" title="Edge_Bent_Bent -&gt; Ftsz_GDP"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Ftsz_GDP" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=987,y=-84]" outPort="java.awt.Point[x=987,y=72]" title="Edge_Bent_Bent -&gt; Ftsz_GDP"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>0.0</cn>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="reaction_3" name="Edge_Straight + Straight -&gt; Edge_Straight_Straight" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="reaction_3" title="Edge_Straight + Straight -&gt; Edge_Straight_Straight" x="268" y="20"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Edge_Straight" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=275,y=53]" outPort="java.awt.Point[x=275,y=38]" title="Edge_Straight + Straight -&gt; Edge_Straight_Straight"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Straight" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=100,y=64]" outPort="java.awt.Point[x=265,y=20]" title="Edge_Straight + Straight -&gt; Edge_Straight_Straight">
+                  <path>
+                    <segment segmentType="moveTo" x0="100" y0="64"/>
+                    <segment segmentType="lineTo" x0="100" y0="20"/>
+                    <segment segmentType="lineTo" x0="265" y0="20"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Edge_Straight_Straight" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=275,y=19]" outPort="java.awt.Point[x=275,y=-32]" title="Edge_Straight + Straight -&gt; Edge_Straight_Straight"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>0.0</cn>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="reaction_4" name="Edge_Straight_Straight -&gt; Edge_Straight_Bent" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="reaction_4" title="Edge_Straight_Straight -&gt; Edge_Straight_Bent" x="340" y="-90"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Edge_Straight_Straight" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=316,y=-82]" outPort="java.awt.Point[x=337,y=-82]" title="Edge_Straight_Straight -&gt; Edge_Straight_Bent"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Edge_Straight_Bent" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=356,y=-82]" outPort="java.awt.Point[x=381,y=-82]" title="Edge_Straight_Straight -&gt; Edge_Straight_Bent"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>0.0</cn>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="reaction_5" name="Edge_Straight_Bent -&gt; Edge_Bent_Bent" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="reaction_5" title="Edge_Straight_Bent -&gt; Edge_Bent_Bent" x="585" y="-95"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Edge_Straight_Bent" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=506,y=-87]" outPort="java.awt.Point[x=582,y=-87]" title="Edge_Straight_Bent -&gt; Edge_Bent_Bent"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Edge_Bent_Bent" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=601,y=-87]" outPort="java.awt.Point[x=632,y=-87]" title="Edge_Straight_Bent -&gt; Edge_Bent_Bent"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>0.0</cn>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="reaction_6" name="Straight + Edge_Bent -&gt; Edge_Straight_Bent" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="reaction_6" title="Straight + Edge_Bent -&gt; Edge_Straight_Bent" x="430" y="0"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Edge_Bent" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=437,y=54]" outPort="java.awt.Point[x=437,y=18]" title="Straight + Edge_Bent -&gt; Edge_Straight_Bent"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Straight" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=80,y=64]" outPort="java.awt.Point[x=427,y=12]" title="Straight + Edge_Bent -&gt; Edge_Straight_Bent">
+                  <path>
+                    <segment segmentType="moveTo" x0="80" y0="64"/>
+                    <segment segmentType="lineTo" x0="80" y0="12"/>
+                    <segment segmentType="lineTo" x0="427" y0="12"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Edge_Straight_Bent" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=437,y=-1]" outPort="java.awt.Point[x=437,y=-32]" title="Straight + Edge_Bent -&gt; Edge_Straight_Bent"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>0.0</cn>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="reaction_7" name="Edge_Straight_Bent + Straight -&gt; Edge_Bent_Straight_Straight" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="reaction_7" title="Edge_Straight_Bent + Straight -&gt; Edge_Bent_Straight_Straight" x="475" y="-10"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Edge_Straight_Bent" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=482,y=-34]" outPort="java.awt.Point[x=482,y=-13]" title="Edge_Straight_Bent + Straight -&gt; Edge_Bent_Straight_Straight"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+          <speciesReference constant="false" species="Straight" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=70,y=64]" outPort="java.awt.Point[x=472,y=-4]" title="Edge_Straight_Bent + Straight -&gt; Edge_Bent_Straight_Straight">
+                  <path>
+                    <segment segmentType="moveTo" x0="70" y0="64"/>
+                    <segment segmentType="lineTo" x0="70" y0="-5"/>
+                    <segment segmentType="lineTo" x0="472" y0="-4"/>
+                  </path>
+                </biouml:edgeInfo>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Edge_Bent_Straight_Straight" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=491,y=-2]" outPort="java.awt.Point[x=597,y=-2]" title="Edge_Straight_Bent + Straight -&gt; Edge_Bent_Straight_Straight"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>0.0</cn>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction fast="false" id="reaction_8" name="Edge_Bent_Straight_Straight -&gt; Ftsz_GDP" reversible="false">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="reaction_8" title="Edge_Bent_Straight_Straight -&gt; Ftsz_GDP" x="830" y="85"/>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfReactants>
+          <speciesReference constant="false" species="Edge_Bent_Straight_Straight" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=726,y=92]" outPort="java.awt.Point[x=827,y=92]" title="Edge_Bent_Straight_Straight -&gt; Ftsz_GDP"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="false" species="Ftsz_GDP" stoichiometry="1">
+            <annotation>
+              <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+                <biouml:edgeInfo inPort="java.awt.Point[x=846,y=92]" outPort="java.awt.Point[x=955,y=92]" title="Edge_Bent_Straight_Straight -&gt; Ftsz_GDP"/>
+              </biouml:BIOUML>
+            </annotation>
+          </speciesReference>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>0.0</cn>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+    <listOfEvents>
+      <event id="bending" useValuesFromTriggerTime="true">
+        <trigger initialValue="true" persistent="true">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <geq/>
+              <ci>Edge_Bent_Bent</ci>
+              <ci>numEdges</ci>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="bending" title="bending" x="319" y="235">
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="doBending">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>1.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="doBinding">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+      </event>
+      <event id="binding" useValuesFromTriggerTime="true">
+        <trigger initialValue="false" persistent="true">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <eq/>
+                <ci>doUnbinding</ci>
+                <cn>1.0</cn>
+              </apply>
+              <apply>
+                <leq/>
+                <ci>Edge_Bent</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="binding" title="binding" x="5" y="237">
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="doBinding">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>1.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="doUnbinding">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="numEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <divide/>
+                <ci>Pi</ci>
+                <apply>
+                  <arcsin/>
+                  <apply>
+                    <divide/>
+                    <ci>L</ci>
+                    <ci>D_prev</ci>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+      </event>
+      <event id="pinchingFinished" useValuesFromTriggerTime="true">
+        <trigger initialValue="true" persistent="true">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <lt/>
+              <ci>diameter</ci>
+              <ci>minDameter</ci>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="pinchingFinished" title="pinchingFinished" x="560" y="234">
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="doBinding">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="doUnbinding">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="doBending">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+      </event>
+      <event id="unbinding" useValuesFromTriggerTime="true">
+        <trigger initialValue="true" persistent="true">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <leq/>
+                <ci>Edge_Straight</ci>
+                <cn>0.0</cn>
+              </apply>
+              <apply>
+                <geq/>
+                <ci>Edge_Bent</ci>
+                <apply>
+                  <times/>
+                  <cn>2.0</cn>
+                  <ci>numEdges</ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="unbinding" title="unbinding" x="330" y="341">
+              <property name="sboTerm" short-description="sboTerm" type="String" value=""/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="doUnbinding">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>1.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="doBending">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="diameter">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <divide/>
+                <apply>
+                  <times/>
+                  <ci>numEdges</ci>
+                  <ci>L</ci>
+                </apply>
+                <ci>Pi</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+      </event>
+    </listOfEvents>
+  </model>
+</sbml>
