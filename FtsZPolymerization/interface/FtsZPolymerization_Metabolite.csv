@@ -1,4 +1,4 @@
-ID (as in matlab)	read-only	Read and write	requirement
-H20	X		
-GDP		X	
-GTP		X	X
+ID (as in matlab),read-only,Read and write,requirement
+H20,X,,
+GDP,,X,
+GTP,,X,X
