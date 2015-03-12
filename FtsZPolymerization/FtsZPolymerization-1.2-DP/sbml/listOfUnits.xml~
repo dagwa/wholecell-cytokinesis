@@ -1,0 +1,51 @@
+     <listOfUnitDefinitions>
+      <unitDefinition id="length" name="length">
+        <listOfUnits>
+          <unit kind="metre" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="area" name="area">
+        <listOfUnits>
+          <unit kind="metre" exponent="2" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="volume" name="volume">
+        <listOfUnits>
+          <unit kind="litre" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="time" name="time">
+        <listOfUnits>
+          <unit kind="second" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="substance" name="substance">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="mls" name="molar per second">
+      	<listOfUnits>
+      	   <unit kind="mole" exponent="1" scale="0" multiplier="1"/>
+	   <unit kind="litre" exponent="-1" scale="0" multiplier="1"/>
+	   <unit kind="second" exponent="-1" scale="0" multiplier="1"/>
+	</listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="s_1" name="per second">
+      	<listOfUnits>
+	   <unit kind="second" exponent="-1" scale="0" multiplier="1"/>
+	</listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+
+    <listOfParameters>
+      <parameter constant="false" id="k_act1" units="s_1" value="1.1"/>
+      <parameter constant="false" id="k_act2" units="s_1" value="0.01"/>
+      <parameter constant="false" id="k_el1" units="mls" value="5100000.0"/>
+      <parameter constant="false" id="k_el2" units="s_1" value="2.9"/>
+      <parameter constant="false" id="k_ex1" units="mls" value="10000.0"/>
+      <parameter constant="false" id="k_ex2" units="mls" value="5000.0"/>
+      <parameter constant="false" id="k_nuc1" units="mls" value="4200000.0"/>
+      <parameter constant="false" id="k_nuc2" units="s_1" value="40.0"/>
+    </listOfParameters>
+

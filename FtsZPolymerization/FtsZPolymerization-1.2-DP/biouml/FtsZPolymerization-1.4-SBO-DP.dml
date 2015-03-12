@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dml appVersion="0.7.7" version="0.7.7">
+  <diagram diagramType="biouml.model.xml.XmlDiagramType" notation="databases/Utils/Diagrams/graphic notations/sbml_sbgn.xml">
+    <diagramInfo title="FtsZ Polymerization"><![CDATA[ ]]>
+      <property isReadOnly="true" name="baseDiagramType" short-description="baseDiagramType" type="String" value="biouml.plugins.sbml.SbmlDiagramType_L3v1"/>
+      <propertyRef name="sboTerm" value=""/>
+    </diagramInfo>
+    <viewOptions>
+      <propertyRef name="autoLayout" value="false"/>
+      <propertyRef name="dependencyEdges" value="false"/>
+      <propertyRef name="drawOnFly" value="false"/>
+      <propertyRef name="gridOptions" type="ru.biosoft.graphics.editor.GridOptions">
+        <propertyRef name="cellSize" value="20"/>
+        <propertyRef name="gridStyle" value="POINTS"/>
+        <propertyRef name="showGrid" value="true"/>
+        <propertyRef name="stepSize" value="5"/>
+        <propertyRef name="useDefault" value="true"/>
+      </propertyRef>
+      <propertyRef name="options">
+        <propertyRef name="sourceSinkSize" value="30;30"/>
+        <propertyRef name="sourceSinkBrush" value="#E15064:#DC2350"/>
+        <propertyRef name="macromoleculeBrush" value="#EAFFD8:#D4FFAA"/>
+        <propertyRef name="nucleicBrush" value="#B4FFFF:#A0F0F0"/>
+        <propertyRef name="perturbingBrush" value="#FFB4FF:#F0A0F0"/>
+        <propertyRef name="unspecifiedBrush" value="#F5E164:#F5C80A"/>
+        <propertyRef name="simpleChemicalBrush" value="#D282AA:#BE5A96"/>
+        <propertyRef name="complexBrush" value="#5ABEC8:#3CB4BE"/>
+        <propertyRef name="compartmentBrush" value="#F0F0F0"/>
+        <propertyRef name="compartmentPen" value="4.0;#969696;Solid"/>
+        <propertyRef name="compartmentPenIn" value="1.0;#C8C8C8;Solid"/>
+        <propertyRef name="compartmentPenOut" value="2.0;#646464;Solid"/>
+        <propertyRef name="unitOfInfoSize" value="40;20"/>
+        <propertyRef name="unitOfInfoBrush" value="white"/>
+        <propertyRef name="variableSize" value="20;20"/>
+        <propertyRef name="variableBrush" value="white"/>
+        <propertyRef name="edgePen" value="1.0;#646464;Solid"/>
+        <propertyRef name="edgeTipBrush" value="#787878"/>
+        <propertyRef name="phenotypeBrush" value="#F0F0FF:#C8B4FF"/>
+        <propertyRef name="nodeTitleFont" value="Arial;0;12;black"/>
+        <propertyRef name="customTitleFont" value="Arial;1;18;black"/>
+        <propertyRef name="portTitleFont" value="Arial;1;12;#7A378B"/>
+        <propertyRef name="formulaFont" value="Arial;0;11;black"/>
+        <propertyRef name="eventTitleFont" value="Arial;1;11;black"/>
+        <propertyRef name="eventPen" value="1.0;black;Solid"/>
+        <propertyRef name="highlight1Brush" value="#CCF"/>
+        <propertyRef name="highlight2Brush" value="#FFCECE"/>
+        <propertyRef name="highlight3Brush" value="#FFCEFF"/>
+        <propertyRef name="addSourceSink" value="true"/>
+        <propertyRef name="nodeTitleLimit" value="1000.0"/>
+        <propertyRef name="automoveReactions" value="true"/>
+      </propertyRef>
+    </viewOptions>
+    <compartmentInfo color="rgba(0,0,0,0)" height="150" id="FtsZ Polymerization" kernel="databases/Cytokinesis/Diagrams/FtsZ Polymerization" shape="0" title="FtsZ_Polymerization" width="150" x="0" y="0"/>
+    <nodes>
+      <compartment>
+        <compartmentInfo color="rgba(0,0,0,0)" height="1398" kernel="stub/Cytosol" kernel_type="compartment" shape="0" title="Cytosol" width="725" x="-40" y="-150"/>
+        <nodes>
+          <compartment>
+            <compartmentInfo color="rgba(0,0,0,0)" height="55" kernel="stub/Cytosol/F" kernel_type="molecule-protein" shape="0" title="MG_224_MONOMER" width="90" x="470" y="-105"/>
+            <nodes/>
+            <edges/>
+            <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+            <propertyRef name="sbgn:cloneMarker" value=""/>
+            <propertyRef name="sbgn:entityType" value="macromolecule"/>
+            <propertyRef name="sbgn:multimer" value="0"/>
+            <propertyRef name="sboTerm" value="SBO:0000245"/>
+            <propertyRef name="titleFont" value="Arial;1;18;black"/>
+            <propertyRef name="useDefaultFont" value="true"/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="entity"/>
+          </compartment>
+          <compartment>
+            <compartmentInfo color="rgba(0,0,0,0)" height="62" kernel="stub/Cytosol/F_D" kernel_type="molecule-protein" shape="0" title="MG_224_MONOMER_GDP" width="75" x="-15" y="-128"/>
+            <nodes>
+              <node kernel="stub/Cytosol/F_D/GDP_label" kernel_type="variable" title="GDP_label" x="-20" y="-140">
+                <propertyRef name="sboTerm" value=""/>
+                <propertyRef name="value" value="GDP"/>
+                <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="variable"/>
+              </node>
+            </nodes>
+            <edges/>
+            <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+            <propertyRef name="sbgn:cloneMarker" value=""/>
+            <propertyRef name="sbgn:entityType" value="macromolecule"/>
+            <propertyRef name="sbgn:multimer" value="0"/>
+            <propertyRef name="sboTerm" value="SBO:0000253"/>
+            <propertyRef name="titleFont" value="Arial;1;18;black"/>
+            <propertyRef name="useDefaultFont" value="true"/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="entity"/>
+          </compartment>
+          <compartment>
+            <compartmentInfo color="rgba(0,0,0,0)" height="63" kernel="stub/Cytosol/F_T" kernel_type="molecule-protein" shape="0" title="MG_224_MONOMER_GTP" width="93" x="322" y="54"/>
+            <nodes>
+              <node kernel="stub/Cytosol/F_T/GTP_label" kernel_type="variable" title="GTP_label" x="390" y="42">
+                <propertyRef name="sboTerm"/>
+                <propertyRef name="value" value="GTP"/>
+                <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="variable"/>
+              </node>
+            </nodes>
+            <edges/>
+            <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+            <propertyRef name="sbgn:cloneMarker" value=""/>
+            <propertyRef name="sbgn:entityType" value="macromolecule"/>
+            <propertyRef name="sbgn:multimer" value="0"/>
+            <propertyRef name="sboTerm" value="SBO:0000253"/>
+            <propertyRef name="titleFont" value="Arial;1;18;black"/>
+            <propertyRef name="useDefaultFont" value="true"/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="entity"/>
+          </compartment>
+          <compartment>
+            <compartmentInfo color="rgba(0,0,0,0)" height="67" kernel="stub/Cytosol/F_T2" kernel_type="molecule-protein" shape="0" title="MG_224_2MER_GTP" width="97" x="95" y="108"/>
+            <nodes>
+              <node height="25" kernel="stub/Cytosol/F_T2/GTP_label" kernel_type="variable" title="GTP_label" width="32" x="175" y="123">
+                <propertyRef name="sboTerm"/>
+                <propertyRef name="value" value="GTP"/>
+                <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="variable"/>
+              </node>
+            </nodes>
+            <edges/>
+            <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+            <propertyRef name="sbgn:cloneMarker" value=""/>
+            <propertyRef name="sbgn:entityType" value="macromolecule"/>
+            <propertyRef name="sbgn:multimer" value="2"/>
+            <propertyRef name="sboTerm" value=" SBO:0000418"/>
+            <propertyRef name="titleFont" value="Arial;1;18;black"/>
+            <propertyRef name="useDefaultFont" value="true"/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="entity"/>
+          </compartment>
+          <compartment>
+            <compartmentInfo color="rgba(0,0,0,0)" height="65" kernel="stub/Cytosol/F_T3" kernel_type="molecule-protein" shape="0" title="MG_224_3MER_GTP" width="100" x="95" y="248"/>
+            <nodes>
+              <node height="50" kernel="stub/Cytosol/F_T3/GTP_label" kernel_type="variable" title="GTP_label" width="34" x="178" y="258">
+                <propertyRef name="sboTerm"/>
+                <propertyRef name="value" value="GTP"/>
+                <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="variable"/>
+              </node>
+            </nodes>
+            <edges/>
+            <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+            <propertyRef name="sbgn:cloneMarker" value=""/>
+            <propertyRef name="sbgn:entityType" value="macromolecule"/>
+            <propertyRef name="sbgn:multimer" value="3"/>
+            <propertyRef name="sboTerm" value=" SBO:0000418"/>
+            <propertyRef name="titleFont" value="Arial;1;18;black"/>
+            <propertyRef name="useDefaultFont" value="true"/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="entity"/>
+          </compartment>
+          <compartment>
+            <compartmentInfo color="rgba(0,0,0,0)" height="65" kernel="stub/Cytosol/F_T4" kernel_type="molecule-protein" shape="0" title="MG_224_4MER_GTP" width="101" x="95" y="393"/>
+            <nodes>
+              <node kernel="stub/Cytosol/F_T4/GTP" kernel_type="variable" title="GTP" x="179" y="398">
+                <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+                <propertyRef name="sboTerm" value="SBO:0000247"/>
+                <propertyRef name="titleFont" value="Arial;1;18;black"/>
+                <propertyRef name="useDefaultFont" value="true"/>
+                <propertyRef name="value" value="GTP"/>
+                <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="variable"/>
+              </node>
+            </nodes>
+            <edges/>
+            <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+            <propertyRef name="sbgn:cloneMarker" value=""/>
+            <propertyRef name="sbgn:entityType" value="macromolecule"/>
+            <propertyRef name="sbgn:multimer" value="4"/>
+            <propertyRef name="sboTerm" value=" SBO:0000418"/>
+            <propertyRef name="titleFont" value="Arial;1;18;black"/>
+            <propertyRef name="useDefaultFont" value="true"/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="entity"/>
+          </compartment>
+          <compartment>
+            <compartmentInfo color="rgba(0,0,0,0)" height="68" kernel="stub/Cytosol/F_T5" kernel_type="molecule-protein" shape="0" title="MG_224_5MER_GTP" width="105" x="95" y="548"/>
+            <nodes>
+              <node kernel="stub/Cytosol/F_T5/GTP" kernel_type="variable" title="GTP" x="183" y="553">
+                <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+                <propertyRef name="sboTerm" value="SBO:0000247"/>
+                <propertyRef name="titleFont" value="Arial;1;18;black"/>
+                <propertyRef name="useDefaultFont" value="true"/>
+                <propertyRef name="value" value="GTP"/>
+                <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="variable"/>
+              </node>
+            </nodes>
+            <edges/>
+            <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+            <propertyRef name="sbgn:cloneMarker" value=""/>
+            <propertyRef name="sbgn:entityType" value="macromolecule"/>
+            <propertyRef name="sbgn:multimer" value="5"/>
+            <propertyRef name="sboTerm" value=" SBO:0000418"/>
+            <propertyRef name="titleFont" value="Arial;1;18;black"/>
+            <propertyRef name="useDefaultFont" value="true"/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="entity"/>
+          </compartment>
+          <compartment>
+            <compartmentInfo color="rgba(0,0,0,0)" height="65" kernel="stub/Cytosol/F_T6" kernel_type="molecule-protein" shape="0" title="MG_224_6MER_GTP" width="106" x="94" y="698"/>
+            <nodes>
+              <node kernel="stub/Cytosol/F_T6/GTP" kernel_type="variable" title="GTP" x="183" y="703">
+                <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+                <propertyRef name="sboTerm" value="SBO:0000247"/>
+                <propertyRef name="titleFont" value="Arial;1;18;black"/>
+                <propertyRef name="useDefaultFont" value="true"/>
+                <propertyRef name="value" value="GTP"/>
+                <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="variable"/>
+              </node>
+            </nodes>
+            <edges/>
+            <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+            <propertyRef name="sbgn:cloneMarker" value=""/>
+            <propertyRef name="sbgn:entityType" value="macromolecule"/>
+            <propertyRef name="sbgn:multimer" value="6"/>
+            <propertyRef name="sboTerm" value=" SBO:0000418"/>
+            <propertyRef name="titleFont" value="Arial;1;18;black"/>
+            <propertyRef name="useDefaultFont" value="true"/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="entity"/>
+          </compartment>
+          <compartment>
+            <compartmentInfo color="rgba(0,0,0,0)" height="60" kernel="stub/Cytosol/F_T7" kernel_type="molecule-protein" shape="0" title="MG_224_7MER_GTP" width="106" x="94" y="843"/>
+            <nodes>
+              <node kernel="stub/Cytosol/F_T7/GTP" kernel_type="variable" title="GTP" x="183" y="853">
+                <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+                <propertyRef name="sboTerm" value="SBO:0000247"/>
+                <propertyRef name="titleFont" value="Arial;1;18;black"/>
+                <propertyRef name="useDefaultFont" value="true"/>
+                <propertyRef name="value" value="GTP"/>
+                <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="variable"/>
+              </node>
+            </nodes>
+            <edges/>
+            <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+            <propertyRef name="sbgn:cloneMarker" value=""/>
+            <propertyRef name="sbgn:entityType" value="macromolecule"/>
+            <propertyRef name="sbgn:multimer" value="7"/>
+            <propertyRef name="sboTerm" value=" SBO:0000418"/>
+            <propertyRef name="titleFont" value="Arial;1;18;black"/>
+            <propertyRef name="useDefaultFont" value="true"/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="entity"/>
+          </compartment>
+          <compartment>
+            <compartmentInfo color="rgba(0,0,0,0)" height="60" kernel="stub/Cytosol/F_T8" kernel_type="molecule-protein" shape="0" title="MG_224_8MER_GTP" width="106" x="94" y="993"/>
+            <nodes>
+              <node kernel="stub/Cytosol/F_T8/GTP" kernel_type="variable" title="GTP" x="183" y="1003">
+                <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+                <propertyRef name="sboTerm" value="SBO:0000247"/>
+                <propertyRef name="titleFont" value="Arial;1;18;black"/>
+                <propertyRef name="useDefaultFont" value="true"/>
+                <propertyRef name="value" value="GTP"/>
+                <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="variable"/>
+              </node>
+            </nodes>
+            <edges/>
+            <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+            <propertyRef name="sbgn:cloneMarker" value=""/>
+            <propertyRef name="sbgn:entityType" value="macromolecule"/>
+            <propertyRef name="sbgn:multimer" value="8"/>
+            <propertyRef name="sboTerm" value=" SBO:0000418"/>
+            <propertyRef name="titleFont" value="Arial;1;18;black"/>
+            <propertyRef name="useDefaultFont" value="true"/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="entity"/>
+          </compartment>
+          <compartment>
+            <compartmentInfo color="rgba(0,0,0,0)" height="55" kernel="stub/Cytosol/F_T9" kernel_type="molecule-protein" shape="0" title="MG_224_9MER_GTP" width="100" x="100" y="1143"/>
+            <nodes>
+              <node kernel="stub/Cytosol/F_T9/GTP" kernel_type="variable" title="GTP" x="183" y="1148">
+                <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+                <propertyRef name="sboTerm" value="SBO:0000247"/>
+                <propertyRef name="titleFont" value="Arial;1;18;black"/>
+                <propertyRef name="useDefaultFont" value="true"/>
+                <propertyRef name="value" value="GTP"/>
+                <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="variable"/>
+              </node>
+            </nodes>
+            <edges/>
+            <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+            <propertyRef name="sbgn:cloneMarker" value=""/>
+            <propertyRef name="sbgn:entityType" value="macromolecule"/>
+            <propertyRef name="sbgn:multimer" value="9"/>
+            <propertyRef name="sboTerm" value=" SBO:0000418"/>
+            <propertyRef name="titleFont" value="Arial;1;18;black"/>
+            <propertyRef name="useDefaultFont" value="true"/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="entity"/>
+          </compartment>
+          <compartment>
+            <compartmentInfo color="rgba(0,0,0,0)" height="51" kernel="stub/Cytosol/GDP" kernel_type="molecule-substance" shape="0" title="GDP" width="50" x="234" y="-70"/>
+            <nodes/>
+            <edges/>
+            <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+            <propertyRef name="sbgn:cloneMarker" value=""/>
+            <propertyRef name="sbgn:entityType" value="simple chemical"/>
+            <propertyRef name="sbgn:multimer" value="0"/>
+            <propertyRef name="sboTerm" value="SBO:0000247"/>
+            <propertyRef name="titleFont" value="Arial;1;18;black"/>
+            <propertyRef name="useDefaultFont" value="true"/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="entity"/>
+          </compartment>
+          <compartment>
+            <compartmentInfo color="rgba(0,0,0,0)" height="50" kernel="stub/Cytosol/GTP" kernel_type="molecule-substance" shape="0" title="GTP" width="50" x="355" y="-70"/>
+            <nodes/>
+            <edges/>
+            <property name="BodyColor" short-description="BodyColor" type="color" value="rgba(0,0,0,0)"/>
+            <propertyRef name="sbgn:cloneMarker" value=""/>
+            <propertyRef name="sbgn:entityType" value="simple chemical"/>
+            <propertyRef name="sbgn:multimer" value="0"/>
+            <propertyRef name="sboTerm" value="SBO:0000247"/>
+            <propertyRef name="titleFont" value="Arial;1;18;black"/>
+            <propertyRef name="useDefaultFont" value="true"/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="entity"/>
+          </compartment>
+          <node height="15" kernel="stub/Cytosol/R03" kernel_type="reaction" title="F_D + GTP -&gt; F_T + GDP" width="1" x="309" y="7">
+            <reaction formula="kex1*$Cytosol.F_D*$Cytosol.GTP">
+              <specieReference comment="" name="R03: F_D as reactant" participation="direct" role="reactant" specie="Cytosol.F_D" stoichiometry="1"/>
+              <specieReference comment="" name="R03: F_T as product" participation="direct" role="product" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R03: GDP as product" participation="direct" role="product" specie="Cytosol.GDP" stoichiometry="1"/>
+              <specieReference comment="" name="R03: GTP as reactant" participation="direct" role="reactant" specie="Cytosol.GTP" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="sboTerm" value="SBO:0000375"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node height="15" kernel="stub/Cytosol/R04" kernel_type="reaction" title="F_T + GDP -&gt; F_D + GTP" width="58" x="310" y="-105">
+            <reaction formula="kex2*$Cytosol.F_T*$Cytosol.GDP">
+              <specieReference comment="" name="R04: F_D as product" participation="direct" role="product" specie="Cytosol.F_D" stoichiometry="1"/>
+              <specieReference comment="" name="R04: F_T as reactant" participation="direct" role="reactant" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R04: GDP as reactant" participation="direct" role="reactant" specie="Cytosol.GDP" stoichiometry="1"/>
+              <specieReference comment="" name="R04: GTP as product" participation="direct" role="product" specie="Cytosol.GTP" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="sboTerm" value="SBO:0000375"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node kernel="stub/Cytosol/R05" kernel_type="reaction" title="F_T -&gt; F_T2" x="160" y="58">
+            <reaction formula="knuc1*$Cytosol.F_T*$Cytosol.F_T">
+              <specieReference comment="" name="R05: F_T as reactant" participation="direct" role="reactant" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R05: F_T2 as product" participation="direct" role="product" specie="Cytosol.F_T2" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="association"/>
+            <propertyRef name="sboTerm" value="SBO:0000177"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node kernel="stub/Cytosol/R06" kernel_type="reaction" title="F_T2 -&gt; F_T" x="105" y="78">
+            <reaction formula="knuc2*$Cytosol.F_T2">
+              <specieReference comment="" name="R06: F_T as product" participation="direct" role="product" specie="Cytosol.F_T" stoichiometry="2"/>
+              <specieReference comment="" name="R06: F_T2 as reactant" participation="direct" role="reactant" specie="Cytosol.F_T2" stoichiometry="2"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="dissociation"/>
+            <propertyRef name="sboTerm" value="SBO:0000180"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node height="15" kernel="stub/Cytosol/R07" kernel_type="reaction" title="F_T + F_T2 -&gt; F_T3" width="15" x="160" y="198">
+            <reaction formula="kel1*$Cytosol.F_T*$Cytosol.F_T2">
+              <specieReference comment="" name="R07: F_T as reactant" participation="direct" role="reactant" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R07: F_T2 as reactant" participation="direct" role="reactant" specie="Cytosol.F_T2" stoichiometry="1"/>
+              <specieReference comment="" name="R07: F_T3 as product" participation="direct" role="product" specie="Cytosol.F_T3" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="association"/>
+            <propertyRef name="sboTerm" value="SBO:0000177"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node height="15" kernel="stub/Cytosol/R08" kernel_type="reaction" title="F_T + F_T3 -&gt; F_T4" width="15" x="160" y="338">
+            <reaction formula="kel1*$Cytosol.F_T*$Cytosol.F_T3">
+              <specieReference comment="" name="R08: F_T as reactant" participation="direct" role="reactant" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R08: F_T3 as reactant" participation="direct" role="reactant" specie="Cytosol.F_T3" stoichiometry="1"/>
+              <specieReference comment="" name="R08: F_T4 as product" participation="direct" role="product" specie="Cytosol.F_T4" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="association"/>
+            <propertyRef name="sboTerm" value="SBO:0000177"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node height="15" kernel="stub/Cytosol/R09" kernel_type="reaction" title="F_T + F_T4 -&gt; F_T5" width="7" x="155" y="483">
+            <reaction formula="kel1*$Cytosol.F_T*$Cytosol.F_T4">
+              <specieReference comment="" name="R09: F_T as reactant" participation="direct" role="reactant" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R09: F_T4 as reactant" participation="direct" role="reactant" specie="Cytosol.F_T4" stoichiometry="1"/>
+              <specieReference comment="" name="R09: F_T5 as product" participation="direct" role="product" specie="Cytosol.F_T5" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="association"/>
+            <propertyRef name="sboTerm" value="SBO:0000177"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node kernel="stub/Cytosol/R10" kernel_type="reaction" title="F_T + F_T5 -&gt; F_T6" x="155" y="648">
+            <reaction formula="kel1*$Cytosol.F_T*$Cytosol.F_T5">
+              <specieReference comment="" name="R10: F_T as reactant" participation="direct" role="reactant" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R10: F_T5 as reactant" participation="direct" role="reactant" specie="Cytosol.F_T5" stoichiometry="1"/>
+              <specieReference comment="" name="R10: F_T6 as product" participation="direct" role="product" specie="Cytosol.F_T6" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="association"/>
+            <propertyRef name="sboTerm" value="SBO:0000177"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node height="15" kernel="stub/Cytosol/R11" kernel_type="reaction" title="F_T + F_T6 -&gt; F_T7" width="15" x="155" y="793">
+            <reaction formula="kel1*$Cytosol.F_T*$Cytosol.F_T6">
+              <specieReference comment="" name="R11: F_T as reactant" participation="direct" role="reactant" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R11: F_T6 as reactant" participation="direct" role="reactant" specie="Cytosol.F_T6" stoichiometry="1"/>
+              <specieReference comment="" name="R11: F_T7 as product" participation="direct" role="product" specie="Cytosol.F_T7" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="association"/>
+            <propertyRef name="sboTerm" value="SBO:0000177"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node height="12" kernel="stub/Cytosol/R12" kernel_type="reaction" title="F_T + F_T7 -&gt; F_T8" width="10" x="159" y="933">
+            <reaction formula="kel1*$Cytosol.F_T*$Cytosol.F_T7">
+              <specieReference comment="" name="R12: F_T as reactant" participation="direct" role="reactant" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R12: F_T7 as reactant" participation="direct" role="reactant" specie="Cytosol.F_T7" stoichiometry="1"/>
+              <specieReference comment="" name="R12: F_T8 as product" participation="direct" role="product" specie="Cytosol.F_T8" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="association"/>
+            <propertyRef name="sboTerm" value="SBO:0000177"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node height="15" kernel="stub/Cytosol/R13" kernel_type="reaction" title="F_T + F_T8 -&gt; F_T9" width="15" x="155" y="1083">
+            <reaction formula="kel1*$Cytosol.F_T*$Cytosol.F_T8">
+              <specieReference comment="" name="R13: F_T as reactant" participation="direct" role="reactant" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R13: F_T8 as reactant" participation="direct" role="reactant" specie="Cytosol.F_T8" stoichiometry="1"/>
+              <specieReference comment="" name="R13: F_T9 as product" participation="direct" role="product" specie="Cytosol.F_T9" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="association"/>
+            <propertyRef name="sboTerm" value="SBO:0000177"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node height="15" kernel="stub/Cytosol/R14" kernel_type="reaction" title="F_T9 -&gt; F_T + F_T8" width="12" x="110" y="1113">
+            <reaction formula="kel2*$Cytosol.F_T9">
+              <specieReference comment="" name="R14: F_T as product" participation="direct" role="product" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R14: F_T8 as product" participation="direct" role="product" specie="Cytosol.F_T8" stoichiometry="1"/>
+              <specieReference comment="" name="R14: F_T9 as reactant" participation="direct" role="reactant" specie="Cytosol.F_T9" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="dissociation"/>
+            <propertyRef name="sboTerm" value="SBO:0000180"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node height="1" kernel="stub/Cytosol/R15" kernel_type="reaction" title="F_T8 -&gt; F_T + F_T7" width="15" x="107" y="958">
+            <reaction formula="kel2*$Cytosol.F_T8">
+              <specieReference comment="" name="R15: F_T as product" participation="direct" role="product" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R15: F_T7 as product" participation="direct" role="product" specie="Cytosol.F_T7" stoichiometry="1"/>
+              <specieReference comment="" name="R15: F_T8 as reactant" participation="direct" role="reactant" specie="Cytosol.F_T8" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="dissociation"/>
+            <propertyRef name="sboTerm" value="SBO:0000180"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node kernel="stub/Cytosol/R16" kernel_type="reaction" title="F_T7 -&gt; F_T + F_T6" x="105" y="818">
+            <reaction formula="kel2*$Cytosol.F_T7">
+              <specieReference comment="" name="R16: F_T as product" participation="direct" role="product" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R16: F_T6 as product" participation="direct" role="product" specie="Cytosol.F_T6" stoichiometry="1"/>
+              <specieReference comment="" name="R16: F_T7 as reactant" participation="direct" role="reactant" specie="Cytosol.F_T7" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="dissociation"/>
+            <propertyRef name="sboTerm" value="SBO:0000180"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node height="15" kernel="stub/Cytosol/R17" kernel_type="reaction" title="F_T6 -&gt; F_T + F_T5" width="15" x="107" y="668">
+            <reaction formula="kel2*$Cytosol.F_T6">
+              <specieReference comment="" name="R17: F_T as product" participation="direct" role="product" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R17: F_T5 as product" participation="direct" role="product" specie="Cytosol.F_T5" stoichiometry="1"/>
+              <specieReference comment="" name="R17: F_T6 as reactant" participation="direct" role="reactant" specie="Cytosol.F_T6" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="dissociation"/>
+            <propertyRef name="sboTerm" value="SBO:0000180"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node height="15" kernel="stub/Cytosol/R18" kernel_type="reaction" title="F_T5 -&gt; F_T + F_T4" width="15" x="107" y="513">
+            <reaction formula="kel2*$Cytosol.F_T5">
+              <specieReference comment="" name="R18: F_T as product" participation="direct" role="product" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R18: F_T4 as product" participation="direct" role="product" specie="Cytosol.F_T4" stoichiometry="1"/>
+              <specieReference comment="" name="R18: F_T5 as reactant" participation="direct" role="reactant" specie="Cytosol.F_T5" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="dissociation"/>
+            <propertyRef name="sboTerm" value="SBO:0000180"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node kernel="stub/Cytosol/R19" kernel_type="reaction" title="F_T4 -&gt; F_T + F_T3" x="105" y="363">
+            <reaction formula="kel2*$Cytosol.F_T4">
+              <specieReference comment="" name="R19: F_T as product" participation="direct" role="product" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R19: F_T3 as product" participation="direct" role="product" specie="Cytosol.F_T3" stoichiometry="1"/>
+              <specieReference comment="" name="R19: F_T4 as reactant" participation="direct" role="reactant" specie="Cytosol.F_T4" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="dissociation"/>
+            <propertyRef name="sboTerm" value="SBO:0000180"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node height="15" kernel="stub/Cytosol/R20" kernel_type="reaction" title="F_T3 -&gt; F_T + F_T2" width="15" x="105" y="218">
+            <reaction formula="kel2*$Cytosol.F_T3">
+              <specieReference comment="" name="R20: F_T as product" participation="direct" role="product" specie="Cytosol.F_T" stoichiometry="1"/>
+              <specieReference comment="" name="R20: F_T2 as product" participation="direct" role="product" specie="Cytosol.F_T2" stoichiometry="1"/>
+              <specieReference comment="" name="R20: F_T3 as reactant" participation="direct" role="reactant" specie="Cytosol.F_T3" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="dissociation"/>
+            <propertyRef name="sboTerm" value="SBO:0000180"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node kernel="stub/Cytosol/reaction" kernel_type="reaction" title="F_T -&gt; F" x="485" y="-15">
+            <reaction formula="kact2*$F_T">
+              <specieReference comment="" name="reaction: F as product" participation="direct" role="product" specie="Cytosol.F" stoichiometry="1"/>
+              <specieReference comment="" name="reaction: F_T as reactant" participation="direct" role="reactant" specie="Cytosol.F_T" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="sboTerm" value="SBO:0000375"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+          <node height="15" kernel="stub/Cytosol/reaction_1" kernel_type="reaction" title="F -&gt; F_T" width="75" x="520" y="-15">
+            <reaction formula="kact1*$F">
+              <specieReference comment="" name="reaction_1: F as reactant" participation="direct" role="reactant" specie="Cytosol.F" stoichiometry="1"/>
+              <specieReference comment="" name="reaction_1: F_T as product" participation="direct" role="product" specie="Cytosol.F_T" stoichiometry="1"/>
+            </reaction>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="sboTerm" value="SBO:0000375"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </node>
+        </nodes>
+        <edges>
+          <edge id="R03: F_D as reactant" in="F_D" inPort="java.awt.Point[x=98,y=-65]" kernel="stub/R03/R03: F_D as reactant" kernel_type="relation-chemical" out="R03" outPort="java.awt.Point[x=313,y=25]" title="F_D + GTP -&gt; F_T + GDP">
+            <path>
+              <segment segmentType="moveTo" x0="98" y0="-65"/>
+              <segment segmentType="lineTo" x0="98" y0="23"/>
+              <segment segmentType="lineTo" x0="313" y0="25"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R03: F_T as product" in="R03" inPort="java.awt.Point[x=325,y=20]" kernel="stub/R03/R03: F_T as product" kernel_type="relation-chemical" out="F_T" outPort="java.awt.Point[x=360,y=51]" title="F_D + GTP -&gt; F_T + GDP">
+            <path>
+              <segment segmentType="moveTo" x0="325" y0="20"/>
+              <segment segmentType="lineTo" x0="360" y0="20"/>
+              <segment segmentType="lineTo" x0="360" y0="51"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R03: GDP as product" in="R03" inPort="java.awt.Point[x=314,y=6]" kernel="stub/R03/R03: GDP as product" kernel_type="relation-chemical" out="GDP" outPort="java.awt.Point[x=262,y=-16]" title="F_D + GTP -&gt; F_T + GDP">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R03: GTP as reactant" in="GTP" inPort="java.awt.Point[x=376,y=-19]" kernel="stub/R03/R03: GTP as reactant" kernel_type="relation-chemical" out="R03" outPort="java.awt.Point[x=318,y=4]" title="F_D + GTP -&gt; F_T + GDP">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R04: F_D as product" in="R04" inPort="java.awt.Point[x=309,y=-97]" kernel="stub/R04/R04: F_D as product" kernel_type="relation-chemical" out="F_D" outPort="java.awt.Point[x=222,y=-97]" title="F_T + GDP -&gt; F_D + GTP">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R04: F_T as reactant" in="F_T" inPort="java.awt.Point[x=454,y=53]" kernel="stub/R04/R04: F_T as reactant" kernel_type="relation-chemical" out="R04" outPort="java.awt.Point[x=328,y=-101]" title="F_T + GDP -&gt; F_D + GTP">
+            <path>
+              <segment segmentType="moveTo" x0="454" y0="53"/>
+              <segment segmentType="lineTo" x0="454" y0="-102"/>
+              <segment segmentType="lineTo" x0="328" y0="-101"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R04: GDP as reactant" in="GDP" inPort="java.awt.Point[x=262,y=-71]" kernel="stub/R04/R04: GDP as reactant" kernel_type="relation-chemical" out="R04" outPort="java.awt.Point[x=315,y=-87]" title="F_T + GDP -&gt; F_D + GTP">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R04: GTP as product" in="R04" inPort="java.awt.Point[x=319,y=-89]" kernel="stub/R04/R04: GTP as product" kernel_type="relation-chemical" out="GTP" outPort="java.awt.Point[x=376,y=-73]" title="F_T + GDP -&gt; F_D + GTP">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R05: F_T as reactant" in="F_T" inPort="java.awt.Point[x=321,y=65]" kernel="stub/R05/R05: F_T as reactant" kernel_type="relation-chemical" out="R05" outPort="java.awt.Point[x=178,y=65]" title="F_T -&gt; F_T2">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R05: F_T2 as product" in="R05" inPort="java.awt.Point[x=167,y=74]" kernel="stub/R05/R05: F_T2 as product" kernel_type="relation-chemical" out="F_T2" outPort="java.awt.Point[x=167,y=105]" title="F_T -&gt; F_T2">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R06: F_T as product" in="R06" inPort="java.awt.Point[x=121,y=85]" kernel="stub/R06/R06: F_T as product" kernel_type="relation-chemical" out="F_T" outPort="java.awt.Point[x=319,y=85]" title="F_T2 -&gt; F_T">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R06: F_T2 as reactant" in="F_T2" inPort="java.awt.Point[x=112,y=107]" kernel="stub/R06/R06: F_T2 as reactant" kernel_type="relation-chemical" out="R06" outPort="java.awt.Point[x=112,y=96]" title="F_T2 -&gt; F_T">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R07: F_T as reactant" in="F_T" inPort="java.awt.Point[x=357,y=118]" kernel="stub/R07/R07: F_T as reactant" kernel_type="relation-chemical" out="R07" outPort="java.awt.Point[x=169,y=216]" title="F_T + F_T2 -&gt; F_T3">
+            <path>
+              <segment segmentType="moveTo" x0="357" y0="118"/>
+              <segment segmentType="lineTo" x0="357" y0="215"/>
+              <segment segmentType="lineTo" x0="169" y0="216"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R07: F_T2 as reactant" in="F_T2" inPort="java.awt.Point[x=167,y=191]" kernel="stub/R07/R07: F_T2 as reactant" kernel_type="relation-chemical" out="R07" outPort="java.awt.Point[x=167,y=195]" title="F_T + F_T2 -&gt; F_T3">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R07: F_T3 as product" in="R07" inPort="java.awt.Point[x=167,y=214]" kernel="stub/R07/R07: F_T3 as product" kernel_type="relation-chemical" out="F_T3" outPort="java.awt.Point[x=167,y=245]" title="F_T + F_T2 -&gt; F_T3">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R08: F_T as reactant" in="F_T" inPort="java.awt.Point[x=370,y=118]" kernel="stub/R08/R08: F_T as reactant" kernel_type="relation-chemical" out="R08" outPort="java.awt.Point[x=169,y=356]" title="F_T + F_T3 -&gt; F_T4">
+            <path>
+              <segment segmentType="moveTo" x0="370" y0="118"/>
+              <segment segmentType="lineTo" x0="370" y0="355"/>
+              <segment segmentType="lineTo" x0="169" y0="356"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R08: F_T3 as reactant" in="F_T3" inPort="java.awt.Point[x=167,y=329]" kernel="stub/R08/R08: F_T3 as reactant" kernel_type="relation-chemical" out="R08" outPort="java.awt.Point[x=167,y=335]" title="F_T + F_T3 -&gt; F_T4">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R08: F_T4 as product" in="R08" inPort="java.awt.Point[x=167,y=354]" kernel="stub/R08/R08: F_T4 as product" kernel_type="relation-chemical" out="F_T4" outPort="java.awt.Point[x=167,y=390]" title="F_T + F_T3 -&gt; F_T4">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R09: F_T as reactant" in="F_T" inPort="java.awt.Point[x=375,y=118]" kernel="stub/R09/R09: F_T as reactant" kernel_type="relation-chemical" out="R09" outPort="java.awt.Point[x=165,y=501]" title="F_T + F_T4 -&gt; F_T5">
+            <path>
+              <segment segmentType="moveTo" x0="375" y0="118"/>
+              <segment segmentType="lineTo" x0="375" y0="500"/>
+              <segment segmentType="lineTo" x0="165" y0="501"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R09: F_T4 as reactant" in="F_T4" inPort="java.awt.Point[x=162,y=474]" kernel="stub/R09/R09: F_T4 as reactant" kernel_type="relation-chemical" out="R09" outPort="java.awt.Point[x=162,y=480]" title="F_T + F_T4 -&gt; F_T5">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R09: F_T5 as product" in="R09" inPort="java.awt.Point[x=162,y=499]" kernel="stub/R09/R09: F_T5 as product" kernel_type="relation-chemical" out="F_T5" outPort="java.awt.Point[x=162,y=545]" title="F_T + F_T4 -&gt; F_T5">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R10: F_T as reactant" in="F_T" inPort="java.awt.Point[x=360,y=118]" kernel="stub/R10/R10: F_T as reactant" kernel_type="relation-chemical" out="R10" outPort="java.awt.Point[x=164,y=666]" title="F_T + F_T5 -&gt; F_T6">
+            <path>
+              <segment segmentType="moveTo" x0="360" y0="118"/>
+              <segment segmentType="lineTo" x0="360" y0="665"/>
+              <segment segmentType="lineTo" x0="164" y0="666"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R10: F_T5 as reactant" in="F_T5" inPort="java.awt.Point[x=162,y=632]" kernel="stub/R10/R10: F_T5 as reactant" kernel_type="relation-chemical" out="R10" outPort="java.awt.Point[x=162,y=645]" title="F_T + F_T5 -&gt; F_T6">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R10: F_T6 as product" in="R10" inPort="java.awt.Point[x=162,y=664]" kernel="stub/R10/R10: F_T6 as product" kernel_type="relation-chemical" out="F_T6" outPort="java.awt.Point[x=162,y=695]" title="F_T + F_T5 -&gt; F_T6">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R11: F_T as reactant" in="F_T" inPort="java.awt.Point[x=355,y=118]" kernel="stub/R11/R11: F_T as reactant" kernel_type="relation-chemical" out="R11" outPort="java.awt.Point[x=173,y=805]" title="F_T + F_T6 -&gt; F_T7">
+            <path>
+              <segment segmentType="moveTo" x0="355" y0="118"/>
+              <segment segmentType="lineTo" x0="355" y0="805"/>
+              <segment segmentType="lineTo" x0="173" y0="805"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R11: F_T6 as reactant" in="F_T6" inPort="java.awt.Point[x=162,y=779]" kernel="stub/R11/R11: F_T6 as reactant" kernel_type="relation-chemical" out="R11" outPort="java.awt.Point[x=162,y=790]" title="F_T + F_T6 -&gt; F_T7">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R11: F_T7 as product" in="R11" inPort="java.awt.Point[x=162,y=809]" kernel="stub/R11/R11: F_T7 as product" kernel_type="relation-chemical" out="F_T7" outPort="java.awt.Point[x=162,y=840]" title="F_T + F_T6 -&gt; F_T7">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R12: F_T as reactant" in="F_T" inPort="java.awt.Point[x=380,y=118]" kernel="stub/R12/R12: F_T as reactant" kernel_type="relation-chemical" out="R12" outPort="java.awt.Point[x=169,y=951]" title="F_T + F_T7 -&gt; F_T8">
+            <path>
+              <segment segmentType="moveTo" x0="380" y0="118"/>
+              <segment segmentType="lineTo" x0="380" y0="950"/>
+              <segment segmentType="lineTo" x0="169" y0="951"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R12: F_T7 as reactant" in="F_T7" inPort="java.awt.Point[x=166,y=919]" kernel="stub/R12/R12: F_T7 as reactant" kernel_type="relation-chemical" out="R12" outPort="java.awt.Point[x=166,y=930]" title="F_T + F_T7 -&gt; F_T8">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R12: F_T8 as product" in="R12" inPort="java.awt.Point[x=166,y=949]" kernel="stub/R12/R12: F_T8 as product" kernel_type="relation-chemical" out="F_T8" outPort="java.awt.Point[x=166,y=990]" title="F_T + F_T7 -&gt; F_T8">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R13: F_T as reactant" in="F_T" inPort="java.awt.Point[x=367,y=118]" kernel="stub/R13/R13: F_T as reactant" kernel_type="relation-chemical" out="R13" outPort="java.awt.Point[x=173,y=1095]" title="F_T + F_T8 -&gt; F_T9">
+            <path>
+              <segment segmentType="moveTo" x0="367" y0="118"/>
+              <segment segmentType="lineTo" x0="367" y0="1095"/>
+              <segment segmentType="lineTo" x0="173" y0="1095"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R13: F_T8 as reactant" in="F_T8" inPort="java.awt.Point[x=162,y=1069]" kernel="stub/R13/R13: F_T8 as reactant" kernel_type="relation-chemical" out="R13" outPort="java.awt.Point[x=162,y=1080]" title="F_T + F_T8 -&gt; F_T9">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R13: F_T9 as product" in="R13" inPort="java.awt.Point[x=162,y=1099]" kernel="stub/R13/R13: F_T9 as product" kernel_type="relation-chemical" out="F_T9" outPort="java.awt.Point[x=162,y=1140]" title="F_T + F_T8 -&gt; F_T9">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R14: F_T as product" in="R14" inPort="java.awt.Point[x=126,y=1120]" kernel="stub/R14/R14: F_T as product" kernel_type="relation-chemical" out="F_T" outPort="java.awt.Point[x=397,y=120]" title="F_T9 -&gt; F_T + F_T8">
+            <path>
+              <segment segmentType="moveTo" x0="126" y0="1120"/>
+              <segment segmentType="lineTo" x0="397" y0="1120"/>
+              <segment segmentType="lineTo" x0="397" y0="120"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R14: F_T8 as product" in="R14" inPort="java.awt.Point[x=117,y=1112]" kernel="stub/R14/R14: F_T8 as product" kernel_type="relation-chemical" out="F_T8" outPort="java.awt.Point[x=117,y=1071]" title="F_T9 -&gt; F_T + F_T8">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R14: F_T9 as reactant" in="F_T9" inPort="java.awt.Point[x=117,y=1142]" kernel="stub/R14/R14: F_T9 as reactant" kernel_type="relation-chemical" out="R14" outPort="java.awt.Point[x=117,y=1131]" title="F_T9 -&gt; F_T + F_T8">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R15: F_T as product" in="R15" inPort="java.awt.Point[x=123,y=970]" kernel="stub/R15/R15: F_T as product" kernel_type="relation-chemical" out="F_T" outPort="java.awt.Point[x=382,y=120]" title="F_T8 -&gt; F_T + F_T7">
+            <path>
+              <segment segmentType="moveTo" x0="123" y0="970"/>
+              <segment segmentType="lineTo" x0="382" y0="970"/>
+              <segment segmentType="lineTo" x0="382" y0="120"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R15: F_T7 as product" in="R15" inPort="java.awt.Point[x=114,y=957]" kernel="stub/R15/R15: F_T7 as product" kernel_type="relation-chemical" out="F_T7" outPort="java.awt.Point[x=114,y=921]" title="F_T8 -&gt; F_T + F_T7">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R15: F_T8 as reactant" in="F_T8" inPort="java.awt.Point[x=114,y=992]" kernel="stub/R15/R15: F_T8 as reactant" kernel_type="relation-chemical" out="R15" outPort="java.awt.Point[x=114,y=976]" title="F_T8 -&gt; F_T + F_T7">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R16: F_T as product" in="R16" inPort="java.awt.Point[x=115,y=834]" kernel="stub/R16/R16: F_T as product" kernel_type="relation-chemical" out="F_T" outPort="java.awt.Point[x=406,y=120]" title="F_T7 -&gt; F_T + F_T6">
+            <path>
+              <segment segmentType="moveTo" x0="115" y0="834"/>
+              <segment segmentType="lineTo" x0="406" y0="835"/>
+              <segment segmentType="lineTo" x0="406" y0="120"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R16: F_T6 as product" in="R16" inPort="java.awt.Point[x=112,y=817]" kernel="stub/R16/R16: F_T6 as product" kernel_type="relation-chemical" out="F_T6" outPort="java.awt.Point[x=112,y=781]" title="F_T7 -&gt; F_T + F_T6">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R16: F_T7 as reactant" in="F_T7" inPort="java.awt.Point[x=112,y=842]" kernel="stub/R16/R16: F_T7 as reactant" kernel_type="relation-chemical" out="R16" outPort="java.awt.Point[x=112,y=836]" title="F_T7 -&gt; F_T + F_T6">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R17: F_T as product" in="R17" inPort="java.awt.Point[x=117,y=684]" kernel="stub/R17/R17: F_T as product" kernel_type="relation-chemical" out="F_T" outPort="java.awt.Point[x=400,y=120]" title="F_T6 -&gt; F_T + F_T5">
+            <path>
+              <segment segmentType="moveTo" x0="117" y0="684"/>
+              <segment segmentType="lineTo" x0="400" y0="683"/>
+              <segment segmentType="lineTo" x0="400" y0="120"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R17: F_T5 as product" in="R17" inPort="java.awt.Point[x=114,y=667]" kernel="stub/R17/R17: F_T5 as product" kernel_type="relation-chemical" out="F_T5" outPort="java.awt.Point[x=114,y=634]" title="F_T6 -&gt; F_T + F_T5">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R17: F_T6 as reactant" in="F_T6" inPort="java.awt.Point[x=114,y=697]" kernel="stub/R17/R17: F_T6 as reactant" kernel_type="relation-chemical" out="R17" outPort="java.awt.Point[x=114,y=686]" title="F_T6 -&gt; F_T + F_T5">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R18: F_T as product" in="R18" inPort="java.awt.Point[x=123,y=525]" kernel="stub/R18/R18: F_T as product" kernel_type="relation-chemical" out="F_T" outPort="java.awt.Point[x=390,y=120]" title="F_T5 -&gt; F_T + F_T4">
+            <path>
+              <segment segmentType="moveTo" x0="123" y0="525"/>
+              <segment segmentType="lineTo" x0="390" y0="525"/>
+              <segment segmentType="lineTo" x0="390" y0="120"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R18: F_T4 as product" in="R18" inPort="java.awt.Point[x=114,y=512]" kernel="stub/R18/R18: F_T4 as product" kernel_type="relation-chemical" out="F_T4" outPort="java.awt.Point[x=114,y=476]" title="F_T5 -&gt; F_T + F_T4">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R18: F_T5 as reactant" in="F_T5" inPort="java.awt.Point[x=114,y=547]" kernel="stub/R18/R18: F_T5 as reactant" kernel_type="relation-chemical" out="R18" outPort="java.awt.Point[x=114,y=531]" title="F_T5 -&gt; F_T + F_T4">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R19: F_T as product" in="R19" inPort="java.awt.Point[x=121,y=371]" kernel="stub/R19/R19: F_T as product" kernel_type="relation-chemical" out="F_T" outPort="java.awt.Point[x=387,y=120]" title="F_T4 -&gt; F_T + F_T3">
+            <path>
+              <segment segmentType="moveTo" x0="121" y0="371"/>
+              <segment segmentType="lineTo" x0="387" y0="371"/>
+              <segment segmentType="lineTo" x0="387" y0="120"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R19: F_T3 as product" in="R19" inPort="java.awt.Point[x=112,y=362]" kernel="stub/R19/R19: F_T3 as product" kernel_type="relation-chemical" out="F_T3" outPort="java.awt.Point[x=112,y=331]" title="F_T4 -&gt; F_T + F_T3">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R19: F_T4 as reactant" in="F_T4" inPort="java.awt.Point[x=112,y=392]" kernel="stub/R19/R19: F_T4 as reactant" kernel_type="relation-chemical" out="R19" outPort="java.awt.Point[x=112,y=381]" title="F_T4 -&gt; F_T + F_T3">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R20: F_T as product" in="R20" inPort="java.awt.Point[x=115,y=234]" kernel="stub/R20/R20: F_T as product" kernel_type="relation-chemical" out="F_T" outPort="java.awt.Point[x=383,y=120]" title="F_T3 -&gt; F_T + F_T2">
+            <path>
+              <segment segmentType="moveTo" x0="115" y0="234"/>
+              <segment segmentType="lineTo" x0="383" y0="233"/>
+              <segment segmentType="lineTo" x0="383" y0="120"/>
+            </path>
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R20: F_T2 as product" in="R20" inPort="java.awt.Point[x=112,y=217]" kernel="stub/R20/R20: F_T2 as product" kernel_type="relation-chemical" out="F_T2" outPort="java.awt.Point[x=112,y=193]" title="F_T3 -&gt; F_T + F_T2">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="R20: F_T3 as reactant" in="F_T3" inPort="java.awt.Point[x=112,y=247]" kernel="stub/R20/R20: F_T3 as reactant" kernel_type="relation-chemical" out="R20" outPort="java.awt.Point[x=112,y=236]" title="F_T3 -&gt; F_T + F_T2">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="reaction: F as product" in="reaction" inPort="java.awt.Point[x=492,y=-16]" kernel="stub/reaction/reaction: F as product" kernel_type="relation-chemical" out="F" outPort="java.awt.Point[x=492,y=-47]" title="F_T -&gt; F">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="reaction: F_T as reactant" in="F_T" inPort="java.awt.Point[x=492,y=53]" kernel="stub/reaction/reaction: F_T as reactant" kernel_type="relation-chemical" out="reaction" outPort="java.awt.Point[x=492,y=3]" title="F_T -&gt; F">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="reaction_1: F as reactant" in="F" inPort="java.awt.Point[x=527,y=-49]" kernel="stub/reaction_1/reaction_1: F as reactant" kernel_type="relation-chemical" out="reaction_1" outPort="java.awt.Point[x=527,y=-18]" title="F -&gt; F_T">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+          <edge id="reaction_1: F_T as product" in="reaction_1" inPort="java.awt.Point[x=527,y=1]" kernel="stub/reaction_1/reaction_1: F_T as product" kernel_type="relation-chemical" out="F_T" outPort="java.awt.Point[x=527,y=51]" title="F -&gt; F_T">
+            <propertyRef name="sbgn:edgeType" value=""/>
+            <propertyRef name="sbgn:reactionType" value="process"/>
+            <propertyRef name="text" value=""/>
+            <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="reaction"/>
+          </edge>
+        </edges>
+        <propertyRef name="closeup" value=""/>
+        <propertyRef name="compartmentType" value=""/>
+        <propertyRef name="sboTerm" value=""/>
+        <property isHidden="true" name="xmlElementType" short-description="xmlElementType" type="String" value="compartment"/>
+      </compartment>
+    </nodes>
+    <edges/>
+    <filters>
+      <a n="filters" t="[Lbiouml.model.DiagramFilter;">
+        <v/>
+      </a>
+    </filters>
+  </diagram>
+  <executableModel class="biouml.model.dynamics.EModel" completionTime="100.0" initialTime="0.0" timeIncrement="1.0">
+    <parameter constant="true" name="kact1" units="s_1" value="1.1"/>
+    <parameter constant="true" name="kact2" units="s_1" value="0.01"/>
+    <parameter constant="true" name="kel1" units="mls" value="5100000.0"/>
+    <parameter constant="true" name="kel2" units="s_1" value="2.9"/>
+    <parameter constant="true" name="kex1" units="mls" value="10000.0"/>
+    <parameter constant="true" name="kex2" units="mls" value="5000.0"/>
+    <parameter constant="true" name="knuc1" units="mls" value="4200000.0"/>
+    <parameter constant="true" name="knuc2" units="s_1" value="40.0"/>
+    <variable diagramElement="Cytosol" initialValue="1.0E-18" units="litre"/>
+    <variable diagramElement="Cytosol/F" initialValue="0.02" showInPlot="true" units="mole"/>
+    <variable diagramElement="Cytosol/F_D" initialValue="0.0" showInPlot="true" units="mole"/>
+    <variable diagramElement="Cytosol/F_T" initialValue="0.0" showInPlot="true" units="mole"/>
+    <variable diagramElement="Cytosol/F_T2" initialValue="0.0" showInPlot="true" units="mole"/>
+    <variable diagramElement="Cytosol/F_T3" initialValue="0.0" showInPlot="true" units="mole"/>
+    <variable diagramElement="Cytosol/F_T4" initialValue="0.0" showInPlot="true" units="mole"/>
+    <variable diagramElement="Cytosol/F_T5" initialValue="0.0" showInPlot="true" units="mole"/>
+    <variable diagramElement="Cytosol/F_T6" initialValue="0.0" showInPlot="true" units="mole"/>
+    <variable diagramElement="Cytosol/F_T7" initialValue="0.0" showInPlot="true" units="mole"/>
+    <variable diagramElement="Cytosol/F_T8" initialValue="0.0" showInPlot="true" units="mole"/>
+    <variable diagramElement="Cytosol/F_T9" initialValue="0.0" showInPlot="true" units="mole"/>
+    <variable diagramElement="Cytosol/GDP" initialValue="0.01" showInPlot="true" units="mole"/>
+    <variable diagramElement="Cytosol/GTP" initialValue="0.09" showInPlot="true" units="mole"/>
+    <equation diagramElement="Cytosol/R03" formula="kex1*$Cytosol.F_D*$Cytosol.GTP" type="scalar" variable="$$rate_R03"/>
+    <equation diagramElement="Cytosol/R03: F_D as reactant" formula="-$$rate_R03" variable="$Cytosol.F_D"/>
+    <equation diagramElement="Cytosol/R03: F_T as product" formula="$$rate_R03" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R03: GDP as product" formula="$$rate_R03" variable="$Cytosol.GDP"/>
+    <equation diagramElement="Cytosol/R03: GTP as reactant" formula="-$$rate_R03" variable="$Cytosol.GTP"/>
+    <equation diagramElement="Cytosol/R04" formula="kex2*$Cytosol.F_T*$Cytosol.GDP" type="scalar" variable="$$rate_R04"/>
+    <equation diagramElement="Cytosol/R04: F_D as product" formula="$$rate_R04" variable="$Cytosol.F_D"/>
+    <equation diagramElement="Cytosol/R04: F_T as reactant" formula="-$$rate_R04" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R04: GDP as reactant" formula="-$$rate_R04" variable="$Cytosol.GDP"/>
+    <equation diagramElement="Cytosol/R04: GTP as product" formula="$$rate_R04" variable="$Cytosol.GTP"/>
+    <equation diagramElement="Cytosol/R05" formula="knuc1*$Cytosol.F_T*$Cytosol.F_T" type="scalar" variable="$$rate_R05"/>
+    <equation diagramElement="Cytosol/R05: F_T as reactant" formula="-$$rate_R05" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R05: F_T2 as product" formula="$$rate_R05" variable="$Cytosol.F_T2"/>
+    <equation diagramElement="Cytosol/R06" formula="knuc2*$Cytosol.F_T2" type="scalar" variable="$$rate_R06"/>
+    <equation diagramElement="Cytosol/R06: F_T as product" formula="$$rate_R06*(2)" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R06: F_T2 as reactant" formula="-$$rate_R06*(2)" variable="$Cytosol.F_T2"/>
+    <equation diagramElement="Cytosol/R07" formula="kel1*$Cytosol.F_T*$Cytosol.F_T2" type="scalar" variable="$$rate_R07"/>
+    <equation diagramElement="Cytosol/R07: F_T as reactant" formula="-$$rate_R07" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R07: F_T2 as reactant" formula="-$$rate_R07" variable="$Cytosol.F_T2"/>
+    <equation diagramElement="Cytosol/R07: F_T3 as product" formula="$$rate_R07" variable="$Cytosol.F_T3"/>
+    <equation diagramElement="Cytosol/R08" formula="kel1*$Cytosol.F_T*$Cytosol.F_T3" type="scalar" variable="$$rate_R08"/>
+    <equation diagramElement="Cytosol/R08: F_T as reactant" formula="-$$rate_R08" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R08: F_T3 as reactant" formula="-$$rate_R08" variable="$Cytosol.F_T3"/>
+    <equation diagramElement="Cytosol/R08: F_T4 as product" formula="$$rate_R08" variable="$Cytosol.F_T4"/>
+    <equation diagramElement="Cytosol/R09" formula="kel1*$Cytosol.F_T*$Cytosol.F_T4" type="scalar" variable="$$rate_R09"/>
+    <equation diagramElement="Cytosol/R09: F_T as reactant" formula="-$$rate_R09" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R09: F_T4 as reactant" formula="-$$rate_R09" variable="$Cytosol.F_T4"/>
+    <equation diagramElement="Cytosol/R09: F_T5 as product" formula="$$rate_R09" variable="$Cytosol.F_T5"/>
+    <equation diagramElement="Cytosol/R10" formula="kel1*$Cytosol.F_T*$Cytosol.F_T5" type="scalar" variable="$$rate_R10"/>
+    <equation diagramElement="Cytosol/R10: F_T as reactant" formula="-$$rate_R10" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R10: F_T5 as reactant" formula="-$$rate_R10" variable="$Cytosol.F_T5"/>
+    <equation diagramElement="Cytosol/R10: F_T6 as product" formula="$$rate_R10" variable="$Cytosol.F_T6"/>
+    <equation diagramElement="Cytosol/R11" formula="kel1*$Cytosol.F_T*$Cytosol.F_T6" type="scalar" variable="$$rate_R11"/>
+    <equation diagramElement="Cytosol/R11: F_T as reactant" formula="-$$rate_R11" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R11: F_T6 as reactant" formula="-$$rate_R11" variable="$Cytosol.F_T6"/>
+    <equation diagramElement="Cytosol/R11: F_T7 as product" formula="$$rate_R11" variable="$Cytosol.F_T7"/>
+    <equation diagramElement="Cytosol/R12" formula="kel1*$Cytosol.F_T*$Cytosol.F_T7" type="scalar" variable="$$rate_R12"/>
+    <equation diagramElement="Cytosol/R12: F_T as reactant" formula="-$$rate_R12" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R12: F_T7 as reactant" formula="-$$rate_R12" variable="$Cytosol.F_T7"/>
+    <equation diagramElement="Cytosol/R12: F_T8 as product" formula="$$rate_R12" variable="$Cytosol.F_T8"/>
+    <equation diagramElement="Cytosol/R13" formula="kel1*$Cytosol.F_T*$Cytosol.F_T8" type="scalar" variable="$$rate_R13"/>
+    <equation diagramElement="Cytosol/R13: F_T as reactant" formula="-$$rate_R13" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R13: F_T8 as reactant" formula="-$$rate_R13" variable="$Cytosol.F_T8"/>
+    <equation diagramElement="Cytosol/R13: F_T9 as product" formula="$$rate_R13" variable="$Cytosol.F_T9"/>
+    <equation diagramElement="Cytosol/R14" formula="kel2*$Cytosol.F_T9" type="scalar" variable="$$rate_R14"/>
+    <equation diagramElement="Cytosol/R14: F_T as product" formula="$$rate_R14" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R14: F_T8 as product" formula="$$rate_R14" variable="$Cytosol.F_T8"/>
+    <equation diagramElement="Cytosol/R14: F_T9 as reactant" formula="-$$rate_R14" variable="$Cytosol.F_T9"/>
+    <equation diagramElement="Cytosol/R15" formula="kel2*$Cytosol.F_T8" type="scalar" variable="$$rate_R15"/>
+    <equation diagramElement="Cytosol/R15: F_T as product" formula="$$rate_R15" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R15: F_T7 as product" formula="$$rate_R15" variable="$Cytosol.F_T7"/>
+    <equation diagramElement="Cytosol/R15: F_T8 as reactant" formula="-$$rate_R15" variable="$Cytosol.F_T8"/>
+    <equation diagramElement="Cytosol/R16" formula="kel2*$Cytosol.F_T7" type="scalar" variable="$$rate_R16"/>
+    <equation diagramElement="Cytosol/R16: F_T as product" formula="$$rate_R16" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R16: F_T6 as product" formula="$$rate_R16" variable="$Cytosol.F_T6"/>
+    <equation diagramElement="Cytosol/R16: F_T7 as reactant" formula="-$$rate_R16" variable="$Cytosol.F_T7"/>
+    <equation diagramElement="Cytosol/R17" formula="kel2*$Cytosol.F_T6" type="scalar" variable="$$rate_R17"/>
+    <equation diagramElement="Cytosol/R17: F_T as product" formula="$$rate_R17" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R17: F_T5 as product" formula="$$rate_R17" variable="$Cytosol.F_T5"/>
+    <equation diagramElement="Cytosol/R17: F_T6 as reactant" formula="-$$rate_R17" variable="$Cytosol.F_T6"/>
+    <equation diagramElement="Cytosol/R18" formula="kel2*$Cytosol.F_T5" type="scalar" variable="$$rate_R18"/>
+    <equation diagramElement="Cytosol/R18: F_T as product" formula="$$rate_R18" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R18: F_T4 as product" formula="$$rate_R18" variable="$Cytosol.F_T4"/>
+    <equation diagramElement="Cytosol/R18: F_T5 as reactant" formula="-$$rate_R18" variable="$Cytosol.F_T5"/>
+    <equation diagramElement="Cytosol/R19" formula="kel2*$Cytosol.F_T4" type="scalar" variable="$$rate_R19"/>
+    <equation diagramElement="Cytosol/R19: F_T as product" formula="$$rate_R19" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R19: F_T3 as product" formula="$$rate_R19" variable="$Cytosol.F_T3"/>
+    <equation diagramElement="Cytosol/R19: F_T4 as reactant" formula="-$$rate_R19" variable="$Cytosol.F_T4"/>
+    <equation diagramElement="Cytosol/R20" formula="kel2*$Cytosol.F_T3" type="scalar" variable="$$rate_R20"/>
+    <equation diagramElement="Cytosol/R20: F_T as product" formula="$$rate_R20" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/R20: F_T2 as product" formula="$$rate_R20" variable="$Cytosol.F_T2"/>
+    <equation diagramElement="Cytosol/R20: F_T3 as reactant" formula="-$$rate_R20" variable="$Cytosol.F_T3"/>
+    <equation diagramElement="Cytosol/reaction" formula="kact2*$F_T" type="scalar" variable="$$rate_reaction"/>
+    <equation diagramElement="Cytosol/reaction: F as product" formula="$$rate_reaction" variable="$Cytosol.F"/>
+    <equation diagramElement="Cytosol/reaction: F_T as reactant" formula="-$$rate_reaction" variable="$Cytosol.F_T"/>
+    <equation diagramElement="Cytosol/reaction_1" formula="kact1*$F" type="scalar" variable="$$rate_reaction_1"/>
+    <equation diagramElement="Cytosol/reaction_1: F as reactant" formula="-$$rate_reaction_1" variable="$Cytosol.F"/>
+    <equation diagramElement="Cytosol/reaction_1: F_T as product" formula="$$rate_reaction_1" variable="$Cytosol.F_T"/>
+  </executableModel>
+</dml>
