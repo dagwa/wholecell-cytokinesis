@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model metaid="WCM_3_3" id="WCM_3_3" name="Whole Cell 2015 - Cytokinesis">
+
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	       xmlns:dc="http://purl.org/dc/elements/1.1/"
+	       xmlns:dcterms="http://purl.org/dc/terms/"
+	       xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
+	       xmlns:bqbiol="http://biomodels.net/biology-qualifiers/"
+	       xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#model1">
+
+          <dc:creator>
+            <rdf:Bag>
+
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Kumar</vCard:Family>
+                  <vCard:Given>Naveen</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>navyeinstein1991@gmail.com</vCard:EMAIL>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>University Paris Sud and CNRS</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Zhu</vCard:Family>
+                  <vCard:Given>Yan</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>yan.zhu@monash.edu</vCard:EMAIL>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>Monash University</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Kiselev</vCard:Family>
+                  <vCard:Given>Ilya</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>axec@systemsbiology.ru</vCard:EMAIL>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>SBRAS Novosibirsk</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Priego</vCard:Family>
+                  <vCard:Given>Daniel</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>dpriego87@gmail.com</vCard:EMAIL>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname> Universidad Nacional Autónoma de Mexico</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Liebermeister</vCard:Family>
+                  <vCard:Given>Wolfram</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>wolfram.liebermeister@gmail.com</vCard:EMAIL>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>Charite Berlin</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+
+            </rdf:Bag>
+          </dc:creator>
+
+          <dcterms:created rdf:parseType="Resource">
+            <dcterms:W3CDTF>2015-03-10T12:00:00Z</dcterms:W3CDTF>
+          </dcterms:created>
+
+          <dcterms:modified rdf:parseType="Resource">
+            <dcterms:W3CDTF>2015-03-13T12:00:00Z</dcterms:W3CDTF>
+          </dcterms:modified>
+
+          <bqmodel:isInstanceOf>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/mamo/MAMO_0000036"/>
+            </rdf:Bag>
+          </bqmodel:isInstanceOf>
+
+          <bqmodel:isInstanceOf>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
+            </rdf:Bag>
+          </bqmodel:isInstanceOf>
+					
+          <bqmodel:isDerivedFrom>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/doi/10.1016/j.cell.2012.05.044"/>
+            </rdf:Bag>
+          </bqmodel:isDerivedFrom>
+
+          <bqbiol:hasTaxon>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/taxonomy/243273"/>
+            </rdf:Bag>
+          </bqbiol:hasTaxon>
+
+        </rdf:Description>
+      </rdf:RDF>
+
+    </annotation>
+
+
+
+  </model>
+</sbml>
