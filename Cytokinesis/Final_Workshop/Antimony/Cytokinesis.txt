@@ -1,0 +1,47 @@
+function binomial(x,y)
+x*y;
+end
+model cytokinesis_Yan_new()
+   compartment default;
+   species H2O__c in default;
+   var CellGeometry_pinchedDiameter, H, H2O, MG_224_9MER_GTP, MG_224_MONOMER_GDP, PI, Pi, binding, flooredDiameter, ftsZRing_filamentLengthInNm, ftszRing_numFtsZSubunitsPerFilament, newDiameter, numEdges, numManEdges, oneBent, oneBentOneStraight, oneBentTwoStraight, oneStraight, rateFilamentBindingMembrane, rateFilamentDissociation, rateFtsZGtpHydrolysis, result, secondBinding, twoBent, twoStraight, x, y;
+
+   default = 1.0;
+   CellGeometry_pinchedDiameter = 2.0E-7;
+   H = 1000000.0;
+   H2O = 1000000.0;
+   MG_224_9MER_GTP = 1000.0;
+   PI = 1000000.0;
+   Pi = 3.1415936;
+   ftsZRing_filamentLengthInNm = 40.0;
+   ftszRing_numFtsZSubunitsPerFilament = 9.0;
+   numEdges = 15.0;
+   rateFilamentBindingMembrane = 1.0;
+
+   const default, Pi, ftszRing_numFtsZSubunitsPerFilament, rateFilamentBindingMembrane, rateFilamentDissociation, rateFtsZGtpHydrolysis;
+
+   H2O__c := ftszRing_numFtsZSubunitsPerFilament*MG_224_9MER_GTP;
+
+   bending: at oneBentOneStraight+oneBentTwoStraight+oneBent==numEdges&&oneBent>=1.0&&twoBent==0.0&&oneStraight==0.0&&twoStraight==0.0,priority = 11.0 : numManEdges = binomial(oneBent,rateFilamentBindingMembrane);
+   bendingFirstCyc: at twoStraight+twoBent==numEdges&&twoStraight>=1.0&&numManEdges>=1.0,priority = 15.0 : twoStraight = twoStraight-numManEdges : twoBent = twoBent+numManEdges : H2O = H2O-9.0*numManEdges : PI = PI+9.0*numManEdges : H = H+9.0*numManEdges : numManEdges = 0.0;
+   binding: at oneStraight+twoStraight<=numEdges-1.0&&oneBent==0.0&&twoBent==0.0&&oneBentOneStraight==0.0&&oneBentTwoStraight==0.0&&numManEdges>0.0,priority = 21.0 : oneStraight = oneStraight+numManEdges : MG_224_9MER_GTP = MG_224_9MER_GTP-numManEdges : numManEdges = 0.0;
+   bindingSecondStepFirstCyc: at oneStraight+twoStraight<=numEdges&&oneStraight>=1.0&&oneBent==0.0&&twoBent==0.0&&oneBentOneStraight==0.0&&oneBentTwoStraight==0.0,priority = 17.0 : twoStraight = twoStraight+numManEdges : MG_224_9MER_GTP = MG_224_9MER_GTP-numManEdges : oneStraight = oneStraight-numManEdges : numManEdges = 0.0;
+   calBindingEdgesStep1FirstCyc: at oneStraight+twoStraight<=numEdges-1.0&&oneBent==0.0&&twoBent==0.0&&oneBentOneStraight==0.0&&oneBentTwoStraight==0.0,priority = 22.0 : numManEdges = binomial(numEdges-oneStraight-twoStraight,rateFilamentBindingMembrane);
+   calBindingEdgesStep2FirstCyc: at oneStraight+twoStraight<=numEdges&&oneStraight>=1.0&&oneBent==0.0&&twoBent==0.0&&oneBentOneStraight==0.0&&oneBentTwoStraight==0.0,priority = 18.0 : numManEdges = binomial(oneStraight,rateFilamentBindingMembrane);
+   calManEdgesStepEight: at oneBentOneStraight+oneBentTwoStraight+oneBent==numEdges&&oneBentOneStraight>=1.0&&twoBent==0.0&&oneStraight==0.0&&twoStraight==0.0,priority = 7.0 : numManEdges = binomial(oneBentOneStraight,rateFilamentBindingMembrane);
+   calNumBentEdgesFirstCyc: at twoStraight+twoBent==numEdges&&twoStraight>=1.0,priority = 16.0 : numManEdges = binomial(twoStraight,rateFtsZGtpHydrolysis);
+   calNumManEdgesStepNine: at oneBentOneStraight+oneBentTwoStraight+oneStraight+twoStraight==numEdges&&oneBentOneStraight>=1.0&&twoBent==0.0&&oneBent==0.0,priority = 5.0 : numManEdges = binomial(oneBentOneStraight,rateFilamentDissociation);
+   calNumManEdgesStepTen: at oneBentOneStraight+oneBentTwoStraight+oneStraight+twoStraight==numEdges&&oneBentTwoStraight>=1.0&&twoBent==0.0&&oneBent==0.0,priority = 3.0 : numManEdges = binomial(oneBentTwoStraight,rateFilamentDissociation);
+   calNumManEdgesStepTwo: at oneStraight+twoStraight<=numEdges-1.0&&oneBent==0.0&&twoBent==0.0&&oneBentOneStraight==0.0&&oneBentTwoStraight==0.0,priority = 20.0 : numManEdges = binomial(numEdges-oneStraight-twoStraight,rateFilamentBindingMembrane);
+   calNumUnbindEdgesFirstCyc: at oneBent+twoBent==numEdges&&twoBent>=1.0,priority = 13.0 : numManEdges = binomial(twoBent,rateFilamentDissociation);
+   pinchFinished: at oneBentOneStraight+oneBentTwoStraight+oneBent==numEdges&&oneBent>=1.0&&twoBent==0.0&&oneStraight==0.0&&twoStraight==0.0,priority = 9.0 : numManEdges = binomial(oneBent,rateFilamentBindingMembrane);
+   stepEight: at oneBentOneStraight+oneBentTwoStraight+oneBent==numEdges&&oneBentOneStraight>=1.0&&twoBent==0.0&&oneStraight==0.0&&twoStraight==0.0&&numManEdges>=1.0,priority = 6.0 : oneBentOneStraight = oneBentOneStraight-numManEdges : oneBentTwoStraight = oneBentTwoStraight+numManEdges : MG_224_9MER_GTP = MG_224_9MER_GTP-numManEdges : numManEdges = 0.0;
+   stepNine: at oneBentOneStraight+oneBentTwoStraight+oneStraight+twoStraight==numEdges&&oneBentOneStraight>=1.0&&twoBent==0.0&&oneBent==0.0&&numManEdges>=1.0,priority = 4.0 : oneBentOneStraight = oneBentOneStraight-numManEdges : oneStraight = oneStraight+numManEdges : MG_224_MONOMER_GDP = MG_224_MONOMER_GDP+9.0*numManEdges : numManEdges = 0.0;
+   stepSeven: at oneBentOneStraight+oneBentTwoStraight+oneBent==numEdges&&oneBent>=1.0&&twoBent==0.0&&oneStraight==0.0&&twoStraight==0.0&&numManEdges>=1.0,priority = 8.0 : oneBentOneStraight = oneBentOneStraight+numManEdges : oneBent = oneBent-numManEdges : MG_224_9MER_GTP = MG_224_9MER_GTP-numManEdges : numManEdges = 0.0;
+   stepTen: at oneBentOneStraight+oneBentTwoStraight+oneStraight+twoStraight==numEdges&&oneBentTwoStraight>=1.0&&twoBent==0.0&&oneBent==0.0&&numManEdges>=1.0,priority = 2.0 : oneBentTwoStraight = oneBentTwoStraight-numManEdges : twoStraight = twoStraight+numManEdges : MG_224_MONOMER_GDP = MG_224_MONOMER_GDP+9.0*numManEdges : numManEdges = 0.0;
+   stepTwo: at oneStraight+twoStraight<=numEdges-1.0&&oneBent==0.0&&twoBent==0.0&&oneBentOneStraight==0.0&&oneBentTwoStraight==0.0&&numManEdges>=1.0,priority = 19.0 : oneStraight = oneStraight+numManEdges : MG_224_9MER_GTP = MG_224_9MER_GTP-numManEdges : numManEdges = 0.0 : secondBinding = 1.0;
+   unbinding: at oneBentOneStraight+oneBentTwoStraight+oneBent==numEdges&&oneBent>=1.0&&twoBent==0.0&&oneStraight==0.0&&twoStraight==0.0&&numManEdges>=1.0,priority = 10.0 : oneBentOneStraight = oneBentOneStraight+numManEdges : oneBent = oneBent-numManEdges : MG_224_9MER_GTP = MG_224_9MER_GTP-numManEdges : numManEdges = 0.0;
+   unbindingFirstCyc: at oneBent+twoBent==numEdges&&twoBent>=1.0&&numManEdges>=1.0,priority = 12.0 : twoBent = twoBent-numManEdges : oneBent = oneBent+numManEdges : MG_224_MONOMER_GDP = MG_224_MONOMER_GDP+9.0*numManEdges : numManEdges = 0.0;
+   updateDiameter: at oneStraight==0.0&&twoStraight==0.0&&oneBent==0.0&&oneBentOneStraight==0.0&&oneBentTwoStraight==0.0&&twoBent==numEdges,priority = 14.0 : numEdges = floor(Pi/arcsin(ftsZRing_filamentLengthInNm*0.0/CellGeometry_pinchedDiameter)) : flooredDiameter = ftsZRing_filamentLengthInNm*0.0/sin(Pi/numEdges) : newDiameter = ftsZRing_filamentLengthInNm*0.0*numEdges/Pi : result = newDiameter+(CellGeometry_pinchedDiameter-flooredDiameter) : CellGeometry_pinchedDiameter = piecewise(0.0,result<=ftsZRing_filamentLengthInNm*0.0,result);
+   default is "cytosol";
+end
