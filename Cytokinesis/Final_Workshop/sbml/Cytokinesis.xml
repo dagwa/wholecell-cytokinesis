@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
   <model id="Cytokinesis" name="Cytokinesis">
-    </listOfUnitDefinitions>
+    <listOfUnitDefinitions>
      <unitDefinition id="s_1" name="per second">
       	<listOfUnits>
 	   <unit kind="second" exponent="-1" scale="0" multiplier="1"/>

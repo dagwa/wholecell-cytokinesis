@@ -1,7 +1,7 @@
 function binomial(x,y)
 x*y;
 end
-model cytokinesis_Yan_new()
+model Cytokinesis()
    compartment default;
    species H2O__c in default;
    var CellGeometry_pinchedDiameter, H, H2O, MG_224_9MER_GTP, MG_224_MONOMER_GDP, PI, Pi, binding, flooredDiameter, ftsZRing_filamentLengthInNm, ftszRing_numFtsZSubunitsPerFilament, newDiameter, numEdges, numManEdges, oneBent, oneBentOneStraight, oneBentTwoStraight, oneStraight, rateFilamentBindingMembrane, rateFilamentDissociation, rateFtsZGtpHydrolysis, result, secondBinding, twoBent, twoStraight, x, y;

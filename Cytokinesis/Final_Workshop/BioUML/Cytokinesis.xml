@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
-  <model id="cytokinesis_Yan_new" name="cytokinesis_Yan_new">
+  <model id="Cytokinesis" name="Cytokinesis">
     <annotation>
       <sbgn xmlns:biouml="http://www.biouml.org/ns" notation="databases/Utils/Diagrams/graphic notations/sbml_sbgn.xml">
         <nodes>
@@ -130,7 +130,7 @@
         </viewOptions>
       </sbgn>
       <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
-        <biouml:diagramInfo completeName="cytokinesis_Yan_new"/>
+        <biouml:diagramInfo completeName="Cytokinesis"/>
         <biouml:viewOptions autoLayout="true" dependencyEdges="false"/>
       </biouml:BIOUML>
     </annotation>
