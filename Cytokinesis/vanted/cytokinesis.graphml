@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created by the Gravisto/VANTED graphML writer plugin on Fri Mar 13 02:53:00 CET 2015. --><graphml xmlns="http://graphml.graphdrawing.org/xmlns/graphml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/graphml http://graphml.graphdrawing.org/xmlns/graphml/graphml-structure-1.0rc.xsd">
+<!-- Created by the Gravisto/VANTED graphML writer plugin on Fri Mar 13 09:15:24 CET 2015. --><graphml xmlns="http://graphml.graphdrawing.org/xmlns/graphml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns/graphml http://graphml.graphdrawing.org/xmlns/graphml/graphml-structure-1.0rc.xsd">
 <key attr.name=".directed" attr.type="boolean" for="graph" id="ga0"/>
 <key attr.name=".sbml_unit_definition_3.sbml_unit_definition_3_id" attr.type="string" for="graph" id="ga45"/>
 <key attr.name=".sbml_unit_definition_3.sbml_unit_definition_3_name" attr.type="string" for="graph" id="ga46"/>
@@ -219,7 +219,7 @@
 <data key="ga1">3</data>
 <data key="ga30">0.0</data>
 <data key="ga0">true</data>
-<node id="n53">
+<node id="n0">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -253,7 +253,7 @@
 <data key="na23">plain</data>
 <data key="na22">18</data>
 </node>
-<node id="n54">
+<node id="n1">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -277,7 +277,7 @@
 <data key="na3">60.0</data>
 <data key="na2">1730.0</data>
 <data key="na1">320.0</data>
-<data key="na29">7, 16</data>
+<data key="na29">7,16</data>
 <data key="na0">glyph21</data>
 <data key="na28">text</data>
 <data key="na27">MG_224_MONOMER</data>
@@ -287,7 +287,7 @@
 <data key="na23">plain</data>
 <data key="na22">19</data>
 </node>
-<node id="n55">
+<node id="n2">
 <data key="na29">7, 16</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -345,7 +345,7 @@
 <data key="na31">-1</data>
 <data key="na30">MULTIMERCOMPLEX</data>
 </node>
-<node id="n56">
+<node id="n3">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -379,7 +379,7 @@
 <data key="na23">plain</data>
 <data key="na22">18</data>
 </node>
-<node id="n57">
+<node id="n4">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -413,7 +413,7 @@
 <data key="na23">plain</data>
 <data key="na22">19</data>
 </node>
-<node id="n58">
+<node id="n5">
 <data key="na29">8, 16</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -471,7 +471,7 @@
 <data key="na31">-1</data>
 <data key="na30">MULTIMERCOMPLEX</data>
 </node>
-<node id="n59">
+<node id="n6">
 <data key="na29">9, 16</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -529,7 +529,7 @@
 <data key="na31">-1</data>
 <data key="na30">MULTIMERCOMPLEX</data>
 </node>
-<node id="n60">
+<node id="n7">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -563,7 +563,7 @@
 <data key="na23">plain</data>
 <data key="na22">18</data>
 </node>
-<node id="n61">
+<node id="n8">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -597,7 +597,7 @@
 <data key="na23">plain</data>
 <data key="na22">19</data>
 </node>
-<node id="n62">
+<node id="n9">
 <data key="na29">18</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -652,7 +652,7 @@
 <data key="na31">-3</data>
 <data key="na30">COMPLEX</data>
 </node>
-<node id="n63">
+<node id="n10">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -684,7 +684,7 @@
 <data key="na23">plain</data>
 <data key="na22">12</data>
 </node>
-<node id="n64">
+<node id="n11">
 <data key="na29">14</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -739,7 +739,7 @@
 <data key="na31">-3</data>
 <data key="na30">COMPLEX</data>
 </node>
-<node id="n65">
+<node id="n12">
 <data key="na29">19</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -794,7 +794,7 @@
 <data key="na31">-3</data>
 <data key="na30">COMPLEX</data>
 </node>
-<node id="n66">
+<node id="n13">
 <data key="na29">16</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -849,7 +849,7 @@
 <data key="na31">-3</data>
 <data key="na30">COMPLEX</data>
 </node>
-<node id="n67">
+<node id="n14">
 <data key="na29">17</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -904,7 +904,7 @@
 <data key="na31">-3</data>
 <data key="na30">COMPLEX</data>
 </node>
-<node id="n68">
+<node id="n15">
 <data key="na29">15</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -959,7 +959,7 @@
 <data key="na31">-3</data>
 <data key="na30">COMPLEX</data>
 </node>
-<node id="n69">
+<node id="n16">
 <data key="na29">10, 17</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -1017,7 +1017,7 @@
 <data key="na31">-1</data>
 <data key="na30">MULTIMERCOMPLEX</data>
 </node>
-<node id="n70">
+<node id="n17">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1051,7 +1051,7 @@
 <data key="na23">plain</data>
 <data key="na22">19</data>
 </node>
-<node id="n71">
+<node id="n18">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1085,7 +1085,7 @@
 <data key="na23">plain</data>
 <data key="na22">18</data>
 </node>
-<node id="n72">
+<node id="n19">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1119,7 +1119,7 @@
 <data key="na23">plain</data>
 <data key="na22">19</data>
 </node>
-<node id="n73">
+<node id="n20">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1153,7 +1153,7 @@
 <data key="na23">plain</data>
 <data key="na22">18</data>
 </node>
-<node id="n74">
+<node id="n21">
 <data key="na29">4</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -1211,7 +1211,7 @@
 <data key="na31">-1</data>
 <data key="na30">MULTIMERCOMPLEX</data>
 </node>
-<node id="n75">
+<node id="n22">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1245,7 +1245,7 @@
 <data key="na23">plain</data>
 <data key="na22">18</data>
 </node>
-<node id="n76">
+<node id="n23">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1279,7 +1279,7 @@
 <data key="na23">plain</data>
 <data key="na22">19</data>
 </node>
-<node id="n77">
+<node id="n24">
 <data key="na29">5, 15</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -1337,7 +1337,7 @@
 <data key="na31">-1</data>
 <data key="na30">MULTIMERCOMPLEX</data>
 </node>
-<node id="n78">
+<node id="n25">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1371,7 +1371,7 @@
 <data key="na23">plain</data>
 <data key="na22">18</data>
 </node>
-<node id="n79">
+<node id="n26">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1405,7 +1405,7 @@
 <data key="na23">plain</data>
 <data key="na22">19</data>
 </node>
-<node id="n80">
+<node id="n27">
 <data key="na29">6, 15</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -1463,7 +1463,7 @@
 <data key="na31">-1</data>
 <data key="na30">MULTIMERCOMPLEX</data>
 </node>
-<node id="n81">
+<node id="n28">
 <data key="na29">11, 18</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -1521,7 +1521,7 @@
 <data key="na31">-1</data>
 <data key="na30">MULTIMERCOMPLEX</data>
 </node>
-<node id="n82">
+<node id="n29">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1555,7 +1555,7 @@
 <data key="na23">plain</data>
 <data key="na22">18</data>
 </node>
-<node id="n83">
+<node id="n30">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1589,7 +1589,7 @@
 <data key="na23">plain</data>
 <data key="na22">19</data>
 </node>
-<node id="n84">
+<node id="n31">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1623,7 +1623,7 @@
 <data key="na23">plain</data>
 <data key="na22">18</data>
 </node>
-<node id="n85">
+<node id="n32">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1657,7 +1657,7 @@
 <data key="na23">plain</data>
 <data key="na22">19</data>
 </node>
-<node id="n86">
+<node id="n33">
 <data key="na29">12, 18</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -1715,7 +1715,7 @@
 <data key="na31">-1</data>
 <data key="na30">MULTIMERCOMPLEX</data>
 </node>
-<node id="n87">
+<node id="n34">
 <data key="na29">3, 14</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -1773,7 +1773,7 @@
 <data key="na31">-1</data>
 <data key="na30">MULTIMERCOMPLEX</data>
 </node>
-<node id="n88">
+<node id="n35">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1807,7 +1807,7 @@
 <data key="na23">plain</data>
 <data key="na22">18</data>
 </node>
-<node id="n89">
+<node id="n36">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1841,7 +1841,7 @@
 <data key="na23">plain</data>
 <data key="na22">19</data>
 </node>
-<node id="n90">
+<node id="n37">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1875,7 +1875,7 @@
 <data key="na23">plain</data>
 <data key="na22">19</data>
 </node>
-<node id="n91">
+<node id="n38">
 <data key="na29">2, 14</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -1933,7 +1933,7 @@
 <data key="na31">-1</data>
 <data key="na30">MULTIMERCOMPLEX</data>
 </node>
-<node id="n92">
+<node id="n39">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -1967,7 +1967,7 @@
 <data key="na23">plain</data>
 <data key="na22">18</data>
 </node>
-<node id="n93">
+<node id="n40">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2001,7 +2001,7 @@
 <data key="na23">plain</data>
 <data key="na22">19</data>
 </node>
-<node id="n94">
+<node id="n41">
 <data key="na29">13, 19</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -2059,7 +2059,7 @@
 <data key="na31">-1</data>
 <data key="na30">MULTIMERCOMPLEX</data>
 </node>
-<node id="n95">
+<node id="n42">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2093,7 +2093,7 @@
 <data key="na23">plain</data>
 <data key="na22">18</data>
 </node>
-<node id="n96">
+<node id="n43">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2127,7 +2127,7 @@
 <data key="na23">plain</data>
 <data key="na22">19</data>
 </node>
-<node id="n97">
+<node id="n44">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2161,7 +2161,7 @@
 <data key="na23">plain</data>
 <data key="na22">18</data>
 </node>
-<node id="n98">
+<node id="n45">
 <data key="na29">1</data>
 <data key="na9">2.0</data>
 <data key="na28">text</data>
@@ -2219,7 +2219,7 @@
 <data key="na31">-1</data>
 <data key="na30">MULTIMERCOMPLEX</data>
 </node>
-<node id="n99">
+<node id="n46">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2251,7 +2251,7 @@
 <data key="na23">plain</data>
 <data key="na22">25</data>
 </node>
-<node id="n100">
+<node id="n47">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2283,7 +2283,7 @@
 <data key="na23">plain</data>
 <data key="na22">25</data>
 </node>
-<node id="n101">
+<node id="n48">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2315,7 +2315,7 @@
 <data key="na23">plain</data>
 <data key="na22">25</data>
 </node>
-<node id="n102">
+<node id="n49">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2347,7 +2347,7 @@
 <data key="na23">plain</data>
 <data key="na22">12</data>
 </node>
-<node id="n103">
+<node id="n50">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2381,7 +2381,7 @@
 <data key="na23">plain</data>
 <data key="na22">18</data>
 </node>
-<node id="n104">
+<node id="n51">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2415,7 +2415,7 @@
 <data key="na23">plain</data>
 <data key="na22">19</data>
 </node>
-<node id="n105">
+<node id="n52">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na33">10</data>
@@ -2451,7 +2451,7 @@
 <data key="na23">bold</data>
 <data key="na22">20</data>
 </node>
-<node id="n106">
+<node id="n53">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2483,7 +2483,7 @@
 <data key="na23">plain</data>
 <data key="na22">14</data>
 </node>
-<node id="n107">
+<node id="n54">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2515,7 +2515,7 @@
 <data key="na23">plain</data>
 <data key="na22">12</data>
 </node>
-<node id="n108">
+<node id="n55">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2547,61 +2547,39 @@
 <data key="na23">plain</data>
 <data key="na22">12</data>
 </node>
-<node id="n109">
-<data key="na9">2.0</data>
-<data key="na28">text</data>
-<data key="na8">255</data>
-<data key="na27">Edge</data>
-<data key="na7">255</data>
-<data key="na26">0.0</data>
-<data key="na6">255</data>
-<data key="na25">0.0</data>
-<data key="na5">255</data>
-<data key="na24">0.0</data>
-<data key="na4">270.0</data>
-<data key="na55">text</data>
-<data key="na23">plain</data>
-<data key="na3">740.0</data>
-<data key="na54">0@bent</data>
-<data key="na22">30</data>
-<data key="na2">970.0</data>
-<data key="na53">0.0</data>
-<data key="na1">330.0</data>
+<node id="n56">
 <data key="na21">Arial</data>
-<data key="na52">0.0</data>
 <data key="na20">#000000</data>
-<data key="na51">0.0</data>
-<data key="na50">oval</data>
+<data key="na31">-3</data>
+<data key="na30">UNSPECIFIEDENTITY</data>
 <data key="na19">b</data>
 <data key="na18">center</data>
-<data key="na49">25</data>
-<data key="na17">complex</data>
-<data key="na48">Arial</data>
+<data key="na17">org.graffiti.plugins.views.defaults.EllipseNodeShape</data>
 <data key="na16">0.0</data>
-<data key="na47">#000000</data>
 <data key="na15">255</data>
-<data key="na46">btr</data>
 <data key="na14">0</data>
-<data key="na45">center</data>
 <data key="na13">0</data>
-<data key="na44">text</data>
+<data key="na9">2.0</data>
 <data key="na12">0</data>
-<data key="na43">0@straight</data>
+<data key="na8">255</data>
 <data key="na11"> 0.0</data>
-<data key="na42">0.0</data>
+<data key="na7">255</data>
 <data key="na10">0.0</data>
-<data key="na41">0.0</data>
-<data key="na40">0.0</data>
-<data key="na39">oval</data>
-<data key="na38">25</data>
-<data key="na37">Arial</data>
-<data key="na36">#000000</data>
-<data key="na35">btl</data>
-<data key="na34">center</data>
-<data key="na31">-3</data>
-<data key="na30">COMPLEX</data>
+<data key="na6">255</data>
+<data key="na5">255</data>
+<data key="na4">150.0</data>
+<data key="na3">80.0</data>
+<data key="na2">970.0</data>
+<data key="na1">330.0</data>
+<data key="na28">text</data>
+<data key="na27">Edge</data>
+<data key="na26">0.0</data>
+<data key="na25">0.0</data>
+<data key="na24">0.0</data>
+<data key="na23">plain</data>
+<data key="na22">30</data>
 </node>
-<node id="n110">
+<node id="n57">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2633,7 +2611,7 @@
 <data key="na23">plain</data>
 <data key="na22">12</data>
 </node>
-<node id="n111">
+<node id="n58">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2665,7 +2643,7 @@
 <data key="na23">plain</data>
 <data key="na22">12</data>
 </node>
-<node id="n112">
+<node id="n59">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2697,7 +2675,7 @@
 <data key="na23">plain</data>
 <data key="na22">12</data>
 </node>
-<node id="n113">
+<node id="n60">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-1</data>
@@ -2729,7 +2707,7 @@
 <data key="na23">plain</data>
 <data key="na22">12</data>
 </node>
-<node id="n114">
+<node id="n61">
 <data key="na21">Arial</data>
 <data key="na20">#000000</data>
 <data key="na31">-7</data>
@@ -2761,7 +2739,7 @@
 <data key="na23">plain</data>
 <data key="na22">40</data>
 </node>
-<edge id="e0" source="n63" target="n100">
+<edge id="e0" source="n10" target="n47">
 <data key="ea31">0</data>
 <data key="ea30">-8.0</data>
 <data key="ea19">5.0</data>
@@ -2798,7 +2776,7 @@
 <data key="ea33">18</data>
 <data key="ea32">0.666</data>
 </edge>
-<edge id="e1" source="n63" target="n101">
+<edge id="e1" source="n10" target="n48">
 <data key="ea31">0</data>
 <data key="ea30">-8.0</data>
 <data key="ea19">5.0</data>
@@ -2835,7 +2813,7 @@
 <data key="ea33">18</data>
 <data key="ea32">0.666</data>
 </edge>
-<edge id="e2" source="n64" target="n102">
+<edge id="e2" source="n11" target="n49">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -2857,7 +2835,7 @@
 <data key="ea2"/>
 <data key="ea1"/>
 </edge>
-<edge id="e3" source="n74" target="n106">
+<edge id="e3" source="n21" target="n53">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -2894,7 +2872,7 @@
 <data key="ea36">center</data>
 <data key="ea35">1726.0;1240.0</data>
 </edge>
-<edge id="e4" source="n106" target="n105">
+<edge id="e4" source="n53" target="n52">
 <data key="ea31">0</data>
 <data key="ea30">-8.0</data>
 <data key="ea19">5.0</data>
@@ -2931,7 +2909,7 @@
 <data key="ea33">9</data>
 <data key="ea32">0.666</data>
 </edge>
-<edge id="e5" source="n98" target="n107">
+<edge id="e5" source="n45" target="n54">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -2956,7 +2934,7 @@
 <data key="ea1"/>
 <data key="ea35">1236.0;900.0</data>
 </edge>
-<edge id="e6" source="n67" target="n107">
+<edge id="e6" source="n14" target="n54">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -2981,7 +2959,7 @@
 <data key="ea1"/>
 <data key="ea35">1236.0;900.0</data>
 </edge>
-<edge id="e7" source="n107" target="n62">
+<edge id="e7" source="n54" target="n9">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3006,7 +2984,7 @@
 <data key="ea1">org.graffiti.plugins.views.defaults.StandardArrowShape</data>
 <data key="ea0">1284.0;900.0</data>
 </edge>
-<edge id="e8" source="n108" target="n74">
+<edge id="e8" source="n55" target="n21">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3031,7 +3009,7 @@
 <data key="ea1">org.graffiti.plugins.views.defaults.StandardArrowShape</data>
 <data key="ea0">1280.0;1236.0</data>
 </edge>
-<edge id="e9" source="n68" target="n111">
+<edge id="e9" source="n15" target="n58">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3056,7 +3034,7 @@
 <data key="ea1"/>
 <data key="ea35">634.0;1560.0</data>
 </edge>
-<edge id="e10" source="n98" target="n111">
+<edge id="e10" source="n45" target="n58">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3081,7 +3059,7 @@
 <data key="ea1"/>
 <data key="ea35">634.0;1560.0</data>
 </edge>
-<edge id="e11" source="n65" target="n112">
+<edge id="e11" source="n12" target="n59">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3106,7 +3084,7 @@
 <data key="ea1"/>
 <data key="ea35">1264.0;1590.0</data>
 </edge>
-<edge id="e12" source="n98" target="n112">
+<edge id="e12" source="n45" target="n59">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3131,7 +3109,7 @@
 <data key="ea1"/>
 <data key="ea35">1264.0;1590.0</data>
 </edge>
-<edge id="e13" source="n113" target="n74">
+<edge id="e13" source="n60" target="n21">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3156,7 +3134,7 @@
 <data key="ea1">org.graffiti.plugins.views.defaults.StandardArrowShape</data>
 <data key="ea0">1114.0;2380.0</data>
 </edge>
-<edge id="e14" source="n66" target="n113">
+<edge id="e14" source="n13" target="n60">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3181,7 +3159,7 @@
 <data key="ea1"/>
 <data key="ea35">1066.0;2380.0</data>
 </edge>
-<edge id="e15" source="n109" target="n110">
+<edge id="e15" source="n56" target="n57">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3206,7 +3184,7 @@
 <data key="ea1"/>
 <data key="ea35">660.0;974.0</data>
 </edge>
-<edge id="e16" source="n98" target="n110">
+<edge id="e16" source="n45" target="n57">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3231,7 +3209,7 @@
 <data key="ea1"/>
 <data key="ea35">660.0;974.0</data>
 </edge>
-<edge id="e17" source="n110" target="n67">
+<edge id="e17" source="n57" target="n14">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3256,7 +3234,7 @@
 <data key="ea1">org.graffiti.plugins.views.defaults.StandardArrowShape</data>
 <data key="ea0">660.0;926.0</data>
 </edge>
-<edge id="e18" source="n62" target="n63">
+<edge id="e18" source="n9" target="n10">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3281,7 +3259,7 @@
 <data key="ea1"/>
 <data key="ea35">2166.0;620.0</data>
 </edge>
-<edge id="e19" source="n99" target="n63">
+<edge id="e19" source="n46" target="n10">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3318,7 +3296,7 @@
 <data key="ea36">center</data>
 <data key="ea35">2166.0;620.0</data>
 </edge>
-<edge id="e20" source="n68" target="n108">
+<edge id="e20" source="n15" target="n55">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3343,7 +3321,7 @@
 <data key="ea1"/>
 <data key="ea35">1280.0;1284.0</data>
 </edge>
-<edge id="e21" source="n113" target="n64">
+<edge id="e21" source="n60" target="n11">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3368,7 +3346,7 @@
 <data key="ea1">org.graffiti.plugins.views.defaults.StandardArrowShape</data>
 <data key="ea0">1114.0;2380.0</data>
 </edge>
-<edge id="e22" source="n111" target="n66">
+<edge id="e22" source="n58" target="n13">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3393,7 +3371,7 @@
 <data key="ea1">org.graffiti.plugins.views.defaults.StandardArrowShape</data>
 <data key="ea0">586.0;1560.0</data>
 </edge>
-<edge id="e23" source="n112" target="n68">
+<edge id="e23" source="n59" target="n15">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3418,7 +3396,7 @@
 <data key="ea1">org.graffiti.plugins.views.defaults.StandardArrowShape</data>
 <data key="ea0">1216.0;1590.0</data>
 </edge>
-<edge id="e24" source="n102" target="n74">
+<edge id="e24" source="n49" target="n21">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3443,7 +3421,7 @@
 <data key="ea1">org.graffiti.plugins.views.defaults.StandardArrowShape</data>
 <data key="ea0">1866.0;1600.0</data>
 </edge>
-<edge id="e25" source="n102" target="n65">
+<edge id="e25" source="n49" target="n12">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3468,7 +3446,7 @@
 <data key="ea1">org.graffiti.plugins.views.defaults.StandardArrowShape</data>
 <data key="ea0">1866.0;1600.0</data>
 </edge>
-<edge id="e26" source="n108" target="n67">
+<edge id="e26" source="n55" target="n14">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>
@@ -3493,7 +3471,7 @@
 <data key="ea1">org.graffiti.plugins.views.defaults.StandardArrowShape</data>
 <data key="ea0">1280.0;1236.0</data>
 </edge>
-<edge id="e27" source="n63" target="n64">
+<edge id="e27" source="n10" target="n11">
 <data key="ea19">5.0</data>
 <data key="ea18">255</data>
 <data key="ea17">0</data>

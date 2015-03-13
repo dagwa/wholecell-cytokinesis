@@ -9,11 +9,11 @@
         </glyph>
         <glyph compartmentRef="glyph0" id="glyph21" class="macromolecule">
             <label text="MG_224_MONOMER"/>
-            <bbox y="1220.0" x="1490.0" h="60.0" w="200.0"/>
+            <bbox y="1220.0" x="850.0" h="60.0" w="200.0"/>
         </glyph>
         <glyph compartmentRef="glyph0" id="glyph21" class="macromolecule">
             <label text="MG_224_MONOMER"/>
-            <bbox y="1220.0" x="850.0" h="60.0" w="200.0"/>
+            <bbox y="1220.0" x="1490.0" h="60.0" w="200.0"/>
         </glyph>
         <glyph compartmentRef="glyph0" id="glyph24" class="simple chemical">
             <label text="GDP"/>
@@ -23,18 +23,18 @@
             <label text="GTP"/>
             <bbox y="1150.0" x="910.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph compartmentRef="glyph0" id="glyph47" class="simple chemical">
+        <glyph compartmentRef="glyph0" id="glyph39" class="simple chemical">
             <label text="PI"/>
             <bbox y="430.0" x="2310.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph compartmentRef="glyph0" id="glyph55" class="simple chemical">
+        <glyph compartmentRef="glyph0" id="glyph47" class="simple chemical">
             <label text="H"/>
             <bbox y="590.0" x="2420.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph62" class="omitted process">
+        <glyph id="glyph59" class="omitted process">
             <bbox y="1228.0" x="1738.0" h="24.0" w="24.0"/>
-            <port y="1240.0" x="1726.0" id="glyph62.1"/>
-            <port y="1240.0" x="1774.0" id="glyph62.2"/>
+            <port y="1240.0" x="1726.0" id="glyph59.1"/>
+            <port y="1240.0" x="1774.0" id="glyph59.2"/>
         </glyph>
         <glyph compartmentRef="glyph0" id="glyph7" class="complex">
             <label text="MG_224_MONOMER_GDP">
@@ -50,24 +50,14 @@
                 <bbox y="1220.0" x="1900.0" h="60.0" w="200.0"/>
             </glyph>
         </glyph>
-        <glyph id="glyph63" class="association">
+        <glyph id="glyph62" class="association">
             <bbox y="888.0" x="1248.0" h="24.0" w="24.0"/>
-            <port y="900.0" x="1236.0" id="glyph63.1"/>
-            <port y="900.0" x="1284.0" id="glyph63.2"/>
+            <port y="900.0" x="1236.0" id="glyph62.1"/>
+            <port y="900.0" x="1284.0" id="glyph62.2"/>
         </glyph>
-        <glyph compartmentRef="glyph0" id="glyph8" class="complex">
-            <label text="Edge">
-                <bbox y="1302.0" x="290.5" h="36.0" w="79.0"/>
-            </label>
-            <bbox y="600.0" x="195.0" h="740.0" w="270.0"/>
-            <glyph id="glyph8a" class="state variable">
-                <state variable="straight" value="0"/>
-                <bbox y="572.0" x="188.0" h="56.0" w="149.0"/>
-            </glyph>
-            <glyph id="glyph8b" class="state variable">
-                <state variable="bent" value="0"/>
-                <bbox y="575.0" x="342.0" h="50.0" w="111.0"/>
-            </glyph>
+        <glyph compartmentRef="glyph0" id="glyph8" class="unspecified entity">
+            <label text="Edge"/>
+            <bbox y="930.0" x="255.0" h="80.0" w="150.0"/>
         </glyph>
         <glyph compartmentRef="glyph0" id="glyph7" class="complex multimer">
             <label text="MG_224_9MER_GTP">
@@ -88,16 +78,16 @@
             <port y="974.0" x="660.0" id="glyph58.2"/>
             <port y="926.0" x="660.0" id="glyph58.1"/>
         </glyph>
-        <glyph compartmentRef="glyph0" id="glyph5" class="complex">
+        <glyph compartmentRef="glyph0" id="glyph4" class="complex">
             <label text="Edge">
                 <bbox y="922.0" x="1550.5" h="36.0" w="79.0"/>
             </label>
             <bbox y="220.0" x="1455.0" h="740.0" w="270.0"/>
-            <glyph id="glyph5a" class="state variable">
+            <glyph id="glyph4a" class="state variable">
                 <state variable="straight" value="2"/>
                 <bbox y="192.0" x="1448.0" h="56.0" w="149.0"/>
             </glyph>
-            <glyph id="glyph5b" class="state variable">
+            <glyph id="glyph4b" class="state variable">
                 <state variable="bent" value="0"/>
                 <bbox y="195.0" x="1602.0" h="50.0" w="111.0"/>
             </glyph>
@@ -150,26 +140,26 @@
             <label text="H2O"/>
             <bbox y="750.0" x="1980.0" h="60.0" w="60.0"/>
         </glyph>
-        <glyph id="glyph59" class="dissociation">
+        <glyph id="glyph56" class="dissociation">
             <bbox y="2368.0" x="1078.0" h="24.0" w="24.0"/>
-            <port y="2380.0" x="1114.0" id="glyph59.2"/>
-            <port y="2380.0" x="1066.0" id="glyph59.1"/>
+            <port y="2380.0" x="1114.0" id="glyph56.2"/>
+            <port y="2380.0" x="1066.0" id="glyph56.1"/>
         </glyph>
-        <glyph id="glyph56" class="association">
+        <glyph id="glyph60" class="association">
             <bbox y="1548.0" x="598.0" h="24.0" w="24.0"/>
-            <port y="1560.0" x="634.0" id="glyph56.2"/>
-            <port y="1560.0" x="586.0" id="glyph56.1"/>
+            <port y="1560.0" x="634.0" id="glyph60.2"/>
+            <port y="1560.0" x="586.0" id="glyph60.1"/>
         </glyph>
-        <glyph compartmentRef="glyph0" id="glyph6" class="complex">
+        <glyph compartmentRef="glyph0" id="glyph3" class="complex">
             <label text="Edge">
                 <bbox y="2282.0" x="280.5" h="36.0" w="79.0"/>
             </label>
             <bbox y="1580.0" x="185.0" h="740.0" w="270.0"/>
-            <glyph id="glyph6a" class="state variable">
+            <glyph id="glyph3a" class="state variable">
                 <state variable="straight" value="2"/>
                 <bbox y="1552.0" x="178.0" h="56.0" w="149.0"/>
             </glyph>
-            <glyph id="glyph6b" class="state variable">
+            <glyph id="glyph3b" class="state variable">
                 <state variable="bent" value="1"/>
                 <bbox y="1555.0" x="332.0" h="50.0" w="111.0"/>
             </glyph>
@@ -240,21 +230,21 @@
                 <bbox y="2140.0" x="220.0" h="60.0" w="200.0"/>
             </glyph>
         </glyph>
-        <glyph id="glyph61" class="association">
+        <glyph id="glyph63" class="association">
             <bbox y="1578.0" x="1228.0" h="24.0" w="24.0"/>
-            <port y="1590.0" x="1264.0" id="glyph61.2"/>
-            <port y="1590.0" x="1216.0" id="glyph61.1"/>
+            <port y="1590.0" x="1264.0" id="glyph63.2"/>
+            <port y="1590.0" x="1216.0" id="glyph63.1"/>
         </glyph>
-        <glyph compartmentRef="glyph0" id="glyph3" class="complex">
+        <glyph compartmentRef="glyph0" id="glyph2" class="complex">
             <label text="Edge">
                 <bbox y="2162.0" x="910.5" h="36.0" w="79.0"/>
             </label>
             <bbox y="1460.0" x="815.0" h="740.0" w="270.0"/>
-            <glyph id="glyph3a" class="state variable">
+            <glyph id="glyph2a" class="state variable">
                 <state variable="straight" value="1"/>
                 <bbox y="1432.0" x="808.0" h="56.0" w="149.0"/>
             </glyph>
-            <glyph id="glyph3b" class="state variable">
+            <glyph id="glyph2b" class="state variable">
                 <state variable="bent" value="1"/>
                 <bbox y="1435.0" x="962.0" h="50.0" w="111.0"/>
             </glyph>
@@ -317,20 +307,20 @@
                 <bbox y="1133.5" x="1620.5" h="33.0" w="54.0"/>
             </glyph>
         </glyph>
-        <glyph id="glyph64" class="dissociation">
+        <glyph id="glyph57" class="dissociation">
             <bbox y="1588.0" x="1878.0" h="24.0" w="24.0"/>
-            <port y="1600.0" x="1866.0" id="glyph64.1"/>
+            <port y="1600.0" x="1866.0" id="glyph57.1"/>
         </glyph>
-        <glyph compartmentRef="glyph0" id="glyph4" class="complex">
+        <glyph compartmentRef="glyph0" id="glyph5" class="complex">
             <label text="Edge">
                 <bbox y="2292.0" x="1560.5" h="36.0" w="79.0"/>
             </label>
             <bbox y="1590.0" x="1465.0" h="740.0" w="270.0"/>
-            <glyph id="glyph4a" class="state variable">
+            <glyph id="glyph5a" class="state variable">
                 <state variable="straight" value="0"/>
                 <bbox y="1562.0" x="1458.0" h="56.0" w="149.0"/>
             </glyph>
-            <glyph id="glyph4b" class="state variable">
+            <glyph id="glyph5b" class="state variable">
                 <state variable="bent" value="1"/>
                 <bbox y="1565.0" x="1612.0" h="50.0" w="111.0"/>
             </glyph>
@@ -357,21 +347,21 @@
                 <bbox y="1640.0" x="1560.0" h="60.0" w="60.0"/>
             </glyph>
         </glyph>
-        <glyph id="glyph57" orientation="vertical" class="dissociation">
+        <glyph id="glyph64" orientation="vertical" class="dissociation">
             <bbox y="1248.0" x="1268.0" h="24.0" w="24.0"/>
-            <port y="1236.0" x="1280.0" id="glyph57.1"/>
-            <port y="1284.0" x="1280.0" id="glyph57.2"/>
+            <port y="1236.0" x="1280.0" id="glyph64.1"/>
+            <port y="1284.0" x="1280.0" id="glyph64.2"/>
         </glyph>
-        <glyph compartmentRef="glyph0" id="glyph2" class="complex">
+        <glyph compartmentRef="glyph0" id="glyph6" class="complex">
             <label text="Edge">
                 <bbox y="912.0" x="900.5" h="36.0" w="79.0"/>
             </label>
             <bbox y="210.0" x="805.0" h="740.0" w="270.0"/>
-            <glyph id="glyph2a" class="state variable">
+            <glyph id="glyph6a" class="state variable">
                 <state variable="straight" value="1"/>
                 <bbox y="182.0" x="798.0" h="56.0" w="149.0"/>
             </glyph>
-            <glyph id="glyph2b" class="state variable">
+            <glyph id="glyph6b" class="state variable">
                 <state variable="bent" value="0"/>
                 <bbox y="185.0" x="952.0" h="50.0" w="111.0"/>
             </glyph>
@@ -398,10 +388,10 @@
                 <bbox y="260.0" x="900.0" h="60.0" w="60.0"/>
             </glyph>
         </glyph>
-        <glyph id="glyph60" class="process">
+        <glyph id="glyph61" class="process">
             <bbox y="608.0" x="2178.0" h="24.0" w="24.0"/>
-            <port y="620.0" x="2214.0" id="glyph60.2"/>
-            <port y="620.0" x="2166.0" id="glyph60.1"/>
+            <port y="620.0" x="2214.0" id="glyph61.2"/>
+            <port y="620.0" x="2166.0" id="glyph61.1"/>
         </glyph>
         <glyph compartmentRef="glyph0" id="glyph1" class="complex">
             <label text="Edge">
@@ -461,7 +451,7 @@
                 <bbox y="1850.0" x="2170.0" h="60.0" w="60.0"/>
             </glyph>
         </glyph>
-        <arc target="glyph47" source="glyph60.2" id="arc0" class="production">
+        <arc target="glyph39" source="glyph61.2" id="arc0" class="production">
             <glyph id="glyph65" class="cardinality">
                 <label text="18"/>
                 <bbox y="521.0" x="2259.0" h="18.5" w="29.5"/>
@@ -469,7 +459,7 @@
             <start y="620.0" x="2214.0"/>
             <end y="481.8861" x="2319.4817"/>
         </arc>
-        <arc target="glyph55" source="glyph60.2" id="arc1" class="production">
+        <arc target="glyph47" source="glyph61.2" id="arc1" class="production">
             <glyph id="glyph66" class="cardinality">
                 <label text="18"/>
                 <bbox y="600.0" x="2319.0" h="18.5" w="29.5"/>
@@ -477,11 +467,11 @@
             <start y="620.0" x="2214.0"/>
             <end y="620.0" x="2420.0"/>
         </arc>
-        <arc target="glyph64" source="glyph1" id="arc2" class="logic arc">
+        <arc target="glyph57" source="glyph1" id="arc2" class="logic arc">
             <start y="1802.3438" x="2075.0"/>
             <end y="1612.0" x="1900.9714"/>
         </arc>
-        <arc target="glyph62.1" source="glyph7" id="arc3" class="consumption">
+        <arc target="glyph59.1" source="glyph7" id="arc3" class="consumption">
             <glyph id="glyph68" class="cardinality">
                 <label text="1"/>
                 <bbox y="1221.0" x="1698.0" h="18.5" w="22.5"/>
@@ -489,7 +479,7 @@
             <start y="1240.0" x="1705.0"/>
             <end y="1240.0" x="1726.0"/>
         </arc>
-        <arc target="glyph7" source="glyph62.2" id="arc4" class="production">
+        <arc target="glyph7" source="glyph59.2" id="arc4" class="production">
             <glyph id="glyph69" class="cardinality">
                 <label text="9"/>
                 <bbox y="1220.0" x="1814.0" h="18.5" w="22.5"/>
@@ -497,63 +487,63 @@
             <start y="1240.0" x="1774.0"/>
             <end y="1240.0" x="1875.0"/>
         </arc>
-        <arc target="glyph63.1" source="glyph7" id="arc5" class="consumption">
+        <arc target="glyph62.1" source="glyph7" id="arc5" class="consumption">
             <start y="1150.0" x="1025.7059"/>
             <end y="900.0" x="1236.0"/>
         </arc>
-        <arc target="glyph63.1" source="glyph2" id="arc6" class="consumption">
+        <arc target="glyph62.1" source="glyph6" id="arc6" class="consumption">
             <start y="725.9459" x="1075.0"/>
             <end y="900.0" x="1236.0"/>
         </arc>
-        <arc target="glyph5" source="glyph63.2" id="arc7" class="production">
+        <arc target="glyph4" source="glyph62.2" id="arc7" class="production">
             <start y="900.0" x="1284.0"/>
             <end y="716.8182" x="1455.0"/>
         </arc>
-        <arc target="glyph7" source="glyph57.1" id="arc8" class="production">
+        <arc target="glyph7" source="glyph64.1" id="arc8" class="production">
             <start y="1236.0" x="1280.0"/>
             <end y="1247.4193" x="1475.0"/>
         </arc>
-        <arc target="glyph56.2" source="glyph3" id="arc9" class="consumption">
+        <arc target="glyph60.2" source="glyph2" id="arc9" class="consumption">
             <start y="1714.6519" x="815.0"/>
             <end y="1560.0" x="634.0"/>
         </arc>
-        <arc target="glyph56.2" source="glyph7" id="arc10" class="consumption">
+        <arc target="glyph60.2" source="glyph7" id="arc10" class="consumption">
             <start y="1330.0" x="861.125"/>
             <end y="1560.0" x="634.0"/>
         </arc>
-        <arc target="glyph61.2" source="glyph4" id="arc11" class="consumption">
+        <arc target="glyph63.2" source="glyph5" id="arc11" class="consumption">
             <start y="1811.3392" x="1465.0"/>
             <end y="1590.0" x="1264.0"/>
         </arc>
-        <arc target="glyph61.2" source="glyph7" id="arc12" class="consumption">
+        <arc target="glyph63.2" source="glyph7" id="arc12" class="consumption">
             <start y="1330.0" x="1030.7428"/>
             <end y="1590.0" x="1264.0"/>
         </arc>
-        <arc target="glyph7" source="glyph59.2" id="arc13" class="production">
+        <arc target="glyph7" source="glyph56.2" id="arc13" class="production">
             <start y="2380.0" x="1114.0"/>
             <end y="1330.0" x="1550.5264"/>
         </arc>
-        <arc target="glyph59.1" source="glyph6" id="arc14" class="consumption">
+        <arc target="glyph56.1" source="glyph3" id="arc14" class="consumption">
             <start y="2027.8151" x="455.0"/>
             <end y="2380.0" x="1066.0"/>
         </arc>
         <arc target="glyph58.2" source="glyph8" id="arc15" class="consumption">
-            <start y="971.63635" x="465.0"/>
+            <start y="970.9091" x="405.0"/>
             <end y="974.0" x="660.0"/>
         </arc>
         <arc target="glyph58.2" source="glyph7" id="arc16" class="consumption">
             <start y="1150.0" x="851.8797"/>
             <end y="974.0" x="660.0"/>
         </arc>
-        <arc target="glyph2" source="glyph58.1" id="arc17" class="production">
+        <arc target="glyph6" source="glyph58.1" id="arc17" class="production">
             <start y="926.0" x="660.0"/>
             <end y="758.3929" x="805.0"/>
         </arc>
-        <arc target="glyph60.1" source="glyph5" id="arc18" class="consumption">
+        <arc target="glyph61.1" source="glyph4" id="arc18" class="consumption">
             <start y="597.03125" x="1725.0"/>
             <end y="620.0" x="2166.0"/>
         </arc>
-        <arc target="glyph60.1" source="glyph44" id="arc19" class="consumption">
+        <arc target="glyph61.1" source="glyph44" id="arc19" class="consumption">
             <glyph id="glyph84" class="cardinality">
                 <label text="18"/>
                 <bbox y="690.0" x="2062.0" h="18.5" w="29.5"/>
@@ -561,35 +551,35 @@
             <start y="758.52" x="2030.943"/>
             <end y="620.0" x="2166.0"/>
         </arc>
-        <arc target="glyph57.2" source="glyph3" id="arc20" class="consumption">
+        <arc target="glyph64.2" source="glyph2" id="arc20" class="consumption">
             <start y="1606.6364" x="1085.0"/>
             <end y="1284.0" x="1280.0"/>
         </arc>
-        <arc target="glyph1" source="glyph59.2" id="arc21" class="production">
+        <arc target="glyph1" source="glyph56.2" id="arc21" class="production">
             <start y="2380.0" x="1114.0"/>
             <end y="2001.8303" x="2075.0"/>
         </arc>
-        <arc target="glyph6" source="glyph56.1" id="arc22" class="production">
+        <arc target="glyph3" source="glyph60.1" id="arc22" class="production">
             <start y="1560.0" x="586.0"/>
             <end y="1768.4482" x="455.0"/>
         </arc>
-        <arc target="glyph3" source="glyph61.1" id="arc23" class="production">
+        <arc target="glyph2" source="glyph63.1" id="arc23" class="production">
             <start y="1590.0" x="1216.0"/>
             <end y="1718.2759" x="1085.0"/>
         </arc>
-        <arc target="glyph7" source="glyph64.1" id="arc24" class="production">
+        <arc target="glyph7" source="glyph57.1" id="arc24" class="production">
             <start y="1600.0" x="1866.0"/>
             <end y="1330.0" x="1665.0"/>
         </arc>
-        <arc target="glyph4" source="glyph64.1" id="arc25" class="production">
+        <arc target="glyph5" source="glyph57.1" id="arc25" class="production">
             <start y="1600.0" x="1866.0"/>
             <end y="1792.4138" x="1735.0"/>
         </arc>
-        <arc target="glyph2" source="glyph57.1" id="arc26" class="production">
+        <arc target="glyph6" source="glyph64.1" id="arc26" class="production">
             <start y="1236.0" x="1280.0"/>
             <end y="850.0" x="1075.0"/>
         </arc>
-        <arc target="glyph1" source="glyph60.2" id="arc27" class="production">
+        <arc target="glyph1" source="glyph61.2" id="arc27" class="production">
             <start y="620.0" x="2214.0"/>
             <end y="1580.0" x="2204.436"/>
         </arc>
