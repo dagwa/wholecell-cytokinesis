@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sbgn xmlns="http://sbgn.org/libsbgn/0.2">
+    <map language="process description">
+        <glyph compartmentOrder="-62.0" id="glyph0" class="compartment">
+            <label text="Cytosol">
+                <bbox y="128.0" x="43.0" h="48.0" w="139.0"/>
+            </label>
+            <bbox y="120.0" x="35.0" h="2320.0" w="2510.0"/>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph21" class="macromolecule">
+            <label text="MG_224_MONOMER"/>
+            <bbox y="1220.0" x="850.0" h="60.0" w="200.0"/>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph21" class="macromolecule">
+            <label text="MG_224_MONOMER"/>
+            <bbox y="1220.0" x="1490.0" h="60.0" w="200.0"/>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph24" class="simple chemical">
+            <label text="GDP"/>
+            <bbox y="1150.0" x="1550.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph24" class="simple chemical">
+            <label text="GTP"/>
+            <bbox y="1150.0" x="910.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph39" class="simple chemical">
+            <label text="PI"/>
+            <bbox y="430.0" x="2310.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph47" class="simple chemical">
+            <label text="H"/>
+            <bbox y="590.0" x="2420.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph59" class="omitted process">
+            <bbox y="1228.0" x="1738.0" h="24.0" w="24.0"/>
+            <port y="1240.0" x="1726.0" id="glyph59.1"/>
+            <port y="1240.0" x="1774.0" id="glyph59.2"/>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph7" class="complex">
+            <label text="MG_224_MONOMER_GDP">
+                <bbox y="1303.0" x="1871.0" h="25.0" w="258.0"/>
+            </label>
+            <bbox y="1150.0" x="1875.0" h="180.0" w="250.0"/>
+            <glyph id="glyph24" class="simple chemical">
+                <label text="GDP"/>
+                <bbox y="1150.0" x="1960.0" h="60.0" w="60.0"/>
+            </glyph>
+            <glyph id="glyph21" class="macromolecule">
+                <label text="MG_224_MONOMER"/>
+                <bbox y="1220.0" x="1900.0" h="60.0" w="200.0"/>
+            </glyph>
+        </glyph>
+        <glyph id="glyph62" class="association">
+            <bbox y="888.0" x="1248.0" h="24.0" w="24.0"/>
+            <port y="900.0" x="1236.0" id="glyph62.1"/>
+            <port y="900.0" x="1284.0" id="glyph62.2"/>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph8" class="unspecified entity">
+            <label text="Edge"/>
+            <bbox y="930.0" x="255.0" h="80.0" w="150.0"/>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph7" class="complex multimer">
+            <label text="MG_224_9MER_GTP">
+                <bbox y="1303.0" x="847.5" h="25.0" w="205.0"/>
+            </label>
+            <bbox y="1150.0" x="835.0" h="180.0" w="230.0"/>
+            <glyph id="glyph7a" class="unit of information">
+                <label text="N:9"/>
+                <bbox y="1136.5" x="870.0" h="27.0" w="45.0"/>
+            </glyph>
+            <glyph id="glyph7b" class="state variable">
+                <state value="straight"/>
+                <bbox y="1131.5" x="967.5" h="37.0" w="80.0"/>
+            </glyph>
+        </glyph>
+        <glyph id="glyph58" orientation="vertical" class="association">
+            <bbox y="938.0" x="648.0" h="24.0" w="24.0"/>
+            <port y="974.0" x="660.0" id="glyph58.2"/>
+            <port y="926.0" x="660.0" id="glyph58.1"/>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph4" class="complex">
+            <label text="Edge">
+                <bbox y="922.0" x="1550.5" h="36.0" w="79.0"/>
+            </label>
+            <bbox y="220.0" x="1455.0" h="740.0" w="270.0"/>
+            <glyph id="glyph4a" class="state variable">
+                <state variable="straight" value="2"/>
+                <bbox y="192.0" x="1448.0" h="56.0" w="149.0"/>
+            </glyph>
+            <glyph id="glyph4b" class="state variable">
+                <state variable="bent" value="0"/>
+                <bbox y="195.0" x="1602.0" h="50.0" w="111.0"/>
+            </glyph>
+            <glyph id="glyph7" class="complex multimer">
+                <label text="MG_224_9MER_GTP">
+                    <bbox y="423.0" x="1487.5" h="25.0" w="205.0"/>
+                </label>
+                <bbox y="270.0" x="1475.0" h="180.0" w="230.0"/>
+                <glyph id="glyph7a" class="unit of information">
+                    <label text="N:9"/>
+                    <bbox y="256.5" x="1510.0" h="27.0" w="45.0"/>
+                </glyph>
+                <glyph id="glyph7b" class="state variable">
+                    <state value="straight"/>
+                    <bbox y="251.5" x="1607.5" h="37.0" w="80.0"/>
+                </glyph>
+            </glyph>
+            <glyph id="glyph24" class="simple chemical">
+                <label text="GTP"/>
+                <bbox y="270.0" x="1550.0" h="60.0" w="60.0"/>
+            </glyph>
+            <glyph id="glyph21" class="macromolecule">
+                <label text="MG_224_MONOMER"/>
+                <bbox y="340.0" x="1490.0" h="60.0" w="200.0"/>
+            </glyph>
+            <glyph id="glyph24" class="simple chemical">
+                <label text="GTP"/>
+                <bbox y="490.0" x="1550.0" h="60.0" w="60.0"/>
+            </glyph>
+            <glyph id="glyph21" class="macromolecule">
+                <label text="MG_224_MONOMER"/>
+                <bbox y="560.0" x="1490.0" h="60.0" w="200.0"/>
+            </glyph>
+            <glyph id="glyph7" class="complex multimer">
+                <label text="MG_224_9MER_GTP">
+                    <bbox y="643.0" x="1487.5" h="25.0" w="205.0"/>
+                </label>
+                <bbox y="490.0" x="1475.0" h="180.0" w="230.0"/>
+                <glyph id="glyph7a" class="unit of information">
+                    <label text="N:9"/>
+                    <bbox y="476.5" x="1510.0" h="27.0" w="45.0"/>
+                </glyph>
+                <glyph id="glyph7b" class="state variable">
+                    <state value="straight"/>
+                    <bbox y="471.5" x="1607.5" h="37.0" w="80.0"/>
+                </glyph>
+            </glyph>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph44" class="simple chemical">
+            <label text="H2O"/>
+            <bbox y="750.0" x="1980.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph56" class="dissociation">
+            <bbox y="2368.0" x="1078.0" h="24.0" w="24.0"/>
+            <port y="2380.0" x="1114.0" id="glyph56.2"/>
+            <port y="2380.0" x="1066.0" id="glyph56.1"/>
+        </glyph>
+        <glyph id="glyph60" class="association">
+            <bbox y="1548.0" x="598.0" h="24.0" w="24.0"/>
+            <port y="1560.0" x="634.0" id="glyph60.2"/>
+            <port y="1560.0" x="586.0" id="glyph60.1"/>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph3" class="complex">
+            <label text="Edge">
+                <bbox y="2282.0" x="280.5" h="36.0" w="79.0"/>
+            </label>
+            <bbox y="1580.0" x="185.0" h="740.0" w="270.0"/>
+            <glyph id="glyph3a" class="state variable">
+                <state variable="straight" value="2"/>
+                <bbox y="1552.0" x="178.0" h="56.0" w="149.0"/>
+            </glyph>
+            <glyph id="glyph3b" class="state variable">
+                <state variable="bent" value="1"/>
+                <bbox y="1555.0" x="332.0" h="50.0" w="111.0"/>
+            </glyph>
+            <glyph id="glyph24" class="simple chemical">
+                <label text="GDP"/>
+                <bbox y="1630.0" x="280.0" h="60.0" w="60.0"/>
+            </glyph>
+            <glyph id="glyph21" class="macromolecule">
+                <label text="MG_224_MONOMER"/>
+                <bbox y="1700.0" x="220.0" h="60.0" w="200.0"/>
+            </glyph>
+            <glyph id="glyph7" class="complex multimer">
+                <label text="MG_224_9MER_GDP">
+                    <bbox y="1783.0" x="217.0" h="25.0" w="206.0"/>
+                </label>
+                <bbox y="1630.0" x="205.0" h="180.0" w="230.0"/>
+                <glyph id="glyph7a" class="unit of information">
+                    <label text="N:9"/>
+                    <bbox y="1616.5" x="240.0" h="27.0" w="45.0"/>
+                </glyph>
+                <glyph id="glyph7b" class="state variable">
+                    <state value="bent"/>
+                    <bbox y="1613.5" x="350.5" h="33.0" w="54.0"/>
+                </glyph>
+            </glyph>
+            <glyph id="glyph24" class="simple chemical">
+                <label text="GTP"/>
+                <bbox y="1850.0" x="280.0" h="60.0" w="60.0"/>
+            </glyph>
+            <glyph id="glyph21" class="macromolecule">
+                <label text="MG_224_MONOMER"/>
+                <bbox y="1920.0" x="220.0" h="60.0" w="200.0"/>
+            </glyph>
+            <glyph id="glyph7" class="complex multimer">
+                <label text="MG_224_9MER_GTP">
+                    <bbox y="2003.0" x="217.5" h="25.0" w="205.0"/>
+                </label>
+                <bbox y="1850.0" x="205.0" h="180.0" w="230.0"/>
+                <glyph id="glyph7a" class="unit of information">
+                    <label text="N:9"/>
+                    <bbox y="1836.5" x="240.0" h="27.0" w="45.0"/>
+                </glyph>
+                <glyph id="glyph7b" class="state variable">
+                    <state value="straight"/>
+                    <bbox y="1831.5" x="337.5" h="37.0" w="80.0"/>
+                </glyph>
+            </glyph>
+            <glyph id="glyph7" class="complex multimer">
+                <label text="MG_224_9MER_GTP">
+                    <bbox y="2223.0" x="217.5" h="25.0" w="205.0"/>
+                </label>
+                <bbox y="2070.0" x="205.0" h="180.0" w="230.0"/>
+                <glyph id="glyph7a" class="unit of information">
+                    <label text="N:9"/>
+                    <bbox y="2056.5" x="240.0" h="27.0" w="45.0"/>
+                </glyph>
+                <glyph id="glyph7b" class="state variable">
+                    <state value="straight"/>
+                    <bbox y="2051.5" x="337.5" h="37.0" w="80.0"/>
+                </glyph>
+            </glyph>
+            <glyph id="glyph24" class="simple chemical">
+                <label text="GTP"/>
+                <bbox y="2070.0" x="280.0" h="60.0" w="60.0"/>
+            </glyph>
+            <glyph id="glyph21" class="macromolecule">
+                <label text="MG_224_MONOMER"/>
+                <bbox y="2140.0" x="220.0" h="60.0" w="200.0"/>
+            </glyph>
+        </glyph>
+        <glyph id="glyph63" class="association">
+            <bbox y="1578.0" x="1228.0" h="24.0" w="24.0"/>
+            <port y="1590.0" x="1264.0" id="glyph63.2"/>
+            <port y="1590.0" x="1216.0" id="glyph63.1"/>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph2" class="complex">
+            <label text="Edge">
+                <bbox y="2162.0" x="910.5" h="36.0" w="79.0"/>
+            </label>
+            <bbox y="1460.0" x="815.0" h="740.0" w="270.0"/>
+            <glyph id="glyph2a" class="state variable">
+                <state variable="straight" value="1"/>
+                <bbox y="1432.0" x="808.0" h="56.0" w="149.0"/>
+            </glyph>
+            <glyph id="glyph2b" class="state variable">
+                <state variable="bent" value="1"/>
+                <bbox y="1435.0" x="962.0" h="50.0" w="111.0"/>
+            </glyph>
+            <glyph id="glyph24" class="simple chemical">
+                <label text="GDP"/>
+                <bbox y="1510.0" x="910.0" h="60.0" w="60.0"/>
+            </glyph>
+            <glyph id="glyph21" class="macromolecule">
+                <label text="MG_224_MONOMER"/>
+                <bbox y="1580.0" x="850.0" h="60.0" w="200.0"/>
+            </glyph>
+            <glyph id="glyph7" class="complex multimer">
+                <label text="MG_224_9MER_GDP">
+                    <bbox y="1663.0" x="847.0" h="25.0" w="206.0"/>
+                </label>
+                <bbox y="1510.0" x="835.0" h="180.0" w="230.0"/>
+                <glyph id="glyph7a" class="unit of information">
+                    <label text="N:9"/>
+                    <bbox y="1496.5" x="870.0" h="27.0" w="45.0"/>
+                </glyph>
+                <glyph id="glyph7b" class="state variable">
+                    <state value="bent"/>
+                    <bbox y="1493.5" x="980.5" h="33.0" w="54.0"/>
+                </glyph>
+            </glyph>
+            <glyph id="glyph24" class="simple chemical">
+                <label text="GTP"/>
+                <bbox y="1730.0" x="910.0" h="60.0" w="60.0"/>
+            </glyph>
+            <glyph id="glyph21" class="macromolecule">
+                <label text="MG_224_MONOMER"/>
+                <bbox y="1800.0" x="850.0" h="60.0" w="200.0"/>
+            </glyph>
+            <glyph id="glyph7" class="complex multimer">
+                <label text="MG_224_9MER_GTP">
+                    <bbox y="1883.0" x="847.5" h="25.0" w="205.0"/>
+                </label>
+                <bbox y="1730.0" x="835.0" h="180.0" w="230.0"/>
+                <glyph id="glyph7a" class="unit of information">
+                    <label text="N:9"/>
+                    <bbox y="1716.5" x="870.0" h="27.0" w="45.0"/>
+                </glyph>
+                <glyph id="glyph7b" class="state variable">
+                    <state value="straight"/>
+                    <bbox y="1711.5" x="967.5" h="37.0" w="80.0"/>
+                </glyph>
+            </glyph>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph7" class="complex multimer">
+            <label text="MG_224_9MER_GDP">
+                <bbox y="1303.0" x="1487.0" h="25.0" w="206.0"/>
+            </label>
+            <bbox y="1150.0" x="1475.0" h="180.0" w="230.0"/>
+            <glyph id="glyph7a" class="unit of information">
+                <label text="N:9"/>
+                <bbox y="1136.5" x="1510.0" h="27.0" w="45.0"/>
+            </glyph>
+            <glyph id="glyph7b" class="state variable">
+                <state value="bent"/>
+                <bbox y="1133.5" x="1620.5" h="33.0" w="54.0"/>
+            </glyph>
+        </glyph>
+        <glyph id="glyph57" class="dissociation">
+            <bbox y="1588.0" x="1878.0" h="24.0" w="24.0"/>
+            <port y="1600.0" x="1866.0" id="glyph57.1"/>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph5" class="complex">
+            <label text="Edge">
+                <bbox y="2292.0" x="1560.5" h="36.0" w="79.0"/>
+            </label>
+            <bbox y="1590.0" x="1465.0" h="740.0" w="270.0"/>
+            <glyph id="glyph5a" class="state variable">
+                <state variable="straight" value="0"/>
+                <bbox y="1562.0" x="1458.0" h="56.0" w="149.0"/>
+            </glyph>
+            <glyph id="glyph5b" class="state variable">
+                <state variable="bent" value="1"/>
+                <bbox y="1565.0" x="1612.0" h="50.0" w="111.0"/>
+            </glyph>
+            <glyph id="glyph21" class="macromolecule">
+                <label text="MG_224_MONOMER"/>
+                <bbox y="1710.0" x="1500.0" h="60.0" w="200.0"/>
+            </glyph>
+            <glyph id="glyph7" class="complex multimer">
+                <label text="MG_224_9MER_GDP">
+                    <bbox y="1793.0" x="1497.0" h="25.0" w="206.0"/>
+                </label>
+                <bbox y="1640.0" x="1485.0" h="180.0" w="230.0"/>
+                <glyph id="glyph7a" class="unit of information">
+                    <label text="N:9"/>
+                    <bbox y="1626.5" x="1520.0" h="27.0" w="45.0"/>
+                </glyph>
+                <glyph id="glyph7b" class="state variable">
+                    <state value="bent"/>
+                    <bbox y="1623.5" x="1630.5" h="33.0" w="54.0"/>
+                </glyph>
+            </glyph>
+            <glyph id="glyph24" class="simple chemical">
+                <label text="GDP"/>
+                <bbox y="1640.0" x="1560.0" h="60.0" w="60.0"/>
+            </glyph>
+        </glyph>
+        <glyph id="glyph64" orientation="vertical" class="dissociation">
+            <bbox y="1248.0" x="1268.0" h="24.0" w="24.0"/>
+            <port y="1236.0" x="1280.0" id="glyph64.1"/>
+            <port y="1284.0" x="1280.0" id="glyph64.2"/>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph6" class="complex">
+            <label text="Edge">
+                <bbox y="912.0" x="900.5" h="36.0" w="79.0"/>
+            </label>
+            <bbox y="210.0" x="805.0" h="740.0" w="270.0"/>
+            <glyph id="glyph6a" class="state variable">
+                <state variable="straight" value="1"/>
+                <bbox y="182.0" x="798.0" h="56.0" w="149.0"/>
+            </glyph>
+            <glyph id="glyph6b" class="state variable">
+                <state variable="bent" value="0"/>
+                <bbox y="185.0" x="952.0" h="50.0" w="111.0"/>
+            </glyph>
+            <glyph id="glyph7" class="complex multimer">
+                <label text="MG_224_9MER_GTP">
+                    <bbox y="413.0" x="837.5" h="25.0" w="205.0"/>
+                </label>
+                <bbox y="260.0" x="825.0" h="180.0" w="230.0"/>
+                <glyph id="glyph7a" class="unit of information">
+                    <label text="N:9"/>
+                    <bbox y="246.5" x="860.0" h="27.0" w="45.0"/>
+                </glyph>
+                <glyph id="glyph7b" class="state variable">
+                    <state value="straight"/>
+                    <bbox y="241.5" x="957.5" h="37.0" w="80.0"/>
+                </glyph>
+            </glyph>
+            <glyph id="glyph21" class="macromolecule">
+                <label text="MG_224_MONOMER"/>
+                <bbox y="330.0" x="840.0" h="60.0" w="200.0"/>
+            </glyph>
+            <glyph id="glyph24" class="simple chemical">
+                <label text="GTP"/>
+                <bbox y="260.0" x="900.0" h="60.0" w="60.0"/>
+            </glyph>
+        </glyph>
+        <glyph id="glyph61" class="process">
+            <bbox y="608.0" x="2178.0" h="24.0" w="24.0"/>
+            <port y="620.0" x="2214.0" id="glyph61.2"/>
+            <port y="620.0" x="2166.0" id="glyph61.1"/>
+        </glyph>
+        <glyph compartmentRef="glyph0" id="glyph1" class="complex">
+            <label text="Edge">
+                <bbox y="2282.0" x="2170.5" h="36.0" w="79.0"/>
+            </label>
+            <bbox y="1580.0" x="2075.0" h="740.0" w="270.0"/>
+            <glyph id="glyph1a" class="state variable">
+                <state variable="straight" value="0"/>
+                <bbox y="1552.0" x="2068.0" h="56.0" w="149.0"/>
+            </glyph>
+            <glyph id="glyph1b" class="state variable">
+                <state variable="bent" value="2"/>
+                <bbox y="1555.0" x="2222.0" h="50.0" w="111.0"/>
+            </glyph>
+            <glyph id="glyph7" class="complex multimer">
+                <label text="MG_224_9MER_GDP">
+                    <bbox y="1783.0" x="2107.0" h="25.0" w="206.0"/>
+                </label>
+                <bbox y="1630.0" x="2095.0" h="180.0" w="230.0"/>
+                <glyph id="glyph7a" class="unit of information">
+                    <label text="N:9"/>
+                    <bbox y="1616.5" x="2130.0" h="27.0" w="45.0"/>
+                </glyph>
+                <glyph id="glyph7b" class="state variable">
+                    <state value="bent"/>
+                    <bbox y="1613.5" x="2240.5" h="33.0" w="54.0"/>
+                </glyph>
+            </glyph>
+            <glyph id="glyph24" class="simple chemical">
+                <label text="GDP"/>
+                <bbox y="1630.0" x="2170.0" h="60.0" w="60.0"/>
+            </glyph>
+            <glyph id="glyph21" class="macromolecule">
+                <label text="MG_224_MONOMER"/>
+                <bbox y="1700.0" x="2110.0" h="60.0" w="200.0"/>
+            </glyph>
+            <glyph id="glyph21" class="macromolecule">
+                <label text="MG_224_MONOMER"/>
+                <bbox y="1920.0" x="2110.0" h="60.0" w="200.0"/>
+            </glyph>
+            <glyph id="glyph7" class="complex multimer">
+                <label text="MG_224_9MER_GDP">
+                    <bbox y="2003.0" x="2107.0" h="25.0" w="206.0"/>
+                </label>
+                <bbox y="1850.0" x="2095.0" h="180.0" w="230.0"/>
+                <glyph id="glyph7a" class="unit of information">
+                    <label text="N:9"/>
+                    <bbox y="1836.5" x="2130.0" h="27.0" w="45.0"/>
+                </glyph>
+                <glyph id="glyph7b" class="state variable">
+                    <state value="bent"/>
+                    <bbox y="1833.5" x="2240.5" h="33.0" w="54.0"/>
+                </glyph>
+            </glyph>
+            <glyph id="glyph24" class="simple chemical">
+                <label text="GDP"/>
+                <bbox y="1850.0" x="2170.0" h="60.0" w="60.0"/>
+            </glyph>
+        </glyph>
+        <arc target="glyph39" source="glyph61.2" id="arc0" class="production">
+            <glyph id="glyph65" class="cardinality">
+                <label text="18"/>
+                <bbox y="521.0" x="2259.0" h="18.5" w="29.5"/>
+            </glyph>
+            <start y="620.0" x="2214.0"/>
+            <end y="481.8861" x="2319.4817"/>
+        </arc>
+        <arc target="glyph47" source="glyph61.2" id="arc1" class="production">
+            <glyph id="glyph66" class="cardinality">
+                <label text="18"/>
+                <bbox y="600.0" x="2319.0" h="18.5" w="29.5"/>
+            </glyph>
+            <start y="620.0" x="2214.0"/>
+            <end y="620.0" x="2420.0"/>
+        </arc>
+        <arc target="glyph57" source="glyph1" id="arc2" class="logic arc">
+            <start y="1802.3438" x="2075.0"/>
+            <end y="1612.0" x="1900.9714"/>
+        </arc>
+        <arc target="glyph59.1" source="glyph7" id="arc3" class="consumption">
+            <glyph id="glyph68" class="cardinality">
+                <label text="1"/>
+                <bbox y="1221.0" x="1698.0" h="18.5" w="22.5"/>
+            </glyph>
+            <start y="1240.0" x="1705.0"/>
+            <end y="1240.0" x="1726.0"/>
+        </arc>
+        <arc target="glyph7" source="glyph59.2" id="arc4" class="production">
+            <glyph id="glyph69" class="cardinality">
+                <label text="9"/>
+                <bbox y="1220.0" x="1814.0" h="18.5" w="22.5"/>
+            </glyph>
+            <start y="1240.0" x="1774.0"/>
+            <end y="1240.0" x="1875.0"/>
+        </arc>
+        <arc target="glyph62.1" source="glyph7" id="arc5" class="consumption">
+            <start y="1150.0" x="1025.7059"/>
+            <end y="900.0" x="1236.0"/>
+        </arc>
+        <arc target="glyph62.1" source="glyph6" id="arc6" class="consumption">
+            <start y="725.9459" x="1075.0"/>
+            <end y="900.0" x="1236.0"/>
+        </arc>
+        <arc target="glyph4" source="glyph62.2" id="arc7" class="production">
+            <start y="900.0" x="1284.0"/>
+            <end y="716.8182" x="1455.0"/>
+        </arc>
+        <arc target="glyph7" source="glyph64.1" id="arc8" class="production">
+            <start y="1236.0" x="1280.0"/>
+            <end y="1247.4193" x="1475.0"/>
+        </arc>
+        <arc target="glyph60.2" source="glyph2" id="arc9" class="consumption">
+            <start y="1714.6519" x="815.0"/>
+            <end y="1560.0" x="634.0"/>
+        </arc>
+        <arc target="glyph60.2" source="glyph7" id="arc10" class="consumption">
+            <start y="1330.0" x="861.125"/>
+            <end y="1560.0" x="634.0"/>
+        </arc>
+        <arc target="glyph63.2" source="glyph5" id="arc11" class="consumption">
+            <start y="1811.3392" x="1465.0"/>
+            <end y="1590.0" x="1264.0"/>
+        </arc>
+        <arc target="glyph63.2" source="glyph7" id="arc12" class="consumption">
+            <start y="1330.0" x="1030.7428"/>
+            <end y="1590.0" x="1264.0"/>
+        </arc>
+        <arc target="glyph7" source="glyph56.2" id="arc13" class="production">
+            <start y="2380.0" x="1114.0"/>
+            <end y="1330.0" x="1550.5264"/>
+        </arc>
+        <arc target="glyph56.1" source="glyph3" id="arc14" class="consumption">
+            <start y="2027.8151" x="455.0"/>
+            <end y="2380.0" x="1066.0"/>
+        </arc>
+        <arc target="glyph58.2" source="glyph8" id="arc15" class="consumption">
+            <start y="970.9091" x="405.0"/>
+            <end y="974.0" x="660.0"/>
+        </arc>
+        <arc target="glyph58.2" source="glyph7" id="arc16" class="consumption">
+            <start y="1150.0" x="851.8797"/>
+            <end y="974.0" x="660.0"/>
+        </arc>
+        <arc target="glyph6" source="glyph58.1" id="arc17" class="production">
+            <start y="926.0" x="660.0"/>
+            <end y="758.3929" x="805.0"/>
+        </arc>
+        <arc target="glyph61.1" source="glyph4" id="arc18" class="consumption">
+            <start y="597.03125" x="1725.0"/>
+            <end y="620.0" x="2166.0"/>
+        </arc>
+        <arc target="glyph61.1" source="glyph44" id="arc19" class="consumption">
+            <glyph id="glyph84" class="cardinality">
+                <label text="18"/>
+                <bbox y="690.0" x="2062.0" h="18.5" w="29.5"/>
+            </glyph>
+            <start y="758.52" x="2030.943"/>
+            <end y="620.0" x="2166.0"/>
+        </arc>
+        <arc target="glyph64.2" source="glyph2" id="arc20" class="consumption">
+            <start y="1606.6364" x="1085.0"/>
+            <end y="1284.0" x="1280.0"/>
+        </arc>
+        <arc target="glyph1" source="glyph56.2" id="arc21" class="production">
+            <start y="2380.0" x="1114.0"/>
+            <end y="2001.8303" x="2075.0"/>
+        </arc>
+        <arc target="glyph3" source="glyph60.1" id="arc22" class="production">
+            <start y="1560.0" x="586.0"/>
+            <end y="1768.4482" x="455.0"/>
+        </arc>
+        <arc target="glyph2" source="glyph63.1" id="arc23" class="production">
+            <start y="1590.0" x="1216.0"/>
+            <end y="1718.2759" x="1085.0"/>
+        </arc>
+        <arc target="glyph7" source="glyph57.1" id="arc24" class="production">
+            <start y="1600.0" x="1866.0"/>
+            <end y="1330.0" x="1665.0"/>
+        </arc>
+        <arc target="glyph5" source="glyph57.1" id="arc25" class="production">
+            <start y="1600.0" x="1866.0"/>
+            <end y="1792.4138" x="1735.0"/>
+        </arc>
+        <arc target="glyph6" source="glyph64.1" id="arc26" class="production">
+            <start y="1236.0" x="1280.0"/>
+            <end y="850.0" x="1075.0"/>
+        </arc>
+        <arc target="glyph1" source="glyph61.2" id="arc27" class="production">
+            <start y="620.0" x="2214.0"/>
+            <end y="1580.0" x="2204.436"/>
+        </arc>
+    </map>
+</sbgn>

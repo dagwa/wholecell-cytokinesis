@@ -1,0 +1,19 @@
+How to further update the model annotations in a model:
+
+o Insert our annotation snippet
+
+o Edit the attributes in <model> element:
+    <model metaid="WCM_3_3" id="WCM_3_3" name="Whole Cell 2015 - Cytokinesis">
+    <model metaid="WCM_3_7" id="WCM_3_7" name="Whole Cell 2015 - FtsZ Polymerization">
+  (for model ID: If you have more than one SBML files for one submodel, just append an dash followed by an counter.)
+
+
+o Choose MAMO ids (from http://bioportal.bioontology.org/ontologies/MAMO/)
+
+FtsZ Polymerization:
+ Complex formation / Protein binding network -> to be created
+ ODE model: http://identifiers.org/mamo/MAMO_0000046
+
+Cytokinesis
+ Complex formation / Protein binding network -> to be created
+ Stochastic chemical reaction model
