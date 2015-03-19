@@ -1,12 +1,13 @@
 Directories
 -----------
 
-o Cytokinesis:             our Cytokinesis models
-o FtsZPolymerization:      our FtsZPolymerization models
-o matlab:                  original matlab code (submodels and tests) by Jonathan
-o rdf-annotations:         SBML code snippets for semantic annotations, to be inserted into final SBML models
-o whole-cell-model_Naveen: copy of Naveen's SBML model capturing many reactions from the original whole-cell model
-o presentation-slides:     our presentations from the workshop
+o Cytokinesis:             Our Cytokinesis models
+o FtsZPolymerization:      Our FtsZPolymerization models
+o matlab:                  Original matlab code (submodels and tests) by Jonathan Karr
+o notes                    Notes (e.g., for a paper to come)
+o presentation-slides:     Presentations given during the workshop
+o rdf-annotations:         SBML code snippets for semantic annotations, to be inserted into SBML models
+o whole-cell-model_Naveen: Naveen's SBML model capturing many reactions from the original whole-cell model
 
 
 See our notes in google doc
