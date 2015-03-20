@@ -1,3 +1,9 @@
 This directory contains the latest file versions generated at the workshop.
 
-Semantic annotations were added afterwards -> FtsZPolymerization-annotated.xml
+* sbml folder contain an SMBL file created with BioUML. List of unit definitions was added separately by hand, for this the previously SBML file was imported into COPASI and then exported again to SBML. Unit definitions created in the last file were added to the first one. Semantic annotations were added afterwards -> FtsZPolymerization-annotated.xml
+
+* sbgn folder contain a PNG image of the diagram and a SBGN-ML file, both created with Vanted 2.1.0. For this, SBO terms were added manually to the SBML file from BioUML. The SBO ids used were in accordance with SBGN-PD language. 
+
+* vanted folder contains the graphical file .GRAPHML created in Vanted, from this file one can generate SBGN and PNG files from sbgn folder
+
+* Copasi folder contains a COPASI format file after having imported an SBML file
