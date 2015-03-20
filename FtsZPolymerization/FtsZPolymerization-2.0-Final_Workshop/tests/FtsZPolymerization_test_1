@@ -7,7 +7,7 @@ role.getVariable("$Cytosol.MG_224_MONOMER").setInitialValue(1000);
 role.getVariable("$Cytosol.GTP").setInitialValue(10000);
 role.getVariable("$Cytosol.GDP").setInitialValue(10000);
 
-var span = simulationEngine.createSpan(0, 5, 1); //create time span from 0 to 5 with step = 1
+var span = simulationEngine.createSpan(0, 6, 1); //create time span from 0 to 5 with step = 1
 var result = simulationEngine.simulate(diagram, span); //simulation
 var varNames = ["$Cytosol.MG_224_MONOMER", "$Cytosol.MG_224_9MER_GTP"]; //list of variables for which to obtain simulation result
 var filteredResult = result.getValues(varNames); //result only for selecetd variables
@@ -15,5 +15,5 @@ var monomer = filteredResult[0]; //array of simulated values of MG_224_MONOMER, 
 var ninemer = filteredResult[1]; //array of simulated values of MG_224_9MER_GTP, yValues[i] = MG_224_MONOMER(time[i])
 //do some assertions about yValues
 //...
-var times = [0,1,2,3,4,5]; //time points
+var times = [0,1,2,3,4,5,6]; //time points
 plot(times, monomer, ninemer); //plotting result
