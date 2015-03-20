@@ -764,7 +764,7 @@
             <apply>
               <times/>
               <ci>activationFwd</ci>
-              <ci>F</ci>
+              <ci>MG_224_MONOMER</ci>
             </apply>
           </math>
         </kineticLaw>
