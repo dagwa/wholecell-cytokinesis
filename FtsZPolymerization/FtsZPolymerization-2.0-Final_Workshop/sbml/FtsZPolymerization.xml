@@ -445,7 +445,7 @@
           </math>
         </kineticLaw>
       </reaction>
-      <reaction fast="false" id="R01" name="MG_224_MONOMER_GTP -&gt; F" reversible="false">
+      <reaction fast="false" id="R01" name="MG_224_MONOMER_GTP -&gt; MG_224_MONOMER" reversible="false">
         <listOfReactants>
           <speciesReference constant="false" species="MG_224_MONOMER_GTP" stoichiometry="1"/>
         </listOfReactants>
@@ -462,7 +462,7 @@
           </math>
         </kineticLaw>
       </reaction>
-      <reaction fast="false" id="R02" name="F -&gt; MG_224_MONOMER_GTP" reversible="false">
+      <reaction fast="false" id="R02" name="MG_224_MONOMER -&gt; MG_224_MONOMER_GTP" reversible="false">
         <listOfReactants>
           <speciesReference constant="false" species="MG_224_MONOMER" stoichiometry="1"/>
         </listOfReactants>
