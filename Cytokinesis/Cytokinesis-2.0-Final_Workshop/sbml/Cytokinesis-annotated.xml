@@ -136,7 +136,7 @@
       <parameter constant="false" id="CellGeometry_pinchedDiameter" units="metre" value="2.0E-7"/>
       <parameter constant="false" id="H" units="item" value="1000000.0"/>
       <parameter constant="false" id="H2O" units="item" value="1000000.0"/>
-      <parameter constant="false" id="MG_224_9MER_GTP" metaid="MG_224_9MER_GTP_meta" units="item" value="1000.0"/>
+      <parameter constant="false" id="MG_224_9MER_GTP" metaid="MG_224_9MER_GTP_meta" units="item" value="1000.0">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#MG_224_9MER_GTP_meta">
@@ -153,7 +153,8 @@
             </rdf:Description>
           </rdf:RDF>
         </annotation>
-      <parameter constant="false" id="MG_224_MONOMER_GDP" metaid="MG_224_MONOMER_GDP_meta" units="item" value="0.0"/>
+      </parameter>
+      <parameter constant="false" id="MG_224_MONOMER_GDP" metaid="MG_224_MONOMER_GDP_meta" units="item" value="0.0">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#MG_224_MONOMER_GDP_meta">
@@ -170,6 +171,7 @@
             </rdf:Description>
           </rdf:RDF>
         </annotation>
+      </parameter>
       <parameter constant="false" id="PI" units="item" value="1000000.0"/>
       <parameter constant="true" id="Pi" units="dimensionless" value="3.1415936"/>
       <parameter constant="false" id="binding" units="dimensionless" value="0.0"/>
