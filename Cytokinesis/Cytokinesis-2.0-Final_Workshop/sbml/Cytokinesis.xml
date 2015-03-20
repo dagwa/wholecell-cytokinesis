@@ -9,7 +9,7 @@
       </unitDefinition>
       <unitDefinition id="nm" name="nanometre">
       	<listOfUnits>
-	   <unit kind="metre" exponent="" scale="-9" multiplier="1"/>
+	   <unit kind="metre" exponent="1" scale="-9" multiplier="1"/>
 	</listOfUnits>
       </unitDefinition>
     </listOfUnitDefinitions>

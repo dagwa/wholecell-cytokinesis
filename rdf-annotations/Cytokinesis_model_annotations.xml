@@ -10,32 +10,8 @@
 	       xmlns:bqbiol="http://biomodels.net/biology-qualifiers/"
 	       xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
         <rdf:Description rdf:about="#model1">
-
           <dc:creator>
             <rdf:Bag>
-
-              <rdf:li rdf:parseType="Resource">
-                <vCard:N rdf:parseType="Resource">
-                  <vCard:Family>Kumar</vCard:Family>
-                  <vCard:Given>Naveen</vCard:Given>
-                </vCard:N>
-                <vCard:EMAIL>navyeinstein1991@gmail.com</vCard:EMAIL>
-                <vCard:ORG rdf:parseType="Resource">
-                  <vCard:Orgname>University Paris Sud and CNRS</vCard:Orgname>
-                </vCard:ORG>
-              </rdf:li>
-
-              <rdf:li rdf:parseType="Resource">
-                <vCard:N rdf:parseType="Resource">
-                  <vCard:Family>Zhu</vCard:Family>
-                  <vCard:Given>Yan</vCard:Given>
-                </vCard:N>
-                <vCard:EMAIL>yan.zhu@monash.edu</vCard:EMAIL>
-                <vCard:ORG rdf:parseType="Resource">
-                  <vCard:Orgname>Monash University</vCard:Orgname>
-                </vCard:ORG>
-              </rdf:li>
-
               <rdf:li rdf:parseType="Resource">
                 <vCard:N rdf:parseType="Resource">
                   <vCard:Family>Kiselev</vCard:Family>
@@ -46,7 +22,26 @@
                   <vCard:Orgname>SBRAS Novosibirsk</vCard:Orgname>
                 </vCard:ORG>
               </rdf:li>
-
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Zhu</vCard:Family>
+                  <vCard:Given>Yan</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>yan.zhu@monash.edu</vCard:EMAIL>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>Monash University</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Kumar</vCard:Family>
+                  <vCard:Given>Naveen</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>navyeinstein1991@gmail.com</vCard:EMAIL>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>University Paris Sud and CNRS</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
               <rdf:li rdf:parseType="Resource">
                 <vCard:N rdf:parseType="Resource">
                   <vCard:Family>Priego</vCard:Family>
@@ -57,7 +52,6 @@
                   <vCard:Orgname> Universidad Nacional Autónoma de Mexico</vCard:Orgname>
                 </vCard:ORG>
               </rdf:li>
-
               <rdf:li rdf:parseType="Resource">
                 <vCard:N rdf:parseType="Resource">
                   <vCard:Family>Liebermeister</vCard:Family>
@@ -68,10 +62,8 @@
                   <vCard:Orgname>Charite Berlin</vCard:Orgname>
                 </vCard:ORG>
               </rdf:li>
-
             </rdf:Bag>
           </dc:creator>
-
           <dcterms:created rdf:parseType="Resource">
             <dcterms:W3CDTF>2015-03-10T12:00:00Z</dcterms:W3CDTF>
           </dcterms:created>
@@ -86,12 +78,6 @@
             </rdf:Bag>
           </bqmodel:isInstanceOf>
 
-          <bqmodel:isInstanceOf>
-            <rdf:Bag>
-              <rdf:li rdf:resource="http://identifiers.org/mamo/MAMO_0000003"/>
-            </rdf:Bag>
-          </bqmodel:isInstanceOf>
-					
           <bqmodel:isDerivedFrom>
             <rdf:Bag>
               <rdf:li rdf:resource="http://identifiers.org/doi/10.1016/j.cell.2012.05.044"/>
@@ -106,10 +92,7 @@
 
         </rdf:Description>
       </rdf:RDF>
-
     </annotation>
-
-
 
   </model>
 </sbml>
