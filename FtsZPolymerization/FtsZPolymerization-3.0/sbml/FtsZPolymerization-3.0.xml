@@ -130,11 +130,7 @@
       </unitDefinition>
     </listOfUnitDefinitions>
     <listOfSpecies>
-<<<<<<< HEAD
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_MONOMER" metaid="MG_224_MONOMER_meta" initialConcentration="0.02" name="MG_224_MONOMER" sboTerm="SBO:0000245" substanceUnits="item">
-=======
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_MONOMER" metaid="MG_224_MONOMER_meta" initialAmount="1000" name="MG_224_MONOMER" sboTerm="SBO:0000245" substanceUnits="item"/>
->>>>>>> 693f871dce5aa1dd5b0c9385c6948107dbb7d9f0
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_MONOMER" metaid="MG_224_MONOMER_meta" initialAmount="1000" name="MG_224_MONOMER" sboTerm="SBO:0000245" substanceUnits="item">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#MG_224_MONOMER_meta">
@@ -146,12 +142,8 @@
             </rdf:Description>
           </rdf:RDF>
         </annotation>
-<<<<<<< HEAD
       </species>
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_MONOMER_GDP" metaid="MG_224_MONOMER_GDP_meta" initialConcentration="0.0" name="MG_224_MONOMER_GDP" sboTerm="SBO:0000253" substanceUnits="item">
-=======
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_MONOMER_GDP" metaid="MG_224_MONOMER_GDP_meta" initialAmount="0.0" name="MG_224_MONOMER_GDP" sboTerm="SBO:0000253" substanceUnits="item"/>
->>>>>>> 693f871dce5aa1dd5b0c9385c6948107dbb7d9f0
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_MONOMER_GDP" metaid="MG_224_MONOMER_GDP_meta" initialAmount="0.0" name="MG_224_MONOMER_GDP" sboTerm="SBO:0000253" substanceUnits="item">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#MG_224_MONOMER_GDP_meta">
@@ -168,12 +160,8 @@
             </rdf:Description>
           </rdf:RDF>
         </annotation>
-<<<<<<< HEAD
       </species>
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_MONOMER_GTP" metaid="MG_224_MONOMER_GTP_meta" initialConcentration="0.0" name="MG_224_MONOMER_GTP" sboTerm="SBO:0000253" substanceUnits="item">
-=======
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_MONOMER_GTP" metaid="MG_224_MONOMER_GTP_meta" initialAmount="0.0" name="MG_224_MONOMER_GTP" sboTerm="SBO:0000253" substanceUnits="item"/>
->>>>>>> 693f871dce5aa1dd5b0c9385c6948107dbb7d9f0
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_MONOMER_GTP" metaid="MG_224_MONOMER_GTP_meta" initialAmount="0.0" name="MG_224_MONOMER_GTP" sboTerm="SBO:0000253" substanceUnits="item">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#MG_224_MONOMER_GTP_meta">
@@ -190,12 +178,8 @@
             </rdf:Description>
           </rdf:RDF>
         </annotation>
-<<<<<<< HEAD
       </species>
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_2MER_GTP" metaid="MG_224_2MER_GTP_meta" initialConcentration="0.0" name="MG_224_2MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
-=======
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_2MER_GTP" metaid="MG_224_2MER_GTP_meta" initialAmount="0.0" name="MG_224_2MER_GTP" sboTerm="SBO:0000418" substanceUnits="item"/>
->>>>>>> 693f871dce5aa1dd5b0c9385c6948107dbb7d9f0
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_2MER_GTP" metaid="MG_224_2MER_GTP_meta" initialAmount="0.0" name="MG_224_2MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#MG_224_2MER_GTP_meta">
@@ -212,12 +196,8 @@
             </rdf:Description>
           </rdf:RDF>
         </annotation>
-<<<<<<< HEAD
       </species>
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_3MER_GTP" metaid="MG_224_3MER_GTP_meta" initialConcentration="0.0" name="MG_224_3MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
-=======
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_3MER_GTP" metaid="MG_224_3MER_GTP_meta" initialAmount="0.0" name="MG_224_3MER_GTP" sboTerm="SBO:0000418" substanceUnits="item"/>
->>>>>>> 693f871dce5aa1dd5b0c9385c6948107dbb7d9f0
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_3MER_GTP" metaid="MG_224_3MER_GTP_meta" initialAmount="0.0" name="MG_224_3MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#MG_224_3MER_GTP_meta">
@@ -234,12 +214,8 @@
             </rdf:Description>
           </rdf:RDF>
         </annotation>
-<<<<<<< HEAD
       </species>
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_4MER_GTP" metaid="MG_224_4MER_GTP_meta" initialConcentration="0.0" name="MG_224_4MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
-=======
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_4MER_GTP" metaid="MG_224_4MER_GTP_meta" initialAmount="0.0" name="MG_224_4MER_GTP" sboTerm="SBO:0000418" substanceUnits="item"/>
->>>>>>> 693f871dce5aa1dd5b0c9385c6948107dbb7d9f0
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_4MER_GTP" metaid="MG_224_4MER_GTP_meta" initialAmount="0.0" name="MG_224_4MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#MG_224_4MER_GTP_meta">
@@ -256,12 +232,8 @@
             </rdf:Description>
           </rdf:RDF>
         </annotation>
-<<<<<<< HEAD
       </species>
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_5MER_GTP" metaid="MG_224_5MER_GTP_meta" initialConcentration="0.0" name="MG_224_5MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
-=======
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_5MER_GTP" metaid="MG_224_5MER_GTP_meta" initialAmount="0.0" name="MG_224_5MER_GTP" sboTerm="SBO:0000418" substanceUnits="item"/>
->>>>>>> 693f871dce5aa1dd5b0c9385c6948107dbb7d9f0
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_5MER_GTP" metaid="MG_224_5MER_GTP_meta" initialAmount="0.0" name="MG_224_5MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#MG_224_5MER_GTP_meta">
@@ -278,12 +250,8 @@
             </rdf:Description>
           </rdf:RDF>
         </annotation>
-<<<<<<< HEAD
       </species>
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_6MER_GTP" metaid="MG_224_6MER_GTP" initialConcentration="0.0" name="MG_224_6MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
-=======
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_6MER_GTP" metid="MG_224_6MER_GTP" initialAmount="0.0" name="MG_224_6MER_GTP" sboTerm="SBO:0000418" substanceUnits="item"/>
->>>>>>> 693f871dce5aa1dd5b0c9385c6948107dbb7d9f0
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_6MER_GTP" metaid="MG_224_6MER_GTP" initialAmount="0.0" name="MG_224_6MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#MG_224_6MER_GTP">
@@ -300,12 +268,8 @@
             </rdf:Description>
           </rdf:RDF>
         </annotation>
-<<<<<<< HEAD
       </species>
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_7MER_GTP" metaid="MG_224_7MER_GTP_meta" initialConcentration="0.0" name="MG_224_7MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
-=======
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_7MER_GTP" metaid="MG_224_7MER_GTP_meta" initialAmount="0.0" name="MG_224_7MER_GTP" sboTerm="SBO:0000418" substanceUnits="item"/>
->>>>>>> 693f871dce5aa1dd5b0c9385c6948107dbb7d9f0
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_7MER_GTP" metaid="MG_224_7MER_GTP_meta" initialAmount="0.0" name="MG_224_7MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#MG_224_7MER_GTP_meta">
@@ -322,12 +286,8 @@
             </rdf:Description>
           </rdf:RDF>
         </annotation>
-<<<<<<< HEAD
       </species>
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_8MER_GTP" metaid="MG_224_8MER_GTP_meta" initialConcentration="0.0" name="MG_224_8MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
-=======
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_8MER_GTP" metaid="MG_224_8MER_GTP_meta" initialAmount="0.0" name="MG_224_8MER_GTP" sboTerm="SBO:0000418" substanceUnits="item"/>
->>>>>>> 693f871dce5aa1dd5b0c9385c6948107dbb7d9f0
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_8MER_GTP" metaid="MG_224_8MER_GTP_meta" initialAmount="0.0" name="MG_224_8MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#MG_224_8MER_GTP_meta">
@@ -344,12 +304,8 @@
             </rdf:Description>
           </rdf:RDF>
         </annotation>
-<<<<<<< HEAD
       </species>
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_9MER_GTP" metaid="MG_224_9MER_GTP_meta" initialConcentration="0.0" name="MG_224_9MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
-=======
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_9MER_GTP" metaid="MG_224_9MER_GTP_meta" initialAmount="0.0" name="MG_224_9MER_GTP" sboTerm="SBO:0000418" substanceUnits="item"/>
->>>>>>> 693f871dce5aa1dd5b0c9385c6948107dbb7d9f0
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="MG_224_9MER_GTP" metaid="MG_224_9MER_GTP_meta" initialAmount="0.0" name="MG_224_9MER_GTP" sboTerm="SBO:0000418" substanceUnits="item">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#MG_224_9MER_GTP_meta">
@@ -366,12 +322,8 @@
             </rdf:Description>
           </rdf:RDF>
         </annotation>
-<<<<<<< HEAD
       </species>
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="GDP" metaid="GDP_meta" initialConcentration="0.01" sboTerm="SBO:0000247" substanceUnits="item">
-=======
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="GDP" metaid="GDP_meta" initialAmount="10000" sboTerm="SBO:0000247" substanceUnits="item"/>
->>>>>>> 693f871dce5aa1dd5b0c9385c6948107dbb7d9f0
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="GDP" metaid="GDP_meta" initialAmount="100000" sboTerm="SBO:0000247" substanceUnits="item">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#GDP_meta">
@@ -383,12 +335,8 @@
             </rdf:Description>
           </rdf:RDF>
         </annotation>
-<<<<<<< HEAD
       </species>
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="GTP" metaid="GTP_meta" initialConcentration="0.09" sboTerm="SBO:0000247" substanceUnits="item">
-=======
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="GTP" metaid="GTP_meta" initialAmount="100000" sboTerm="SBO:0000247" substanceUnits="item"/>
->>>>>>> 693f871dce5aa1dd5b0c9385c6948107dbb7d9f0
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="GTP" metaid="GTP_meta" initialAmount="10000" sboTerm="SBO:0000247" substanceUnits="item">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#GTP_meta">
@@ -400,12 +348,8 @@
             </rdf:Description>
           </rdf:RDF>
         </annotation>
-<<<<<<< HEAD
       </species>
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="GTP__c" metaid="GTP__c_meta" initialConcentration="0.09" sboTerm="SBO:0000247" substanceUnits="item">
-=======
-      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="GTP__c" metaid="GTP__c_meta" initialAmount="0" sboTerm="SBO:0000247" substanceUnits="item"/>
->>>>>>> 693f871dce5aa1dd5b0c9385c6948107dbb7d9f0
+      <species boundaryCondition="false" compartment="Cytosol" constant="false" hasOnlySubstanceUnits="true" id="GTP__c" metaid="GTP__c_meta" initialAmount="0.0" sboTerm="SBO:0000247" substanceUnits="item">
         <annotation>
           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
             <rdf:Description rdf:about="#GTP__c_meta">
