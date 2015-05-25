@@ -1,0 +1,57 @@
+model FtsZ_Polymerization()
+   compartment Cytosol;
+   species F in Cytosol, F_D in Cytosol, F_T in Cytosol, F_T2 in Cytosol, F_T3 in Cytosol, F_T4 in Cytosol, F_T5 in Cytosol, F_T6 in Cytosol, F_T7 in Cytosol, F_T8 in Cytosol, F_T9 in Cytosol, GDP in Cytosol, GTP in Cytosol;
+   var avogadro, factor, k_act1, k_act2, k_el1, k_el2, k_ex1, k_ex2, k_nuc, k_nuc1, k_nuc2, unknown;
+
+   Cytosol = 1.0E-18;
+   F = 1000.0;
+   GDP = 10000.0;
+   GTP = 10000.0;
+   avogadro = 6.0221407818E23;
+   k_act1 = 1.1;
+   k_act2 = 0.01;
+   k_el1 = 5100000.0;
+   k_el2 = 2.9;
+   k_ex1 = 10000.0;
+   k_ex2 = 5000.0;
+   k_nuc1 = 4200000.0;
+   k_nuc2 = 40.0;
+
+   R01: F => F_T; k_act1*F;
+   R02: F_T => F; k_act2*F_T;
+   R03: F_D + GTP => F_T + GDP; k_ex1*F_D*GTP;
+   R04: F_T + GDP => F_D + GTP; k_ex2*F_T*GDP;
+   R05: 2F_T => F_T2; k_nuc1*F_T*F_T;
+   R06: F_T2 => 2F_T; k_nuc2*F_T2;
+   R07: F_T + F_T2 => F_T3; k_el1*F_T*F_T2;
+   R08: F_T + F_T3 => F_T4; k_el1*F_T*F_T3;
+   R09: F_T + F_T4 => F_T5; k_el1*F_T*F_T4;
+   R10: F_T + F_T5 => F_T6; k_el1*F_T*F_T5;
+   R11: F_T + F_T6 => F_T7; k_el1*F_T*F_T6;
+   R12: F_T + F_T7 => F_T8; k_el1*F_T*F_T7;
+   R13: F_T + F_T8 => F_T9; k_el1*F_T*F_T8;
+   R14: F_T9 => F_T + F_T8; k_el2*F_T9;
+   R15: F_T8 => F_T + F_T7; k_el2*F_T8;
+   R16: F_T7 => F_T + F_T6; k_el2*F_T7;
+   R17: F_T6 => F_T + F_T5; k_el2*F_T6;
+   R18: F_T5 => F_T + F_T4; k_el2*F_T5;
+   R19: F_T4 => F_T + F_T3; k_el2*F_T4;
+   R20: F_T3 => F_T + F_T2; k_el2*F_T3;
+
+   factor = Cytosol*avogadro;
+   k_el1 = 5100000.0/factor;
+   k_ex1 = 10000.0/factor;
+   k_ex2 = 5000.0/factor;
+   k_nuc1 = 4200000.0/factor;
+   F is "FtsZ";
+   F_D is "FtsZ";
+   F_T is "FtsZ";
+   F_T2 is "FtsZ";
+   F_T3 is "FtsZ";
+   F_T4 is "FtsZ";
+   F_T5 is "FtsZ";
+   F_T6 is "FtsZ";
+   F_T7 is "FtsZ";
+   F_T8 is "FtsZ";
+   F_T9 is "FtsZ";
+end
