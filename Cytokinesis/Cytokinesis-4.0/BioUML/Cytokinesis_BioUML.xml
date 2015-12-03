@@ -1,0 +1,1401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="Cytokinesis_4_0" name="Cytokinesis">
+    <annotation>
+      <sbgn xmlns:biouml="http://www.biouml.org/ns">
+        <nodes>
+          <node id="H2O__c_Assignment_rule" parent="" type="math-equation">
+            <nodeLayout x="840" y="-409"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="bendingFirstCyc" parent="" title="Bend" type="math-event">
+            <nodeLayout x="499" y="500"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="bindingSecondStepFirstCyc" parent="" title="Bind 2 Straight" type="math-event">
+            <nodeLayout x="499" y="80"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="binding_0" parent="" title="Bind 1 Straight" type="math-event">
+            <nodeLayout x="499" y="-320"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="binomial" parent="" type="math-function">
+            <nodeLayout x="840" y="-355"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="calBindingEdgesStep1FirstCyc" parent="" title="Calc Bind 1 Straight" type="math-event">
+            <nodeLayout x="8" y="-320"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="calBindingEdgesStep2FirstCyc" parent="" title="Calc Bind 2 Straight" type="math-event">
+            <nodeLayout x="68" y="80"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="calNumBentEdgesFirstCyc" parent="" title="Calc Bend" type="math-event">
+            <nodeLayout x="9" y="500"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="calNumManEdgesStepTwo" parent="" title="Calc Bind 1 Straight" type="math-event">
+            <nodeLayout x="-54" y="-120"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="calNumUnbindEdgesFirstCyc" parent="" title="Calc unbind" type="math-event">
+            <nodeLayout x="220" y="945"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="equation" parent="" type="math-equation">
+            <nodeLayout height="0" width="0" x="840" y="-185"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="equation_1" parent="" type="math-equation">
+            <nodeLayout height="0" width="0" x="840" y="-269"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="event" parent="" title="Unbind residual" type="math-event">
+            <nodeLayout height="0" width="0" x="499" y="300"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="event_1" parent="" title="Start of step" type="math-event">
+            <nodeLayout height="0" width="0" x="450" y="-435"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="event_2" parent="" title="Pinch cell" type="math-event">
+            <nodeLayout height="0" width="0" x="985" y="720"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="note" parent="" title="initial" type="note">
+            <nodeLayout height="0" width="0" x="1245" y="-260"/>
+            <nodePaint Style="Default" paint="white"/>
+          </node>
+          <node id="note_1" parent="" title="Stub for random number generator" type="note">
+            <nodeLayout height="0" width="0" x="1259" y="-355"/>
+            <nodePaint Style="Default" paint="white"/>
+          </node>
+          <node id="resUnbinding" parent="" title="Calc Unbind residual" type="math-event">
+            <nodeLayout height="0" width="0" x="67" y="300"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="start_event" parent="" title="End of step" type="math-event">
+            <nodeLayout height="0" width="0" x="434" y="1235"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="stepTwo" parent="" title="Bind 1 Straight" type="math-event">
+            <nodeLayout x="499" y="-120"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="unbindingFirstCyc" parent="" title="Unbind" type="math-event">
+            <nodeLayout x="500" y="937"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="updateDiameter(3)" parent="" title="Update diameter" type="math-event">
+            <nodeLayout x="-174" y="720"/>
+            <nodePaint Style="Default"/>
+          </node>
+          <node id="updateDiameter(4)" parent="" title="Update number of edges" type="math-event">
+            <nodeLayout x="500" y="720"/>
+            <nodePaint Style="Default"/>
+          </node>
+        </nodes>
+        <edges>
+          <edge from="binomial" id="binomial -&gt; note_1" ref="binomial -&gt; note_1" to="note_1" type="note-edge"/>
+          <edge from="equation" id="equation -&gt; note" ref="equation -&gt; note" to="note" type="note-edge">
+            <path>
+              <segment segmentType="lineTo" x0="1053" y0="-170"/>
+              <segment segmentType="lineTo" x0="1157" y0="-170"/>
+              <segment segmentType="quadTo" x0="1260" y0="-170"/>
+              <segment segmentType="lineTo" x0="1260" y0="-204"/>
+              <segment segmentType="lineTo" x0="1260" y0="-239"/>
+            </path>
+          </edge>
+          <edge from="equation_1" id="equation_1 -&gt; note" ref="equation_1 -&gt; note" to="note" type="note-edge"/>
+        </edges>
+        <viewOptions>
+          <propertyRef name="gridOptions" type="ru.biosoft.graphics.editor.GridOptions"/>
+          <propertyRef name="noteLinkPen" value="1.0;#7C007C;Dashed"/>
+          <propertyRef name="styles"/>
+        </viewOptions>
+      </sbgn>
+      <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+        <biouml:diagramInfo/>
+        <biouml:simulationInfo completionTime="100.0" initialTime="0.0" timeIncrement="1.0"/>
+        <biouml:viewOptions autoLayout="true" dependencyEdges="false"/>
+      </biouml:BIOUML>
+    </annotation>
+    <listOfFunctionDefinitions>
+      <functionDefinition id="binomial">
+        <annotation>
+          <distribution xmlns="http://sbml.org/annotations/distribution" defnition="http://en.wikipedia.org/wiki/Binomial_distribution"/>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="binomial" title="binomial" x="840" y="-355">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci>x</ci>
+            </bvar>
+            <bvar>
+              <ci>y</ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci>x</ci>
+              <ci>y</ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+    </listOfFunctionDefinitions>
+    <listOfUnitDefinitions>
+      <unitDefinition id="s_1" name="per second">
+        <listOfUnits>
+          <unit exponent="-1" kind="second" multiplier="1.0" scale="0"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="nm" name="nanometre">
+        <listOfUnits>
+          <unit exponent="1" kind="metre" multiplier="1.0" scale="-9"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfParameters>
+      <parameter constant="false" id="CellGeometry_pinched" name="indicator if cytokinesis is finished" value="0.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">indicator if cytokinesis is finished</body>
+        </notes>
+      </parameter>
+      <parameter constant="false" id="CellGeometry_pinchedDiameter" value="2.0E-7"/>
+      <parameter constant="false" id="FtsZRing_filamentLengthInNm" units="nm" value="39.1304"/>
+      <parameter constant="false" id="FtsZRing_numFtsZSubunitsPerFilament" value="9.0"/>
+      <parameter constant="false" id="H" name="hydrogen" units="item" value="1000000.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">hydrogen</body>
+        </notes>
+      </parameter>
+      <parameter constant="false" id="H2O" name="water" units="item" value="1000000.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">water</body>
+        </notes>
+      </parameter>
+      <parameter constant="false" id="H2O_requirement" units="item" value="0.0"/>
+      <parameter constant="false" id="MG_224_9MER_GTP" units="item" value="1000000.0"/>
+      <parameter constant="false" id="MG_224_MONOMER_GDP" units="item" value="1000000.0"/>
+      <parameter constant="false" id="PI" units="item" value="1000000.0"/>
+      <parameter constant="false" id="mEdges" units="item" value="0.0"/>
+      <parameter constant="false" id="n" units="item" value="0.0"/>
+      <parameter constant="false" id="numEdges" name="number of virtual edges" units="item" value="15.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">number of virtual edges</body>
+        </notes>
+      </parameter>
+      <parameter constant="false" id="oneStraight" name="number of edges with one straight filament" units="item" value="0.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">number of edges with one straight filament</body>
+        </notes>
+      </parameter>
+      <parameter constant="true" id="rateFilamentBindingMembrane" units="s_1" value="0.2"/>
+      <parameter constant="true" id="rateFilamentDissociation" units="s_1" value="0.2"/>
+      <parameter constant="true" id="rateFtsZGtpHydrolysis" units="s_1" value="0.2"/>
+      <parameter constant="false" id="residualBent" units="item" value="15.0"/>
+      <parameter constant="false" id="step" name="step indicator" value="1.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">step indicator</body>
+        </notes>
+      </parameter>
+      <parameter constant="false" id="timeStep" name="interval between events firing" units="s" value="1.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">interval between events firing</body>
+        </notes>
+      </parameter>
+      <parameter constant="false" id="twoBent" name="number of edges with 2 bent filaments" units="item" value="0.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">number of edges with 2 bent filaments</body>
+        </notes>
+      </parameter>
+      <parameter constant="false" id="twoStraight" name="number of edges with 2 straight filaments" units="item" value="0.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">number of edges with 2 straight filaments</body>
+        </notes>
+      </parameter>
+    </listOfParameters>
+    <listOfInitialAssignments>
+      <initialAssignment metaid="equation" symbol="n">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="equation" height="0" title="equation" width="0" x="840" y="-185">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci>FtsZRing_numFtsZSubunitsPerFilament</ci>
+            <cn>2.0</cn>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment metaid="equation_1" symbol="numEdges">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="equation_1" height="0" title="equation_1" width="0" x="840" y="-269">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <floor/>
+            <apply>
+              <divide/>
+              <pi/>
+              <apply>
+                <arcsin/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci>FtsZRing_filamentLengthInNm</ci>
+                    <cn>1.0E-9</cn>
+                  </apply>
+                  <ci>CellGeometry_pinchedDiameter</ci>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </initialAssignment>
+    </listOfInitialAssignments>
+    <listOfRules>
+      <assignmentRule metaid="H2O__c_Assignment_rule" variable="H2O_requirement">
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="H2O__c_Assignment_rule" title="H2O__c_Assignment_rule" x="840" y="-409">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci>FtsZRing_numFtsZSubunitsPerFilament</ci>
+            <ci>MG_224_9MER_GTP</ci>
+          </apply>
+        </math>
+      </assignmentRule>
+    </listOfRules>
+    <listOfEvents>
+      <event id="bendingFirstCyc" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <lt/>
+                      <ci>step</ci>
+                      <cn>6.0</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <apply>
+                        <plus/>
+                        <ci>twoStraight</ci>
+                        <ci>twoBent</ci>
+                      </apply>
+                      <ci>numEdges</ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <gt/>
+                    <ci>twoStraight</ci>
+                    <cn>0.0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>residualBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <geq/>
+                <ci>H2O</ci>
+                <ci>n</ci>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="bendingFirstCyc" title="Bend" x="499" y="500">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="twoStraight">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>twoStraight</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="twoBent">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>twoBent</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="H2O">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>H2O</ci>
+                <apply>
+                  <times/>
+                  <ci>n</ci>
+                  <ci>mEdges</ci>
+                </apply>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="PI">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>PI</ci>
+                <apply>
+                  <times/>
+                  <ci>n</ci>
+                  <ci>mEdges</ci>
+                </apply>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="H">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>H</ci>
+                <apply>
+                  <times/>
+                  <ci>n</ci>
+                  <ci>mEdges</ci>
+                </apply>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>6.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>13.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="bindingSecondStepFirstCyc" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <lt/>
+                  <ci>step</ci>
+                  <cn>4.0</cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>twoBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="bindingSecondStepFirstCyc" title="Bind 2 Straight" x="499" y="80">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="twoStraight">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>twoStraight</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="MG_224_9MER_GTP">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>MG_224_9MER_GTP</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="oneStraight">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>oneStraight</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>4.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>17.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="binding_0" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <lt/>
+                  <ci>step</ci>
+                  <cn>2.0</cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>twoBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="binding_0" title="Bind 1 Straight" x="499" y="-320">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="oneStraight">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>oneStraight</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="MG_224_9MER_GTP">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>MG_224_9MER_GTP</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>2.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>21.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="calBindingEdgesStep1FirstCyc" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <lt/>
+                  <ci>step</ci>
+                  <cn>2.0</cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>twoBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="calBindingEdgesStep1FirstCyc" title="Calc Bind 1 Straight" x="8" y="-320">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <ci>binomial</ci>
+                <apply>
+                  <ci>min</ci>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <minus/>
+                      <ci>numEdges</ci>
+                      <ci>oneStraight</ci>
+                    </apply>
+                    <ci>twoStraight</ci>
+                  </apply>
+                  <cn>0.0</cn>
+                </apply>
+                <ci>rateFilamentBindingMembrane</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>22.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="calBindingEdgesStep2FirstCyc" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <lt/>
+                  <ci>step</ci>
+                  <cn>4.0</cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>twoBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="calBindingEdgesStep2FirstCyc" title="Calc Bind 2 Straight" x="68" y="80">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <ci>binomial</ci>
+                <apply>
+                  <ci>min</ci>
+                  <ci>oneStraight</ci>
+                  <ci>MG_224_9MER_GTP</ci>
+                </apply>
+                <ci>rateFilamentBindingMembrane</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>18.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="calNumBentEdgesFirstCyc" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <lt/>
+                    <ci>step</ci>
+                    <cn>6.0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <apply>
+                      <plus/>
+                      <ci>twoStraight</ci>
+                      <ci>twoBent</ci>
+                    </apply>
+                    <ci>numEdges</ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <gt/>
+                  <ci>twoStraight</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>residualBent</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="calNumBentEdgesFirstCyc" title="Calc Bend" x="9" y="500">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <ci>binomial</ci>
+                <apply>
+                  <ci>min</ci>
+                  <ci>twoStraight</ci>
+                  <apply>
+                    <floor/>
+                    <apply>
+                      <divide/>
+                      <ci>H2O</ci>
+                      <ci>n</ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <ci>rateFtsZGtpHydrolysis</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>14.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="calNumManEdgesStepTwo" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <lt/>
+                  <ci>step</ci>
+                  <cn>3.0</cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>twoBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="calNumManEdgesStepTwo" title="Calc Bind 1 Straight" x="-54" y="-120">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <ci>binomial</ci>
+                <apply>
+                  <ci>min</ci>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <minus/>
+                      <ci>numEdges</ci>
+                      <ci>oneStraight</ci>
+                    </apply>
+                    <ci>twoStraight</ci>
+                  </apply>
+                  <ci>MG_224_9MER_GTP</ci>
+                </apply>
+                <ci>rateFilamentBindingMembrane</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>20.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="calNumUnbindEdgesFirstCyc" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <lt/>
+                <ci>step</ci>
+                <cn>8.0</cn>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>twoStraight</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="calNumUnbindEdgesFirstCyc" title="Calc unbind" x="220" y="945">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <ci>binomial</ci>
+                <ci>twoBent</ci>
+                <ci>rateFilamentDissociation</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>9.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="event" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <lt/>
+                <ci>step</ci>
+                <cn>5.0</cn>
+              </apply>
+              <apply>
+                <or/>
+                <apply>
+                  <eq/>
+                  <apply>
+                    <plus/>
+                    <ci>oneStraight</ci>
+                    <ci>twoStraight</ci>
+                  </apply>
+                  <ci>numEdges</ci>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>CellGeometry_pinched</ci>
+                  <cn>1.0</cn>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="event" height="0" title="Unbind residual" width="0" x="499" y="300">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="residualBent">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>residualBent</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="MG_224_MONOMER_GDP">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>MG_224_MONOMER_GDP</ci>
+                <apply>
+                  <times/>
+                  <ci>mEdges</ci>
+                  <cn>9.0</cn>
+                </apply>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>5.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>15.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="event_1" useValuesFromTriggerTime="true">
+        <trigger initialValue="false" persistent="true">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <eq/>
+              <ci>step</ci>
+              <cn>9.0</cn>
+            </apply>
+          </math>
+        </trigger>
+        <delay>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci>timeStep</ci>
+          </math>
+        </delay>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="event_1" height="0" title="Start of step" width="0" x="450" y="-435">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>1.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>100.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="event_2" useValuesFromTriggerTime="true">
+        <trigger initialValue="true" persistent="true">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <lt/>
+              <ci>CellGeometry_pinchedDiameter</ci>
+              <apply>
+                <times/>
+                <cn>1.0E-9</cn>
+                <ci>FtsZRing_filamentLengthInNm</ci>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="event_2" height="0" title="Pinch cell" width="0" x="985" y="720">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="CellGeometry_pinched">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>1.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="CellGeometry_pinchedDiameter">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="numEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>10.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="resUnbinding" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <lt/>
+                <ci>step</ci>
+                <cn>5.0</cn>
+              </apply>
+              <apply>
+                <or/>
+                <apply>
+                  <eq/>
+                  <apply>
+                    <plus/>
+                    <ci>oneStraight</ci>
+                    <ci>twoStraight</ci>
+                  </apply>
+                  <ci>numEdges</ci>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>CellGeometry_pinched</ci>
+                  <cn>1.0</cn>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="resUnbinding" height="0" title="Calc Unbind residual" width="0" x="67" y="300">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <ci>binomial</ci>
+                <ci>residualBent</ci>
+                <ci>rateFilamentDissociation</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>16.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="start_event" useValuesFromTriggerTime="true">
+        <trigger initialValue="false" persistent="true">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <lt/>
+              <ci>step</ci>
+              <cn>8.0</cn>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="start_event" height="0" title="End of step" width="0" x="434" y="1235">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>9.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>0.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="stepTwo" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <lt/>
+                  <ci>step</ci>
+                  <cn>3.0</cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>twoBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="stepTwo" title="Bind 1 Straight" x="499" y="-120">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="oneStraight">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>oneStraight</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="MG_224_9MER_GTP">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>MG_224_9MER_GTP</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>3.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>19.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="unbindingFirstCyc" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <lt/>
+                <ci>step</ci>
+                <cn>8.0</cn>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>twoStraight</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="unbindingFirstCyc" title="Unbind" x="500" y="937">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="twoBent">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>twoBent</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="MG_224_MONOMER_GDP">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>MG_224_MONOMER_GDP</ci>
+                <apply>
+                  <times/>
+                  <cn>9.0</cn>
+                  <ci>mEdges</ci>
+                </apply>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="residualBent">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>residualBent</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>8.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="updateDiameter_3_" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="true">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <lt/>
+                    <ci>step</ci>
+                    <cn>7.0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>twoBent</ci>
+                    <ci>numEdges</ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>residualBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="updateDiameter(3)" title="Update diameter" x="-174" y="720">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="CellGeometry_pinchedDiameter">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>CellGeometry_pinchedDiameter</ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <times/>
+                    <ci>FtsZRing_filamentLengthInNm</ci>
+                    <cn>1.0E-9</cn>
+                  </apply>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <divide/>
+                      <ci>numEdges</ci>
+                      <pi/>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <cn>1.0</cn>
+                      <apply>
+                        <sin/>
+                        <apply>
+                          <divide/>
+                          <pi/>
+                          <ci>numEdges</ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>12.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="updateDiameter_4_" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="true">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <lt/>
+                    <ci>step</ci>
+                    <cn>7.0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>twoBent</ci>
+                    <ci>numEdges</ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>residualBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <annotation>
+          <biouml:BIOUML xmlns:biouml="http://www.biouml.org/ns">
+            <biouml:nodeInfo completeName="updateDiameter(4)" title="Update number of edges" x="500" y="720">
+              <property name="Style" short-description="Style" type="String" value="Default"/>
+            </biouml:nodeInfo>
+          </biouml:BIOUML>
+        </annotation>
+        <listOfEventAssignments>
+          <eventAssignment variable="numEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <floor/>
+                <apply>
+                  <divide/>
+                  <pi/>
+                  <apply>
+                    <arcsin/>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci>FtsZRing_filamentLengthInNm</ci>
+                        <cn>1.0E-9</cn>
+                      </apply>
+                      <ci>CellGeometry_pinchedDiameter</ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>7.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>11.0</cn>
+          </math>
+        </priority>
+      </event>
+    </listOfEvents>
+  </model>
+</sbml>

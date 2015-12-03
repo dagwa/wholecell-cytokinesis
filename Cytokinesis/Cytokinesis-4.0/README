@@ -1,5 +1,4 @@
 This directory contains model versions generated after the workshop.
 
-Version 3.0 is a copy of the version 2.0 (from the end of the workshop),
- with semantic annotations
-
+Version 4.0 is more simple then 3.0 but more similar to MATLAB code.
+It does not have explicit first cycle (when there are now bent filaments)
