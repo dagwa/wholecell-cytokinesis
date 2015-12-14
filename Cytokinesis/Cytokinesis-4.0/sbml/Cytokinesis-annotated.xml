@@ -1,0 +1,1260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="Cytokinesis_4_0" name="Cytokinesis">
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	       xmlns:dc="http://purl.org/dc/elements/1.1/"
+	       xmlns:dcterms="http://purl.org/dc/terms/"
+	       xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
+	       xmlns:bqbiol="http://biomodels.net/biology-qualifiers/"
+	       xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#model1">
+          <dc:creator>
+            <rdf:Bag>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Kiselev</vCard:Family>
+                  <vCard:Given>Ilya</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>axec@systemsbiology.ru</vCard:EMAIL>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>SBRAS Novosibirsk</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Zhu</vCard:Family>
+                  <vCard:Given>Yan</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>yan.zhu@monash.edu</vCard:EMAIL>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>Monash University</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Kumar</vCard:Family>
+                  <vCard:Given>Naveen</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>navyeinstein1991@gmail.com</vCard:EMAIL>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>University Paris Sud and CNRS</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Priego</vCard:Family>
+                  <vCard:Given>Daniel</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>dpriego87@gmail.com</vCard:EMAIL>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname> Universidad Nacional Autónoma de Mexico</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Liebermeister</vCard:Family>
+                  <vCard:Given>Wolfram</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>wolfram.liebermeister@gmail.com</vCard:EMAIL>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>Charite Berlin</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+            </rdf:Bag>
+          </dc:creator>
+          <dcterms:created rdf:parseType="Resource">
+            <dcterms:W3CDTF>2015-03-10T12:00:00Z</dcterms:W3CDTF>
+          </dcterms:created>
+
+          <dcterms:modified rdf:parseType="Resource">
+            <dcterms:W3CDTF>2015-03-13T12:00:00Z</dcterms:W3CDTF>
+          </dcterms:modified>
+
+          <bqmodel:isInstanceOf>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/mamo/MAMO_0000036"/>
+            </rdf:Bag>
+          </bqmodel:isInstanceOf>
+
+          <bqmodel:isDerivedFrom>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/doi/10.1016/j.cell.2012.05.044"/>
+            </rdf:Bag>
+          </bqmodel:isDerivedFrom>
+
+          <bqbiol:hasTaxon>
+            <rdf:Bag>
+              <rdf:li rdf:resource="http://identifiers.org/taxonomy/243273"/>
+            </rdf:Bag>
+          </bqbiol:hasTaxon>
+
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+    <listOfFunctionDefinitions>
+      <functionDefinition id="binomial">
+        <annotation>
+          <distribution xmlns="http://sbml.org/annotations/distribution" defnition="http://en.wikipedia.org/wiki/Binomial_distribution"/>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci>x</ci>
+            </bvar>
+            <bvar>
+              <ci>y</ci>
+            </bvar>
+            <apply>
+              <times/>
+              <ci>x</ci>
+              <ci>y</ci>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+    </listOfFunctionDefinitions>
+    <listOfUnitDefinitions>
+      <unitDefinition id="s_1" name="per second">
+        <listOfUnits>
+          <unit exponent="-1" kind="second" multiplier="1.0" scale="0"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="nm" name="nanometre">
+        <listOfUnits>
+          <unit exponent="1" kind="metre" multiplier="1.0" scale="-9"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfParameters>
+      <parameter constant="false" id="CellGeometry_pinched" name="indicator if cytokinesis is finished" value="0.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">indicator if cytokinesis is finished</body>
+        </notes>
+      </parameter>
+      <parameter constant="false" id="CellGeometry_pinchedDiameter" value="2.0E-7"/>
+      <parameter constant="false" id="FtsZRing_filamentLengthInNm" units="nm" value="39.1304"/>
+      <parameter constant="false" id="FtsZRing_numFtsZSubunitsPerFilament" value="9.0"/>
+      <parameter constant="false" id="H" name="hydrogen" units="item" value="1000000.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">hydrogen</body>
+        </notes>
+      </parameter>
+      <parameter constant="false" id="H2O" name="water" units="item" value="1000000.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">water</body>
+        </notes>
+      </parameter>
+      <parameter constant="false" id="H2O_requirement" units="item" value="0.0"/>
+      <parameter constant="false" id="MG_224_9MER_GTP" units="item" value="1000000.0">
+      <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#MG_224_9MER_GTP_meta">
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P47466"/>
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/obo.chebi/CHEBI:15996"/>
+                </rdf:Bag>
+              </bqbiol:hasPart>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
+      <parameter constant="false" id="MG_224_MONOMER_GDP" units="item" value="1000000.0">
+       <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#MG_224_MONOMER_GDP_meta">
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/uniprot/P47466"/>
+                </rdf:Bag>
+              </bqbiol:hasPart>
+              <bqbiol:hasPart>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/obo.chebi/CHEBI:17552"/>
+                </rdf:Bag>
+              </bqbiol:hasPart>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
+      <parameter constant="false" id="PI" units="item" value="1000000.0"/>
+      <parameter constant="false" id="mEdges" units="item" value="0.0"/>
+      <parameter constant="false" id="n" units="item" value="0.0"/>
+      <parameter constant="false" id="numEdges" name="number of virtual edges" units="item" value="15.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">number of virtual edges</body>
+        </notes>
+      </parameter>
+      <parameter constant="false" id="oneStraight" name="number of edges with one straight filament" units="item" value="0.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">number of edges with one straight filament</body>
+        </notes>
+      </parameter>
+      <parameter constant="true" id="rateFilamentBindingMembrane" units="s_1" value="0.2"/>
+      <parameter constant="true" id="rateFilamentDissociation" units="s_1" value="0.2"/>
+      <parameter constant="true" id="rateFtsZGtpHydrolysis" units="s_1" value="0.2"/>
+      <parameter constant="false" id="residualBent" units="item" value="15.0"/>
+      <parameter constant="false" id="step" name="step indicator" value="1.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">step indicator</body>
+        </notes>
+      </parameter>
+      <parameter constant="false" id="timeStep" name="interval between events firing" units="second" value="1.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">interval between events firing</body>
+        </notes>
+      </parameter>
+      <parameter constant="false" id="twoBent" name="number of edges with 2 bent filaments" units="item" value="0.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">number of edges with 2 bent filaments</body>
+        </notes>
+      </parameter>
+      <parameter constant="false" id="twoStraight" name="number of edges with 2 straight filaments" units="item" value="0.0">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">number of edges with 2 straight filaments</body>
+        </notes>
+      </parameter>
+    </listOfParameters>
+    <listOfInitialAssignments>
+      <initialAssignment metaid="equation" symbol="n">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci>FtsZRing_numFtsZSubunitsPerFilament</ci>
+            <cn>2.0</cn>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment metaid="equation_1" symbol="numEdges">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <floor/>
+            <apply>
+              <divide/>
+              <pi/>
+              <apply>
+                <arcsin/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci>FtsZRing_filamentLengthInNm</ci>
+                    <cn>1.0E-9</cn>
+                  </apply>
+                  <ci>CellGeometry_pinchedDiameter</ci>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </initialAssignment>
+    </listOfInitialAssignments>
+    <listOfRules>
+      <assignmentRule metaid="H2O__c_Assignment_rule" variable="H2O_requirement">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci>FtsZRing_numFtsZSubunitsPerFilament</ci>
+            <ci>MG_224_9MER_GTP</ci>
+          </apply>
+        </math>
+      </assignmentRule>
+    </listOfRules>
+    <listOfEvents>
+      <event id="bendingFirstCyc" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <lt/>
+                      <ci>step</ci>
+                      <cn>6.0</cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <apply>
+                        <plus/>
+                        <ci>twoStraight</ci>
+                        <ci>twoBent</ci>
+                      </apply>
+                      <ci>numEdges</ci>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <gt/>
+                    <ci>twoStraight</ci>
+                    <cn>0.0</cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>residualBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <geq/>
+                <ci>H2O</ci>
+                <ci>n</ci>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="twoStraight">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>twoStraight</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="twoBent">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>twoBent</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="H2O">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>H2O</ci>
+                <apply>
+                  <times/>
+                  <ci>n</ci>
+                  <ci>mEdges</ci>
+                </apply>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="PI">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>PI</ci>
+                <apply>
+                  <times/>
+                  <ci>n</ci>
+                  <ci>mEdges</ci>
+                </apply>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="H">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>H</ci>
+                <apply>
+                  <times/>
+                  <ci>n</ci>
+                  <ci>mEdges</ci>
+                </apply>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>6.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>13.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="bindingSecondStepFirstCyc" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <lt/>
+                  <ci>step</ci>
+                  <cn>4.0</cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>twoBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="twoStraight">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>twoStraight</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="MG_224_9MER_GTP">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>MG_224_9MER_GTP</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="oneStraight">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>oneStraight</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>4.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>17.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="binding_0" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <lt/>
+                  <ci>step</ci>
+                  <cn>2.0</cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>twoBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="oneStraight">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>oneStraight</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="MG_224_9MER_GTP">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>MG_224_9MER_GTP</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>2.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>21.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="calBindingEdgesStep1FirstCyc" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <lt/>
+                  <ci>step</ci>
+                  <cn>2.0</cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>twoBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <ci>binomial</ci>
+                <apply>
+                  <ci>min</ci>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <minus/>
+                      <ci>numEdges</ci>
+                      <ci>oneStraight</ci>
+                    </apply>
+                    <ci>twoStraight</ci>
+                  </apply>
+                  <cn>0.0</cn>
+                </apply>
+                <ci>rateFilamentBindingMembrane</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>22.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="calBindingEdgesStep2FirstCyc" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <lt/>
+                  <ci>step</ci>
+                  <cn>4.0</cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>twoBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <ci>binomial</ci>
+                <apply>
+                  <ci>min</ci>
+                  <ci>oneStraight</ci>
+                  <ci>MG_224_9MER_GTP</ci>
+                </apply>
+                <ci>rateFilamentBindingMembrane</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>18.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="calNumBentEdgesFirstCyc" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <lt/>
+                    <ci>step</ci>
+                    <cn>6.0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <apply>
+                      <plus/>
+                      <ci>twoStraight</ci>
+                      <ci>twoBent</ci>
+                    </apply>
+                    <ci>numEdges</ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <gt/>
+                  <ci>twoStraight</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>residualBent</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <ci>binomial</ci>
+                <apply>
+                  <ci>min</ci>
+                  <ci>twoStraight</ci>
+                  <apply>
+                    <floor/>
+                    <apply>
+                      <divide/>
+                      <ci>H2O</ci>
+                      <ci>n</ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <ci>rateFtsZGtpHydrolysis</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>14.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="calNumManEdgesStepTwo" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <lt/>
+                  <ci>step</ci>
+                  <cn>3.0</cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>twoBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <ci>binomial</ci>
+                <apply>
+                  <ci>min</ci>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <minus/>
+                      <ci>numEdges</ci>
+                      <ci>oneStraight</ci>
+                    </apply>
+                    <ci>twoStraight</ci>
+                  </apply>
+                  <ci>MG_224_9MER_GTP</ci>
+                </apply>
+                <ci>rateFilamentBindingMembrane</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>20.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="calNumUnbindEdgesFirstCyc" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <lt/>
+                <ci>step</ci>
+                <cn>8.0</cn>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>twoStraight</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <ci>binomial</ci>
+                <ci>twoBent</ci>
+                <ci>rateFilamentDissociation</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>9.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="event" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <lt/>
+                <ci>step</ci>
+                <cn>5.0</cn>
+              </apply>
+              <apply>
+                <or/>
+                <apply>
+                  <eq/>
+                  <apply>
+                    <plus/>
+                    <ci>oneStraight</ci>
+                    <ci>twoStraight</ci>
+                  </apply>
+                  <ci>numEdges</ci>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>CellGeometry_pinched</ci>
+                  <cn>1.0</cn>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="residualBent">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>residualBent</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="MG_224_MONOMER_GDP">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>MG_224_MONOMER_GDP</ci>
+                <apply>
+                  <times/>
+                  <ci>mEdges</ci>
+                  <cn>9.0</cn>
+                </apply>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>5.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>15.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="event_1" useValuesFromTriggerTime="true">
+        <trigger initialValue="false" persistent="true">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <eq/>
+              <ci>step</ci>
+              <cn>9.0</cn>
+            </apply>
+          </math>
+        </trigger>
+        <delay>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci>timeStep</ci>
+          </math>
+        </delay>
+        <listOfEventAssignments>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>1.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>100.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="event_2" useValuesFromTriggerTime="true">
+        <trigger initialValue="true" persistent="true">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <lt/>
+              <ci>CellGeometry_pinchedDiameter</ci>
+              <apply>
+                <times/>
+                <cn>1.0E-9</cn>
+                <ci>FtsZRing_filamentLengthInNm</ci>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="CellGeometry_pinched">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>1.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="CellGeometry_pinchedDiameter">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="numEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>10.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="resUnbinding" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <lt/>
+                <ci>step</ci>
+                <cn>5.0</cn>
+              </apply>
+              <apply>
+                <or/>
+                <apply>
+                  <eq/>
+                  <apply>
+                    <plus/>
+                    <ci>oneStraight</ci>
+                    <ci>twoStraight</ci>
+                  </apply>
+                  <ci>numEdges</ci>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>CellGeometry_pinched</ci>
+                  <cn>1.0</cn>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <ci>binomial</ci>
+                <ci>residualBent</ci>
+                <ci>rateFilamentDissociation</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>16.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="start_event" useValuesFromTriggerTime="true">
+        <trigger initialValue="false" persistent="true">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <lt/>
+              <ci>step</ci>
+              <cn>8.0</cn>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>9.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>0.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="stepTwo" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <lt/>
+                  <ci>step</ci>
+                  <cn>3.0</cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>twoBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="oneStraight">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>oneStraight</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="MG_224_9MER_GTP">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>MG_224_9MER_GTP</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>3.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>19.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="unbindingFirstCyc" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="false">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <lt/>
+                <ci>step</ci>
+                <cn>8.0</cn>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>twoStraight</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="twoBent">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <minus/>
+                <ci>twoBent</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="MG_224_MONOMER_GDP">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>MG_224_MONOMER_GDP</ci>
+                <apply>
+                  <times/>
+                  <cn>9.0</cn>
+                  <ci>mEdges</ci>
+                </apply>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="mEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>0.0</cn>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="residualBent">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>residualBent</ci>
+                <ci>mEdges</ci>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>8.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="updateDiameter_3_" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="true">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <lt/>
+                    <ci>step</ci>
+                    <cn>7.0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>twoBent</ci>
+                    <ci>numEdges</ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>residualBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="CellGeometry_pinchedDiameter">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <plus/>
+                <ci>CellGeometry_pinchedDiameter</ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <times/>
+                    <ci>FtsZRing_filamentLengthInNm</ci>
+                    <cn>1.0E-9</cn>
+                  </apply>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <divide/>
+                      <ci>numEdges</ci>
+                      <pi/>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <cn>1.0</cn>
+                      <apply>
+                        <sin/>
+                        <apply>
+                          <divide/>
+                          <pi/>
+                          <ci>numEdges</ci>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>12.0</cn>
+          </math>
+        </priority>
+      </event>
+      <event id="updateDiameter_4_" useValuesFromTriggerTime="false">
+        <trigger initialValue="false" persistent="true">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <and/>
+              <apply>
+                <and/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <lt/>
+                    <ci>step</ci>
+                    <cn>7.0</cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci>twoBent</ci>
+                    <ci>numEdges</ci>
+                  </apply>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci>residualBent</ci>
+                  <cn>0.0</cn>
+                </apply>
+              </apply>
+              <apply>
+                <eq/>
+                <ci>CellGeometry_pinched</ci>
+                <cn>0.0</cn>
+              </apply>
+            </apply>
+          </math>
+        </trigger>
+        <listOfEventAssignments>
+          <eventAssignment variable="numEdges">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <apply>
+                <floor/>
+                <apply>
+                  <divide/>
+                  <pi/>
+                  <apply>
+                    <arcsin/>
+                    <apply>
+                      <divide/>
+                      <apply>
+                        <times/>
+                        <ci>FtsZRing_filamentLengthInNm</ci>
+                        <cn>1.0E-9</cn>
+                      </apply>
+                      <ci>CellGeometry_pinchedDiameter</ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+          </eventAssignment>
+          <eventAssignment variable="step">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <cn>7.0</cn>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+        <priority>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn>11.0</cn>
+          </math>
+        </priority>
+      </event>
+    </listOfEvents>
+  </model>
+</sbml>
